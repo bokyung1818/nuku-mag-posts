@@ -1,0 +1,6 @@
+# 토큰 등 민감 파일/캐시 제외
+_토큰테스트.py
+*.pyc
+__pycache__/
+.env
+*token*.txt

@@ -1,0 +1,59 @@
+name: NUKU 카드뉴스 발행
+
+# 1) 수동 발행(검수 후 승인): Actions 탭 → 이 워크플로 → Run workflow → 덱 폴더명 입력
+# 2) 자동 예약 발행: 아래 schedule 크론이 queue.json의 'approved'+예약시각 지난 덱을 게시
+on:
+  workflow_dispatch:
+    inputs:
+      deck:
+        description: "발행할 덱 폴더명 (예: 02_계약전_물어야할7가지)"
+        required: true
+        type: string
+  schedule:
+    # UTC 기준. 00:00 UTC = 09:00 KST. 월·화·수·목·금 오전 9시(KST)에 큐 확인.
+    - cron: "0 0 * * 1-5"
+
+permissions:
+  contents: write   # 큐 상태(posted) 커밋용
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      # 수동 트리거 → 지정한 덱을 즉시 발행
+      - name: 수동 발행
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IMG_BASE: ${{ secrets.IMG_BASE }}
+        run: python publish.py --deck "${{ github.event.inputs.deck }}"
+
+      # 예약 트리거 → 큐 처리
+      - name: 예약 큐 발행
+        if: github.event_name == 'schedule'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IMG_BASE: ${{ secrets.IMG_BASE }}
+        run: python publish.py --queue queue.json
+
+      # 큐 상태 변화가 있으면 커밋
+      - name: 큐 상태 저장
+        if: github.event_name == 'schedule'
+        run: |
+          if [ -n "$(git status --porcelain queue.json)" ]; then
+            git config user.name "nuku-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add queue.json
+            git commit -m "chore: 발행 후 큐 상태 갱신"
+            git push
+          fi
