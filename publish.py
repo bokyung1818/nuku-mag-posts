@@ -83,7 +83,46 @@ def _wait_finished(container_id, tok, tries=20, gap=3):
     return True  # 이미지는 보통 즉시 완료. 타임아웃이어도 발행 시도.
 
 
+def publish_reel(deck, dry_run=False):
+    """덱에 reel.mp4가 있으면 릴스(영상)로 발행. 커버=frame01.png, 무음(트렌딩 오디오는 앱에서만 가능)."""
+    uid, tok, base = cfg()
+    cap_path = os.path.join(deck, "caption.txt")
+    caption = open(cap_path, encoding="utf-8").read().strip() if os.path.exists(cap_path) else ""
+    video_url = img_url(base, deck, "reel.mp4")
+    cover_url = img_url(base, deck, "frame01.png") if os.path.exists(os.path.join(deck, "frame01.png")) else None
+
+    print(f"\n=== 릴스 발행: {deck} ===")
+    print("  video:", video_url)
+    if cover_url:
+        print("  cover:", cover_url)
+    print(f"  캡션 {len(caption)}자")
+
+    if dry_run:
+        print("\n[DRY-RUN] 실제 게시는 하지 않았습니다. video_url이 브라우저에서 재생되는지 확인하세요.")
+        return None
+    if not (uid and tok and base):
+        raise SystemExit("[!] IG_USER_ID / IG_ACCESS_TOKEN / IMG_BASE 환경변수를 설정하세요.")
+
+    # 1) 릴스 컨테이너 생성
+    data = {"media_type": "REELS", "video_url": video_url, "caption": caption,
+            "share_to_feed": "true", "access_token": tok}
+    if cover_url:
+        data["cover_url"] = cover_url
+    cont = _post(f"{GRAPH}/{uid}/media", data)["id"]
+    print("  container:", cont)
+
+    # 2) 영상 처리 대기(이미지보다 오래 걸림) 후 게시
+    _wait_finished(cont, tok, tries=60, gap=5)
+    pub = _post(f"{GRAPH}/{uid}/media_publish", {"creation_id": cont, "access_token": tok})
+    print(f"\n✅ 릴스 게시 완료! media_id = {pub['id']}")
+    return pub["id"]
+
+
 def publish_deck(deck, dry_run=False):
+    # reel.mp4가 있으면 릴스(영상)로, 없으면 카드뉴스(이미지 캐러셀)로 분기
+    if os.path.exists(os.path.join(deck, "reel.mp4")):
+        return publish_reel(deck, dry_run)
+
     uid, tok, base = cfg()
     imgs, caption = deck_assets(deck)
     urls = [img_url(base, deck, f) for f in imgs]
