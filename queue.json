@@ -1,17 +1,12 @@
 [
   {
     "deck": "06_프리랜서도_실업급여",
-    "scheduled_at": "2026-06-12T08:00:00+09:00",
-    "status": "approved"
-  },
-  {
-    "deck": "09_청년미래적금_2탄_프리랜서",
-    "scheduled_at": "2026-06-16T08:00:00+09:00",
+    "scheduled_at": "2026-06-13T08:00:00+09:00",
     "status": "approved"
   },
   {
     "deck": "08_카톡도_계약이다",
-    "scheduled_at": "2026-06-18T08:00:00+09:00",
+    "scheduled_at": "2026-06-16T08:00:00+09:00",
     "status": "approved"
   },
   {
