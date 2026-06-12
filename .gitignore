@@ -4,3 +4,4 @@ _토큰테스트.py
 __pycache__/
 .env
 *token*.txt
+docs/_src/preview_*.png
