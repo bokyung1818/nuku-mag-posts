@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"><style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1080px;height:1350px;}
+body{font-family:'Pretendard','Noto Sans KR',sans-serif;background:#0F1115;color:#ECEDF1;
+  -webkit-font-smoothing:antialiased;word-break:keep-all;}
+.frame{position:relative;width:1080px;height:1350px;overflow:hidden;padding:90px 84px;
+  display:flex;flex-direction:column;background:#0F1115;}
+.frame.cover{background:linear-gradient(160deg,#10131A 0%,#0B1830 100%);}
+.top{display:flex;justify-content:space-between;align-items:center;
+  font-size:26px;font-weight:700;letter-spacing:.02em;color:#7E8492;}
+.top .dot{width:13px;height:13px;border-radius:50%;background:var(--ac,#0273FF);display:inline-block;margin-right:11px;}
+.top .num{font-variant-numeric:tabular-nums;}
+.body{flex:1;display:flex;flex-direction:column;justify-content:center;}
+.chip{display:inline-block;align-self:flex-start;font-size:30px;font-weight:800;color:#fff;
+  background:var(--ac,#0273FF);border-radius:12px;padding:12px 24px;letter-spacing:.01em;margin-bottom:40px;}
+.title{font-weight:800;line-height:1.2;letter-spacing:-.03em;width:100%;}
+.rows{margin-top:56px;display:flex;flex-direction:column;gap:30px;}
+.row{display:flex;gap:24px;align-items:flex-start;}
+.row .k{flex:none;width:118px;font-size:30px;font-weight:800;color:var(--ac,#0273FF);}
+.row .v{flex:1;font-size:34px;font-weight:600;line-height:1.4;color:#D7DAE1;}
+.bot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;
+  font-size:25px;font-weight:700;color:#7E8492;padding-top:30px;}
+.bot .src{color:#5C6270;}
+/* cover */
+.cov-k{display:inline-block;align-self:flex-start;font-size:30px;font-weight:800;color:#4AA0FF;
+  background:rgba(74,160,255,.12);border-radius:999px;padding:12px 26px;margin-bottom:36px;}
+.cov-h{font-size:128px;font-weight:800;line-height:1.12;letter-spacing:-.04em;}
+.cov-sub{font-size:40px;font-weight:600;color:#AEB4C0;margin-top:34px;line-height:1.5;}
+.cov-meta{margin-top:52px;display:flex;gap:18px;flex-wrap:wrap;}
+.cov-meta span{font-size:30px;font-weight:700;color:#D7DAE1;background:#1A1F29;border:1px solid #2A303B;
+  border-radius:999px;padding:13px 26px;}
+/* closing */
+.cl-h{font-size:80px;font-weight:800;line-height:1.24;letter-spacing:-.03em;}
+.cl-sub{font-size:38px;font-weight:600;color:#AEB4C0;margin-top:34px;line-height:1.55;}
+.cl-handle{font-size:46px;font-weight:800;color:#ECEDF1;margin-top:60px;}
+.cl-handle .dot{width:18px;height:18px;border-radius:50%;background:#0273FF;display:inline-block;margin-right:14px;}
+em{font-style:normal;color:#4AA0FF;}
+</style></head><body><div class="frame" style="--ac:#0273FF"><div class="top"><span><span class="dot"></span>NUKU</span><span class="num">10 / 10</span></div><div class="body"><div class="cl-h">마음에 드는 공연,<br><em>저장</em>해두세요</div><div class="cl-sub">매주 이맘때 서울·수도권 공연 소식을<br>모아서 전해드려요.</div><div class="cl-handle"><span class="dot"></span>@nuku.mag</div></div><div class="bot"><span class="src">자료: KOPIS(공연예술통합전산망)</span><span></span></div></div><script>
+(function(){function fit(el){var maxH=parseFloat(el.dataset.fith)||430,maxF=parseFloat(el.dataset.fitmax)||118,
+minF=44,lo=minF,hi=maxF,best=minF;for(var i=0;i<26;i++){var mid=(lo+hi)/2;el.style.fontSize=mid+'px';
+if(el.scrollHeight<=maxH+0.5&&el.scrollWidth<=el.clientWidth+1){best=mid;lo=mid;}else{hi=mid;}}
+el.style.fontSize=best.toFixed(2)+'px';}function run(){var n=document.querySelectorAll('.fit');
+for(var i=0;i<n.length;i++)fit(n[i]);}if(document.fonts&&document.fonts.ready){document.fonts.ready.then(run);}run();})();
+</script></body></html>
