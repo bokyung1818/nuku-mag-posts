@@ -18,7 +18,7 @@ u{text-decoration:none;background:linear-gradient(transparent 60%,color-mix(in s
 /* hook */
 .kick{display:inline-block;align-self:flex-start;font-size:32px;font-weight:800;color:#fff;
   background:var(--accent);border-radius:14px;padding:14px 26px;letter-spacing:.02em;margin-bottom:46px;}
-.hookh{font-weight:800;font-size:128px;line-height:1.16;letter-spacing:-.03em;}
+.hookh{font-weight:800;font-size:128px;line-height:1.16;letter-spacing:-.03em;width:100%;}
 .hooksub{font-size:42px;line-height:1.55;color:var(--soft);font-weight:600;margin-top:50px;}
 
 /* statement */
@@ -85,4 +85,22 @@ u{text-decoration:none;background:linear-gradient(transparent 60%,color-mix(in s
 .tbl tr td:first-child{font-weight:800;color:var(--ink);white-space:nowrap;}
 .tbl td em{color:var(--accent);font-weight:800;}
 .tblnote{font-size:31px;color:var(--muted);font-weight:600;margin-top:32px;line-height:1.5;}
-</style></head><body><div class="frame"><div class="top"><span>꼭 글로 남길 것</span><span class="num">06 / 08</span></div><div class="body"><div class="h2" style="margin-bottom:14px">카톡에 이 5가지를</div><div class="steps"><div class="step"><div class="sc">1</div><div class="ln"></div><div class="st"><div class="sh">금액 (단가·총액)</div></div></div><div class="step"><div class="sc">2</div><div class="ln"></div><div class="st"><div class="sh">작업 범위 (어디까지)</div></div></div><div class="step"><div class="sc">3</div><div class="ln"></div><div class="st"><div class="sh">납기 (언제까지)</div></div></div><div class="step"><div class="sc">4</div><div class="ln"></div><div class="st"><div class="sh">수정 횟수 (+추가 비용)</div></div></div><div class="step"><div class="sc">5</div><div class="ln"></div><div class="st"><div class="sh">“확인했습니다” 답 받기</div><div class="sd">전화·구두 합의도 카톡으로 다시 정리</div></div></div></div></div><div class="bot"><span><span class="dot"></span>@nuku.mag</span><span></span></div></div></body></html>
+</style></head><body><div class="frame"><div class="top"><span>꼭 글로 남길 것</span><span class="num">06 / 08</span></div><div class="body"><div class="h2" style="margin-bottom:14px">카톡에 이 5가지를</div><div class="steps"><div class="step"><div class="sc">1</div><div class="ln"></div><div class="st"><div class="sh">금액 (단가·총액)</div></div></div><div class="step"><div class="sc">2</div><div class="ln"></div><div class="st"><div class="sh">작업 범위 (어디까지)</div></div></div><div class="step"><div class="sc">3</div><div class="ln"></div><div class="st"><div class="sh">납기 (언제까지)</div></div></div><div class="step"><div class="sc">4</div><div class="ln"></div><div class="st"><div class="sh">수정 횟수 (+추가 비용)</div></div></div><div class="step"><div class="sc">5</div><div class="ln"></div><div class="st"><div class="sh">“확인했습니다” 답 받기</div><div class="sd">전화·구두 합의도 카톡으로 다시 정리</div></div></div></div></div><div class="bot"><span><span class="dot"></span>@nuku.mag</span><span></span></div></div><script>
+(function(){
+  function fit(el){
+    var maxH=parseFloat(el.dataset.fith)||640,
+        maxF=parseFloat(el.dataset.fitmax)||150,
+        minF=parseFloat(el.dataset.fitmin)||56,
+        lo=minF, hi=maxF, best=minF;
+    for(var i=0;i<26;i++){
+      var mid=(lo+hi)/2;
+      el.style.fontSize=mid+'px';
+      if(el.scrollHeight<=maxH+0.5 && el.scrollWidth<=el.clientWidth+1){ best=mid; lo=mid; }
+      else { hi=mid; }
+    }
+    el.style.fontSize=best.toFixed(2)+'px';
+  }
+  function run(){ var n=document.querySelectorAll('.fit'); for(var i=0;i<n.length;i++) fit(n[i]); }
+  if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(run); } run();
+})();
+</script></body></html>

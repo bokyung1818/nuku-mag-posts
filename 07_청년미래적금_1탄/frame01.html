@@ -18,7 +18,7 @@ u{text-decoration:none;background:linear-gradient(transparent 60%,color-mix(in s
 /* hook */
 .kick{display:inline-block;align-self:flex-start;font-size:32px;font-weight:800;color:#fff;
   background:var(--accent);border-radius:14px;padding:14px 26px;letter-spacing:.02em;margin-bottom:46px;}
-.hookh{font-weight:800;font-size:128px;line-height:1.16;letter-spacing:-.03em;}
+.hookh{font-weight:800;font-size:128px;line-height:1.16;letter-spacing:-.03em;width:100%;}
 .hooksub{font-size:42px;line-height:1.55;color:var(--soft);font-weight:600;margin-top:50px;}
 
 /* statement */
@@ -85,4 +85,22 @@ u{text-decoration:none;background:linear-gradient(transparent 60%,color-mix(in s
 .tbl tr td:first-child{font-weight:800;color:var(--ink);white-space:nowrap;}
 .tbl td em{color:var(--accent);font-weight:800;}
 .tblnote{font-size:31px;color:var(--muted);font-weight:600;margin-top:32px;line-height:1.5;}
-</style></head><body><div class="frame"><div class="body"><div class="kick">1탄 · 핵심 총정리</div><div class="hookh">6월 22일 시작<br>청년미래적금,<br>핵심만 <em>1분</em></div><div class="hooksub">최대 7~8%에 정부가 돈까지 얹어주는 적금. 프리랜서도 대상이에요.</div></div><div class="bot"><span><span class="dot"></span>@nuku.mag</span><span></span></div></div></body></html>
+</style></head><body><div class="frame"><div class="body"><div class="kick">1탄 · 핵심 총정리</div><div class="hookh fit" data-fith="640" data-fitmax="150" data-fitmin="56">6월 22일 시작<br>청년미래적금,<br>핵심만 <em>1분</em></div><div class="hooksub">최대 7~8%에 정부가 돈까지 얹어주는 적금. 프리랜서도 대상이에요.</div></div><div class="bot"><span><span class="dot"></span>@nuku.mag</span><span></span></div></div><script>
+(function(){
+  function fit(el){
+    var maxH=parseFloat(el.dataset.fith)||640,
+        maxF=parseFloat(el.dataset.fitmax)||150,
+        minF=parseFloat(el.dataset.fitmin)||56,
+        lo=minF, hi=maxF, best=minF;
+    for(var i=0;i<26;i++){
+      var mid=(lo+hi)/2;
+      el.style.fontSize=mid+'px';
+      if(el.scrollHeight<=maxH+0.5 && el.scrollWidth<=el.clientWidth+1){ best=mid; lo=mid; }
+      else { hi=mid; }
+    }
+    el.style.fontSize=best.toFixed(2)+'px';
+  }
+  function run(){ var n=document.querySelectorAll('.fit'); for(var i=0;i<n.length;i++) fit(n[i]); }
+  if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(run); } run();
+})();
+</script></body></html>
