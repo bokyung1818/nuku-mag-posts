@@ -5,3 +5,4 @@ __pycache__/
 .env
 *token*.txt
 docs/_src/preview_*.png
+docs/_src/_oghtml/
