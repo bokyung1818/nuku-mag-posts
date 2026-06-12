@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="format-detection" content="telephone=no"><title>내가 찍은 광고, 포트폴리오에 올렸다가 "내려달라"고요? · NUKU</title><meta property="og:title" content="내가 찍은 광고, 포트폴리오에 올렸다가 "내려달라"고요?"><meta property="og:description" content="납품한 상업물, 함부로 못 쓸 수 있어요. 안전하게 쓰는 법."><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"><style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--accent:#0273FF;--ink:#16181D;--soft:#3D424C;--muted:#8A909C;
+  --line:#E8EBF0;--card:#F5F7FB;--bg:#FFFFFF;}
+html{-webkit-text-size-adjust:100%;}
+body{font-family:'Pretendard','Noto Sans KR',-apple-system,BlinkMacSystemFont,sans-serif;
+  background:#EEF1F6;color:var(--ink);line-height:1.62;word-break:keep-all;
+  -webkit-font-smoothing:antialiased;}
+.wrap{max-width:560px;margin:0 auto;background:var(--bg);min-height:100vh;
+  box-shadow:0 0 40px rgba(0,0,0,.06);}
+.bar{display:flex;align-items:center;gap:9px;padding:18px 24px;border-bottom:1px solid var(--line);
+  position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);z-index:5;}
+.bar .dot{width:11px;height:11px;border-radius:50%;background:var(--accent);}
+.bar .h{font-size:15px;font-weight:800;letter-spacing:-.01em;}
+.bar .tag{margin-left:auto;font-size:12px;font-weight:700;color:var(--muted);}
+.hero{padding:34px 24px 26px;}
+.kicker{display:inline-block;font-size:13px;font-weight:800;color:var(--accent);
+  background:rgba(2,115,255,.09);padding:6px 13px;border-radius:999px;letter-spacing:.01em;}
+h1{font-size:31px;font-weight:800;line-height:1.32;letter-spacing:-.03em;margin:18px 0 12px;}
+.sub{font-size:17px;color:var(--soft);font-weight:500;line-height:1.6;}
+.tldr{margin:8px 24px 12px;background:var(--card);border:1px solid var(--line);
+  border-radius:18px;padding:22px 22px;}
+.tldr .t{font-size:13px;font-weight:800;color:var(--accent);letter-spacing:.03em;margin-bottom:13px;}
+.tldr ul{list-style:none;}
+.tldr li{position:relative;padding-left:24px;font-size:16px;font-weight:600;color:var(--ink);
+  line-height:1.55;margin-bottom:11px;}
+.tldr li:last-child{margin-bottom:0;}
+.tldr li:before{content:'✓';position:absolute;left:0;top:0;color:var(--accent);font-weight:800;}
+section{padding:22px 24px;border-top:1px solid var(--line);}
+section h2{font-size:21px;font-weight:800;letter-spacing:-.02em;line-height:1.4;margin-bottom:12px;}
+section p{font-size:16.5px;color:var(--soft);line-height:1.66;margin-bottom:12px;}
+section p:last-child{margin-bottom:0;}
+b{color:var(--ink);font-weight:800;}
+em{font-style:normal;color:var(--accent);font-weight:700;}
+u{text-decoration:none;background:linear-gradient(transparent 60%,rgba(2,115,255,.18) 0);}
+.list{list-style:none;margin:6px 0 4px;}
+.list li{position:relative;padding-left:22px;font-size:16px;color:var(--soft);line-height:1.6;margin-bottom:10px;}
+.list li:before{content:'';position:absolute;left:4px;top:11px;width:6px;height:6px;
+  border-radius:50%;background:var(--accent);}
+.steps{counter-reset:s;margin:8px 0 2px;}
+.step{position:relative;padding-left:50px;margin-bottom:20px;}
+.step:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;
+  width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;}
+.step .sh{font-size:17px;font-weight:800;line-height:1.4;padding-top:4px;}
+.step .sd{font-size:15px;color:var(--muted);line-height:1.55;margin-top:4px;}
+.callout{background:rgba(2,115,255,.07);border-left:4px solid var(--accent);
+  border-radius:0 12px 12px 0;padding:16px 18px;font-size:16px;font-weight:700;
+  color:var(--ink);line-height:1.55;margin:6px 0;}
+table{width:100%;border-collapse:separate;border-spacing:0;margin:10px 0 4px;
+  border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:14.5px;}
+th{background:var(--accent);color:#fff;font-weight:800;padding:12px 13px;text-align:left;}
+td{padding:12px 13px;border-top:1px solid var(--line);color:var(--soft);
+  line-height:1.5;vertical-align:top;}
+tr td:first-child{font-weight:800;color:var(--ink);}
+td em{color:var(--accent);font-weight:800;}
+.chk{list-style:none;margin:6px 0;}
+.chk li{position:relative;padding-left:34px;font-size:16px;color:var(--ink);font-weight:600;
+  line-height:1.5;margin-bottom:14px;}
+.chk li:before{content:'';position:absolute;left:0;top:0;width:23px;height:23px;
+  border:2.5px solid var(--accent);border-radius:7px;}
+.contacts{display:flex;flex-direction:column;gap:10px;margin-top:6px;}
+.contact{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:15px 17px;text-decoration:none;color:inherit;}
+.contact .cn{font-size:15.5px;font-weight:800;}
+.contact .cd{font-size:15px;color:var(--accent);font-weight:700;margin-top:3px;}
+.disc{margin:0 24px;padding:18px 0 4px;font-size:13px;color:var(--muted);line-height:1.6;
+  border-top:1px dashed var(--line);}
+.disc b{color:var(--soft);}
+.sources{padding:18px 24px;}
+.sources .t{font-size:13px;font-weight:800;color:var(--muted);margin-bottom:10px;letter-spacing:.03em;}
+.sources a{display:block;font-size:13px;color:var(--muted);text-decoration:none;
+  line-height:1.5;margin-bottom:7px;word-break:break-all;}
+.sources a:before{content:'↗ ';color:var(--accent);}
+.cta{margin:18px 20px 8px;background:linear-gradient(135deg,#0273FF,#015FE0);border-radius:22px;
+  padding:30px 26px;text-align:center;color:#fff;}
+.cta .ct{font-size:19px;font-weight:800;line-height:1.45;letter-spacing:-.02em;}
+.cta .cs{font-size:14.5px;color:rgba(255,255,255,.85);margin-top:8px;line-height:1.5;font-weight:500;}
+.cta a{display:inline-block;margin-top:18px;background:#fff;color:var(--accent);
+  font-size:16px;font-weight:800;text-decoration:none;padding:14px 30px;border-radius:999px;}
+.foot{text-align:center;padding:22px 24px 40px;font-size:12.5px;color:var(--muted);}
+.foot .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);
+  margin-right:6px;vertical-align:middle;}
+</style></head><body><div class="wrap"><div class="bar"><span class="dot"></span><span class="h">NUKU</span><span class="tag">@nuku.mag · 자료실</span></div><div class="hero"><span class="kicker">프리랜서 권리 가이드</span><h1>내가 찍은 광고, 포트폴리오에 올렸다가 "내려달라"고요?</h1><div class="sub">납품한 상업물, 함부로 못 쓸 수 있어요. 안전하게 쓰는 법.</div></div><div class="tldr"><div class="t">한눈에</div><ul><li>매절(양도)했으면 <b>무단 게시는 침해 소지</b></li><li>미공개 작업물 게시 = <em>공표권·NDA 위반</em> 위험</li><li>핵심 = 계약에 <b>'포트폴리오 사용권 유보'</b> 넣기</li><li>음원·모델 초상도 별도 권리 — 따로 확인해야</li></ul></div><section><h2>"내가 만들었으니 내 거"가 아니에요</h2><p>저작재산권을 클라이언트에 <b>양도(매절)</b>했다면 권리자는 클라이언트예요. 그 영상을 마음대로 복제하거나 SNS·릴에 올리면 <em>복제·전송권 침해</em>가 될 수 있습니다. '내가 참여했다'와 '내가 권리자다'는 다릅니다.</p></section><section><h2>가장 흔한 사고 — 미공개·NDA</h2><p>"곧 공개될 거니까 괜찮겠지"가 제일 위험한 생각이에요. 실제로 <u>"내려달라"는 요청·삭제 통보</u>로 이어지는 가장 흔한 사례입니다.</p><div class="callout">공개 전 영상이나 시안을 올리면 공표권 침해 + 비밀유지(NDA) 위반이에요.</div></section><section><h2>안전한 경우 vs 위험한 경우</h2><table><tr><th>안전</th><th>위험</th></tr><tr><td>계약에 포트폴리오 사용권 조항 있음</td><td>매절 양도 + 사용 허락 없음</td></tr><tr><td>서면으로 게재 동의받음</td><td>미공개·시안 상태로 게시</td></tr><tr><td>이미 공식 공개된 영상</td><td>NDA 대상 정보 노출</td></tr></table></section><section><h2>계약할 때 이렇게</h2><ul class="list"><li><b>'포트폴리오·홍보 목적 사용권 유보'</b> 조항 넣기</li><li><b>공개 시점 이후</b>로 사용 한정(미공개분 제외)</li><li>NDA 대상 정보는 포트폴리오에서 제외</li><li>동의는 <em>서면(메신저 캡처 포함)</em>으로 — 구두는 입증 어려움</li></ul></section><section><h2>올리기 전 체크리스트</h2><p>특히 음원·초상은 광고용 라이선스가 포트폴리오·릴 노출까지 커버하지 않는 경우가 많아요. 불확실하면 권리 확보된 음원으로 교체하세요.</p></section><section><h2>체크리스트</h2><ul class="chk"><li>저작권을 양도(매절)했는가? 포트폴리오 사용 조항이 있는가?</li><li>이 영상이 이미 공식 공개됐는가? (미공개면 공표권 위험)</li><li>게재 동의를 서면으로 받았는가? 범위(웹·SNS·릴)가 적혀 있는가?</li><li>NDA 대상 정보가 포함돼 있지 않은가?</li><li>등장 모델의 초상 사용 범위에 SNS 노출이 포함되는가?</li><li>본편 음원(BGM)의 라이선스가 포트폴리오 노출을 허용하는가?</li><li>내 실제 역할만 정확히 표기했는가? (단독 저작자로 오인 금지)</li></ul></section><section><h2>문의처</h2><div class="contacts"><a class="contact" href="https://www.copyright.or.kr/business/counsel/index.do" target="_blank" rel="noopener"><div class="cn">한국저작권위원회 (상담)</div><div class="cd">1800-5455 · copyright.or.kr</div></a></div></section><div class="disc"><b>안내</b> · 본 안내는 2025~2026년 기준 한국 저작권법·공식 자료를 토대로 한 일반 정보이며, 법률 자문이 아닙니다. 권리 귀속과 사용 가능 범위는 개별 계약과 사실관계에 따라 달라집니다. 중요한 계약을 앞두고 있거나 분쟁이 우려되면 계약서 원문을 근거로 변호사·한국저작권위원회 상담을 받으세요.</div><div class="sources"><div class="t">출처 (공식)</div><a href="https://www.mcst.go.kr/kor/s_policy/copyright/question/question01.jsp" target="_blank" rel="noopener">문화체육관광부 — 저작권 확보 방안(용역결과물)</a><a href="https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=695&ccfNo=2&cciNo=1&cnpClsNo=2" target="_blank" rel="noopener">찾기쉬운 생활법령 — 저작재산권/저작인격권</a><a href="https://www.copyright.or.kr" target="_blank" rel="noopener">한국저작권위원회</a></div><div class="cta"><div class="ct">당신의 실력은 보여줘야 알려져요 — 단, 권리는 지키면서</div><div class="cs">@nuku.mag · 영상 현장인을 위한 정보를 모읍니다</div></div><div class="foot"><span class="dot"></span>NUKU · 영상 현장인을 위한 경력 인증 플랫폼</div></div></body></html>
