@@ -21,6 +21,13 @@ body{font-family:'Pretendard','Noto Sans KR',sans-serif;background:#0F1115;color
 .bot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;
   font-size:25px;font-weight:700;color:#7E8492;padding-top:30px;}
 .bot .src{color:#5C6270;}
+/* poster layout */
+.posterwrap{flex:1;display:flex;align-items:center;justify-content:center;margin:28px 0 24px;min-height:0;}
+.poster{max-width:100%;max-height:600px;border-radius:18px;object-fit:contain;
+  box-shadow:0 16px 48px rgba(0,0,0,.55);}
+.rows.compact{margin-top:0;gap:18px;}
+.rows.compact .k{font-size:26px;width:96px;}
+.rows.compact .v{font-size:30px;}
 /* cover */
 .cov-k{display:inline-block;align-self:flex-start;font-size:30px;font-weight:800;color:#4AA0FF;
   background:rgba(74,160,255,.12);border-radius:999px;padding:12px 26px;margin-bottom:36px;}
@@ -35,7 +42,7 @@ body{font-family:'Pretendard','Noto Sans KR',sans-serif;background:#0F1115;color
 .cl-handle{font-size:46px;font-weight:800;color:#ECEDF1;margin-top:60px;}
 .cl-handle .dot{width:18px;height:18px;border-radius:50%;background:#0273FF;display:inline-block;margin-right:14px;}
 em{font-style:normal;color:#4AA0FF;}
-</style></head><body><div class="frame cover" style="--ac:#0273FF"><div class="top"><span><span class="dot"></span>NUKU</span><span class="num">01 / 10</span></div><div class="body"><span class="cov-k">서울·수도권 · 공연 소식</span><div class="cov-h">이번 주<br><em>볼 만한 공연</em></div><div class="cov-sub">6/12 – 6/18 · 6월</div><div class="cov-meta"><span>총 8편</span><span>전 장르</span><span>저장해두기 👇</span></div></div><div class="bot"><span><span class="dot"></span>@nuku.mag</span><span class="src">자료: KOPIS</span></div></div><script>
+</style></head><body><div class="frame cover" style="--ac:#0273FF"><div class="top"><span><span class="dot"></span>NUKU</span><span class="num">01 / 10</span></div><div class="body"><span class="cov-k">서울·수도권 · 공연 소식</span><div class="cov-h">이번 주<br><em>볼 만한 공연</em></div><div class="cov-sub">6/19 – 6/25 · 6월</div><div class="cov-meta"><span>총 8편</span><span>전 장르</span><span>저장해두기 👇</span></div></div><div class="bot"><span><span class="dot"></span>@nuku.mag</span><span class="src">자료: KOPIS</span></div></div><script>
 (function(){function fit(el){var maxH=parseFloat(el.dataset.fith)||430,maxF=parseFloat(el.dataset.fitmax)||118,
 minF=44,lo=minF,hi=maxF,best=minF;for(var i=0;i<26;i++){var mid=(lo+hi)/2;el.style.fontSize=mid+'px';
 if(el.scrollHeight<=maxH+0.5&&el.scrollWidth<=el.clientWidth+1){best=mid;lo=mid;}else{hi=mid;}}
