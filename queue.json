@@ -12,6 +12,8 @@
   {
     "deck": "17_공연소식",
     "scheduled_at": "2026-07-03T08:00:00+09:00",
-    "status": "approved"
+    "status": "posted",
+    "media_id": "17936043294290324",
+    "posted_at": "2026-07-03T16:30:55+09:00"
   }
 ]
