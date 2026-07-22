@@ -6,3 +6,9 @@ __pycache__/
 *token*.txt
 docs/_src/preview_*.png
 docs/_src/_oghtml/
+_kopis_key.txt
+_샘플_*/
+# 스크린샷에 토큰/시크릿이 찍혀 올라가는 사고 방지 (공개 레포)
+스크린샷*.png
+Screenshot*.png
+*_gh_token*
