@@ -9,11 +9,11 @@ publish.py           인스타 Graph API 발행기 (캐러셀 + 캡션)
 queue.json           예약 발행 큐
 requirements.txt     의존성 (requests)
 .github/workflows/   GitHub Actions (수동 1클릭 / 예약 크론)
-SETUP_가이드.md       ⭐ 처음 셋업은 이 문서부터
+../13_클로드코드_가이드/TEAM91 인스타 자동발행 셋업하기.md       ⭐ 처음 셋업은 이 문서부터
 ```
 
 ## 빠른 사용
-- **셋업(최초 1회):** [`SETUP_가이드.md`](SETUP_가이드.md) 따라 인스타 프로페셔널·Meta 토큰·GitHub Secrets 등록.
+- **셋업(최초 1회):** [`TEAM91 인스타 자동발행 셋업하기`](<../13_클로드코드_가이드/TEAM91 인스타 자동발행 셋업하기.md>) 따라 인스타 프로페셔널·Meta 토큰·GitHub Secrets 등록.
 - **발행:** Actions 탭 → *NUKU 카드뉴스 발행* → Run workflow → 덱 폴더명 입력. (검수 후 1클릭)
 - **테스트:** `python publish.py --deck 02_계약전_물어야할7가지 --dry-run`
 
