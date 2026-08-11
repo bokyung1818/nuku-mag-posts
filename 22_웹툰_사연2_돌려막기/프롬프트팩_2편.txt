@@ -1,0 +1,126 @@
+■ 시리즈2 「그 사람 조심해」 2편 ‘신호’ — 그림 프롬프트팩 (8컷)
+   생성처: Gemini (나노바나나) / 저장: 22_웹툰_사연2_돌려막기\_art\
+   ※ 한글 대사는 그림에 넣지 않고 HTML 오버레이로 얹는다. 그림엔 글자 0개.
+   ※ 1편 프롬프트팩과 동일 규칙. 달라진 건 컷 내용뿐.
+
+────────────────────────────────
+0. 공통 규칙 (모든 프롬프트에 붙임)
+────────────────────────────────
+[STYLE]
+Korean webtoon (manhwa) illustration, clean line art, soft cel shading,
+cinematic film-set lighting, muted realistic palette, vertical 4:5 composition.
+
+[HARD RULES — 매번 붙일 것]
+- ABSOLUTELY NO text, letters, numbers, words, signage, or writing ANYWHERE
+  in the image — including ID badges, lanyards, call sheets, clipboards,
+  phone screens, truck panels, boxes, and clothing prints.
+  Leave all such surfaces BLANK.
+- No speech bubbles, no captions, no watermark.
+- Keep the TOP 15% and BOTTOM 25% visually simple (사람 얼굴·중요 요소 배치 금지)
+  → 말풍선·나레이션 박스 자리.
+
+[캐릭터 앵커 — 매번 레퍼런스 업로드]
+- 지현(주인공)  : _art/s2_protagonist_v1.png
+  검은 단발, 뿔테 안경, 네이비 후드, 갈색 크로스백, 목걸이 명찰(글자 없음), 20대 중반.
+- 민아(세컨드)  : _art/s2_minah_v1.png
+  30대 초반, 짧은 포니테일, 안경 없음, 오버사이즈 검정 필드재킷, 허리에 무전기.
+- 그 선배(가해) : ★얼굴 절대 안 보임. 뒤통수·어깨선·그림자·프레임 밖만.
+                  2편에서도 이 규칙 유지. 얼굴이 보이는 순간 특정인 연상 위험이 생긴다.
+- 화장실 앞 스태프 2인 : 얼굴 안 보이게(뒷모습·기둥 뒤·실루엣). 앵커 불필요.
+
+[저장 파일명]
+  ep2_01_cover.png / ep2_02_rain.png    / ep2_03_scold.png  / ep2_04_silence.png
+  ep2_05_redo.png  / ep2_06_toilet.png  / ep2_07_mirror.png / ep2_08_minah.png
+
+────────────────────────────────
+1. 컷별 프롬프트
+────────────────────────────────
+
+[01 · 표지] ep2_01_cover.png
+Night exterior film set. A young woman (reference) stands alone holding a large
+umbrella, seen from a low three-quarter angle, rain falling through the beam of a
+work light. Behind her, blurred crew silhouettes move under a canopy, none of them
+looking at her. Wet asphalt reflecting cold light, cables taped down, a road case.
+Isolated, tense mood. Wide shot, plenty of empty sky at the top and wet ground at
+the bottom.
+→ 지현 앵커 업로드. 상·하단 여백 넉넉히(제목 들어감).
+
+[02 · 비] ep2_02_rain.png
+A young woman (reference) crouched on wet asphalt at night, holding an umbrella
+tilted to cover a stack of equipment cases rather than herself. Her shoulder and
+one side of her hair are soaked. Rain streaks lit by a single work light.
+Behind her, out of focus, a broad-shouldered figure seen ONLY FROM BEHIND walks
+away under his own umbrella. Medium shot, her face visible and lit, upper area open.
+→ 지현 앵커 업로드. ★뒷모습 인물의 얼굴 절대 노출 금지.
+
+[03 · 질책] ep2_03_scold.png
+Interior of a production tent at night. FOREGROUND LEFT, very close to camera:
+the back of a man's head and shoulder, out of focus, dominating the left third of
+the frame — his face is NEVER visible. He leans forward toward the young woman
+(reference) who stands at RIGHT, holding a blank clipboard against her chest,
+shoulders drawn in, eyes lowered. Harsh practical light from above. Two other crew
+members in the deep background pointedly look at their own hands.
+Medium shot. Keep top and bottom simple.
+→ 지현 앵커 업로드. ★가해자는 전경 실루엣으로만.
+
+[04 · 침묵] ep2_04_silence.png
+Interior production tent, immediately after. The young woman (reference) stands
+alone in the middle of the frame, still holding the clipboard, looking slightly off
+camera. Around her, four crew members are each turned away, absorbed in their own
+tasks — one drinking coffee, one coiling cable, one on a radio. Nobody meets her
+eyes. The empty space around her is the subject. Wide-ish medium shot, cool light.
+→ 지현 앵커 업로드.
+
+[05 · 다시] ep2_05_redo.png
+Late night. The young woman (reference) sits alone at a folding table in the corner
+of a tent, laptop open (SCREEN BLANK AND DARK), papers spread out, one hand pressed
+to her forehead. A cold cup of coffee and an untouched lunch box beside her.
+The rest of the tent is dark and empty; a single desk lamp lights her. Her expression
+is exhausted, not crying. Medium shot from slightly above, wide empty space above her.
+→ 지현 앵커 업로드. 노트북 화면·서류 전부 백지.
+
+[06 · 화장실 앞] ep2_06_toilet.png
+Narrow corridor outside a portable toilet block on a film set at night.
+FOREGROUND RIGHT: the young woman (reference) has just stepped around the corner and
+stopped short, her back partly to camera, head turned, listening — only her profile
+and shoulder visible. BACKGROUND LEFT, further down the corridor: two crew members
+stand talking, seen from BEHIND, faces not visible, one holding a paper cup.
+Harsh single overhead lamp, deep shadows. The distance between her and them is the
+subject. Medium-wide shot.
+→ 지현 앵커 업로드. ★대화 중인 두 사람 얼굴 노출 금지.
+
+[07 · 거울] ep2_07_mirror.png
+Tight shot of the young woman (reference) alone in front of a small dirty mirror in
+a portable washroom at night. She grips the edge of the sink with both hands and
+looks at her own reflection. Her face is tired, jaw set, eyes wet but not crying.
+Cold fluorescent light from above, cramped frame. The reflection is the focus.
+Close-up. Leave the top strip and the sink area at the bottom visually simple.
+→ 지현 앵커 업로드.
+
+[08 · 민아] ep2_08_minah.png  ★클리프행어
+Exterior, deep night, edge of the film set. The woman in her early 30s (민아
+reference) stands facing camera, hands in the pockets of her oversized black field
+jacket, radio at her waist, expression serious and careful. She has clearly been
+waiting. The young woman (reference) is at the edge of frame with her back to camera,
+small and out of focus. Behind them, equipment trucks with headlights on.
+Medium two-shot, weighted toward 민아. Wide empty area at the bottom for the
+cliffhanger line.
+→ ★민아·지현 앵커 둘 다 업로드.
+
+────────────────────────────────
+2. 생성 후 할 일
+────────────────────────────────
+① 제미나이 우하단 워터마크 제거 — python _작업스크립트/_dewatermark.py
+   (좌표는 항상 같음. 다운로드 폴더에 옛 파일이 섞여 있는지 먼저 확인할 것)
+② _art/ 에 위 파일명 그대로 저장
+③ 대사 오버레이 렌더 — python _작업스크립트/_gen_webtoon2_ep2.py
+   (대본은 이미 스크립트 안에 들어 있음. 그림만 채우면 바로 돌아간다)
+④ 결과: 22_웹툰_사연2_돌려막기/인스타_업로드/2편_신호/01~08.png + card01~08.png + caption.txt
+
+────────────────────────────────
+3. 안전장치 점검 (발행 전)
+────────────────────────────────
+· 가해 인물의 얼굴이 어느 컷에서도 보이지 않는가
+· 특정 작품·회사·실명을 연상시키는 요소가 없는가 (로고·간판·차량 표기 전부 백지)
+· 톤이 '고발·조리돌림'이 아니라 '이런 구조가 있다 + 당신 잘못 아니다'인가
+· 캡션에 "실제 사연을 바탕으로 재구성. 특정 인물·작품·회사와 무관" 표기했는가

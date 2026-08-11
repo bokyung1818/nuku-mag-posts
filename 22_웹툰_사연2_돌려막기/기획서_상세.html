@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>사연 웹툰 시리즈2 상세 기획서 v3 — 「그 사람 조심해」</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --blue:#0273FF; --blue-soft:#E8F1FF; --ink:#15181D; --sub:#5B6472;
+    --line:#E4E8EE; --bg:#FFFFFF; --panel:#F7F9FC; --warn:#C2410C; --warn-bg:#FFF4ED;
+    --ok:#0F7B4F; --ok-bg:#EAF7F1; --no:#B42318; --no-bg:#FEF0EF;
+    --new:#6D28D9; --new-bg:#F3EEFF;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --blue:#5EA6FF; --blue-soft:#12243C; --ink:#EDEFF3; --sub:#9AA4B2;
+      --line:#252A33; --bg:#0E1116; --panel:#161A21; --warn:#FDBA74; --warn-bg:#2A1B0F;
+      --ok:#6EE7B7; --ok-bg:#0F2620; --no:#FCA5A5; --no-bg:#2A1315;
+      --new:#C4B5FD; --new-bg:#1E1733; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Malgun Gothic','Apple SD Gothic Neo',sans-serif;
+    line-height:1.72;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:920px;margin:0 auto;padding:0 22px 100px}
+
+  header.cover{padding:64px 0 40px;border-bottom:1px solid var(--line);margin-bottom:40px}
+  .eyebrow{color:var(--blue);font-weight:700;font-size:14px;letter-spacing:.04em;margin-bottom:14px}
+  h1{font-size:clamp(30px,5.4vw,46px);line-height:1.22;margin:0 0 16px;letter-spacing:-.02em;font-weight:800}
+  .lede{font-size:17px;color:var(--sub);margin:0;max-width:62ch}
+  .meta{margin-top:26px;display:flex;flex-wrap:wrap;gap:8px}
+  .tag{font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:999px;
+    background:var(--panel);border:1px solid var(--line);color:var(--sub)}
+  .tag.b{background:var(--blue-soft);border-color:transparent;color:var(--blue)}
+  .tag.r{background:var(--no-bg);border-color:transparent;color:var(--no)}
+  .tag.v{background:var(--new-bg);border-color:transparent;color:var(--new)}
+
+  h2{font-size:23px;font-weight:800;margin:56px 0 8px;letter-spacing:-.01em;
+     padding-top:26px;border-top:1px solid var(--line)}
+  h2 .n{color:var(--blue);margin-right:10px;font-variant-numeric:tabular-nums}
+  h2.first{border-top:none;padding-top:0;margin-top:16px}
+  h3{font-size:17px;font-weight:700;margin:32px 0 8px}
+  p{margin:12px 0}
+  .sub{color:var(--sub);font-size:15px;margin-top:2px}
+  code{background:var(--panel);border:1px solid var(--line);border-radius:5px;
+       padding:1px 6px;font-size:.9em}
+
+  .box{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:20px 0}
+  .box.warn{background:var(--warn-bg);border-color:transparent}
+  .box.warn .bt{color:var(--warn)}
+  .box.no{background:var(--no-bg);border-color:transparent}
+  .box.no .bt{color:var(--no)}
+  .box.new{background:var(--new-bg);border-color:transparent}
+  .box.new .bt{color:var(--new)}
+  .box .bt{font-weight:800;font-size:14px;margin-bottom:8px;display:block;color:var(--blue)}
+  .box p:first-of-type{margin-top:0} .box p:last-child{margin-bottom:0}
+
+  table{width:100%;border-collapse:collapse;margin:18px 0;font-size:15px}
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  th,td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-weight:700;font-size:13px;color:var(--sub);background:var(--panel);white-space:nowrap}
+  td.c{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--sub);font-weight:600}
+
+  ul,ol{margin:12px 0;padding-left:20px} li{margin:6px 0}
+
+  .ep{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:26px 0}
+  .ep>.eph{background:var(--panel);padding:16px 20px;border-bottom:1px solid var(--line)}
+  .eph .num{color:var(--blue);font-weight:800;font-size:13px;letter-spacing:.04em}
+  .eph .ttl{font-weight:800;font-size:20px;margin-top:2px}
+  .eph .hook{font-size:14px;color:var(--sub);margin-top:6px}
+  .cut{display:grid;grid-template-columns:56px 1fr;gap:0;border-bottom:1px solid var(--line)}
+  .cut:last-child{border-bottom:none}
+  .cut.hot{background:var(--no-bg)}
+  .cut.fresh{background:var(--new-bg)}
+  .cut .cn{background:var(--panel);display:flex;align-items:flex-start;justify-content:center;
+    padding:16px 0;font-weight:800;color:var(--sub);font-size:13px;border-right:1px solid var(--line)}
+  .cut.hot .cn{background:transparent;color:var(--no)}
+  .cut.fresh .cn{background:transparent;color:var(--new)}
+  .cut .cb{padding:15px 18px}
+  .art{font-size:13.5px;color:var(--sub);margin:0 0 10px;padding-left:11px;border-left:2px solid var(--line)}
+  .art b{color:var(--ink);font-weight:700}
+  .li{margin:7px 0;font-size:15.5px}
+  .li .who{font-weight:700;font-size:12.5px;padding:2px 7px;border-radius:5px;margin-right:8px;
+    display:inline-block;vertical-align:1px;background:var(--blue-soft);color:var(--blue)}
+  .li.think .who{background:var(--panel);color:var(--sub);border:1px solid var(--line)}
+  .li.narr{color:var(--sub);font-style:italic}
+  .li.narr .who{background:transparent;border:1px solid var(--line);color:var(--sub);font-style:normal}
+  .li.off .who{background:var(--warn-bg);color:var(--warn)}
+  .li.bad .who{background:var(--no-bg);color:var(--no)}
+  .li.msg .who{background:var(--new-bg);color:var(--new)}
+  .screen{background:var(--bg);border:1px solid var(--line);border-radius:10px;
+    padding:12px 14px;margin:10px 0;font-size:14px;color:var(--sub)}
+  .screen .sysline{padding:4px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+  .screen .sysline:last-child{border-bottom:none}
+  .cliff{background:var(--blue-soft);color:var(--blue);font-weight:700;font-size:14px;
+    padding:10px 18px 10px 74px}
+  .flag{display:inline-block;font-size:11.5px;font-weight:800;color:var(--no);
+    background:var(--bg);border:1px solid var(--no);border-radius:5px;padding:1px 6px;margin-left:6px}
+  .flag.n{color:var(--new);border-color:var(--new)}
+
+  .pill{display:inline-block;font-size:12px;font-weight:800;padding:3px 9px;border-radius:6px}
+  .pill.ok{background:var(--ok-bg);color:var(--ok)}
+  .pill.no{background:var(--no-bg);color:var(--no)}
+  .pill.wt{background:var(--warn-bg);color:var(--warn)}
+  .pill.nv{background:var(--new-bg);color:var(--new)}
+
+  .dec{border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:0 10px 10px 0;
+    padding:16px 20px;margin:16px 0;background:var(--panel)}
+  .dec.hot{border-left-color:var(--no)}
+  .dec.done{border-left-color:var(--ok);opacity:.85}
+  .dec .q{font-weight:800;font-size:16px}
+  .dec .r{font-size:14.5px;color:var(--sub);margin-top:6px}
+  .dec .r b{color:var(--ink)}
+
+  footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--line);
+    color:var(--sub);font-size:13.5px}
+  a{color:var(--blue)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="cover">
+  <div class="eyebrow">NUKU · @nuku.mag 사연 웹툰 시리즈 2 — 상세 기획서 <b>v3</b></div>
+  <h1>「그 사람 조심해」</h1>
+  <p class="lede">다들 알면서 아무도 말해주지 않았다. 좁은 바닥에서 문제 인물이 돌고 도는 이야기.<br>
+  시리즈1이 <b>“내가 당한 이야기”</b>였다면, 시리즈2는 <b>“왜 아무도 말해주지 않는가”</b>입니다.</p>
+  <div class="meta">
+    <span class="tag b">검토용 · 미확정</span>
+    <span class="tag">2026-08-07 · v3</span>
+    <span class="tag">4편 × 8컷 = 32컷</span>
+    <span class="tag v">3편 = 시도와 실패</span>
+    <span class="tag v">단톡방으로 교체</span>
+    <span class="tag r">폭언 · 폭력 · 성희롱 포함</span>
+  </div>
+</header>
+
+<div class="box new">
+  <span class="bt">v3에서 바뀐 것 — 구조 수술</span>
+  <p><b>① 3편을 통째로 갈아엎었습니다.</b> 기존 3편(다들 알고 있었다)은 2편의 강도 강화판이라 늘어졌습니다.
+  이제 3편은 <b>「얘기해볼게」 = 지현이 실제로 말해보고, 실패하고, 조용히 배제당하는 편</b>입니다.
+  주인공이 4편 내내 아무것도 안 하던 문제가 이걸로 풀립니다.</p>
+  <p><b>② 창고 낙서를 전부 들어냈습니다.</b> 우연 네 개가 겹치는 편리한 장치였고, 결말까지 거기 얹혀 있었습니다.
+  대신 <b>현장 단톡방의 “○○○님이 나갔습니다” 기록</b>으로 바꿨습니다.</p>
+  <p><b>③ 결말이 능동적으로 바뀌었습니다.</b> 수첩에 적고 끝 → <b>‘나가기’ 버튼 앞에서 멈추고, 새 막내에게 먼저 DM을 보낸다.</b></p>
+  <p>아래 <span class="flag n">신규</span>가 v3에서 새로 쓴 컷, <span class="flag">수위</span>가 v2에서 세진 컷입니다.</p>
+</div>
+
+<!-- ─────────── 1 ─────────── -->
+<h2 class="first"><span class="n">1</span>결정 현황</h2>
+
+<div class="dec done">
+  <div class="q">✓ 구조 — 4편 유지 + 3편을 “시도와 실패”로 <span class="pill ok">확정</span></div>
+  <div class="r">이걸로 <b>사건이 두 번 돕니다</b> — “알고 보니 다들 알고 있었다”(3편 전반) + “말했더니 오히려 배제당했다”(3편 후반).
+  4편의 선택이 <b>마지막 남은 선택</b>이 되면서 결말에 무게가 실립니다.</div>
+</div>
+
+<div class="dec done">
+  <div class="q">✓ 창고 낙서 → 단톡방 교체 <span class="pill ok">확정</span></div>
+  <div class="r">근거는 <b>§3</b>에 정리했습니다.</div>
+</div>
+
+<div class="dec">
+  <div class="q">① 제목 — 「그 사람 조심해」를 추천합니다 <span class="pill wt">미정</span></div>
+  <div class="r"><b>「돌려막기」</b>는 뜻을 한 번 생각해야 걸리고, <b>「그 사람 조심해」</b>는 그 자체가 대사라 첫 컷에 바로 훅이 섭니다.
+  다른 후보: 「좁은 바닥」 / 「아무도 말 안 해줬다」<br>
+  <b>3편 제목은 「얘기해볼게」를 추천합니다</b> — 제작부가 한 말인데 아무 일도 안 일어났다는 게 반어로 남습니다. 대안: 「말해봤다」</div>
+</div>
+
+<div class="dec">
+  <div class="q">② 문제 인물의 얼굴 — 끝까지 안 보여주기 <span class="pill wt">미정</span></div>
+  <div class="r">뒷모습·그림자·프레임 밖으로만. (가) 특정인 연상 위험을 낮춥니다 (나) 시리즈1에서 3번 겪은 <b>AI 얼굴 일관성 문제</b>가 사라집니다
+  (다) <b>AI로 “성희롱하는 인물의 얼굴”을 뽑는 것 자체가 생성 거부에 걸리기 쉽습니다.</b></div>
+</div>
+
+<div class="dec">
+  <div class="q">③ 발행 포맷 — 캐러셀 먼저, 며칠 뒤 릴스 <span class="pill wt">미정</span></div>
+  <div class="r">시리즈1에서 검증된 순서. 수요일 슬롯이라 <b>8/12 → 8/19 → 8/26 → 9/2</b>.</div>
+</div>
+
+<div class="dec hot">
+  <div class="q">④ <b>성희롱·폭력 수위</b> — 로드맵 방침을 뒤집는 결정 <span class="pill no">미정</span></div>
+  <div class="r">현재 대본은 지시하신 수위 그대로입니다.
+  <b>A. 이대로</b>(성희롱 2회 + 폭력 2회) / <b>B. 성희롱 1회로 축소</b> / <b>C. 원래 로드맵</b>(성희롱 제외).
+  판단 재료는 <b>§7</b>. 요지는 “게시가 막히냐”가 아니라 <b>“추천 도달이 깎이냐”</b>입니다.</div>
+</div>
+
+<div class="dec">
+  <div class="q">⑤ 마지막 컷 상담번호(1350) — 넣는 쪽 추천 <span class="pill wt">미정</span></div>
+  <div class="r">성희롱·폭력을 다루면서 아무 정보도 안 주는 건 무책임하게 읽힐 수 있습니다. 단 <b>맨 아래 작은 글씨</b>로, 여운 안 깨는 크기로.</div>
+</div>
+
+<!-- ─────────── 2 ─────────── -->
+<h2><span class="n">2</span>4편 구조</h2>
+
+<div class="scroll">
+<table>
+  <tr><th>편</th><th>제목</th><th>이 편에서 <b>새로 도는 사건</b></th><th>수위</th><th>끝 훅</th></tr>
+  <tr><td class="c">1편</td><td><b>첫날</b></td><td>합류. 친절 → <b>명령조</b>로 미끄러짐. 이상한 침묵을 심는다</td>
+      <td>욕설 1회<br><span class="sub">(남에게 하는 걸 엿들음)</span></td><td>“…너, 그 사람 팀이야?”</td></tr>
+  <tr><td class="c">2편</td><td><b>신호</b></td><td>폭언·성희롱·폭력. 핵심은 <b>주변이 같이 웃는다</b>는 것</td>
+      <td><span class="pill no">성희롱 2 · 폭력 1</span></td><td>“또 새 막내 들어왔다며. …몇 번째야 이게.”</td></tr>
+  <tr><td class="c">3편</td><td><b>얘기해볼게</b> <span class="pill nv">전면 교체</span></td>
+      <td><b>①</b> 다들 알고 있었다 → <b>②</b> 그래서 말해봤다 → <b>③</b> 아무 일도 안 일어나고 <b>조용히 배제당한다</b></td>
+      <td><span class="pill no">폭력 1</span><br><span class="sub">(배제 + 밀침)</span></td>
+      <td>단톡방에 쌓인 <b>“○○○님이 나갔습니다”</b></td></tr>
+  <tr><td class="c">4편</td><td><b>그래서</b> <span class="sub">(완결)</span></td>
+      <td><b>나가기 버튼 앞에서 멈춘다.</b> 나가는 대신 새 막내에게 먼저 말을 건다</td>
+      <td>없음</td><td>완결 · 소프트 CTA</td></tr>
+</table>
+</div>
+
+<div class="box">
+  <span class="bt">이제 사건이 두 번 돕니다</span>
+  <p>v2의 문제는 <b>반전이 하나뿐</b>이었다는 것입니다(“다들 알고 있었다”). 그 뒤 3편은 가해 강도만 올라가고, 4편은 체념 후 기록이라 회수가 약했습니다.</p>
+  <p>v3에서는 <b>3편 안에서 한 번 더 뒤집힙니다.</b> 알게 됐으니 → 말해본다 → <b>아무 일도 안 일어난다</b> → 오히려 배제된다.
+  이 실패가 있어야 4편의 “그럼에도 남는다”가 <b>체념이 아니라 선택</b>이 됩니다.</p>
+</div>
+
+<!-- ─────────── 3 ─────────── -->
+<h2><span class="n">3</span>낙서를 단톡방으로 바꾼 이유</h2>
+
+<div class="scroll">
+<table>
+  <tr><th></th><th>창고 낙서 <span class="pill no">폐기</span></th><th>단톡방 기록 <span class="pill nv">채택</span></th></tr>
+  <tr><td class="c">발견 경위</td>
+      <td>마침 그 선반에, 마침 전임자가, 마침 남겨놨고, 마침 지현이 발견 — <b>우연 4개</b></td>
+      <td>지현이 <b>원래 그 방에 있다.</b> 우연 없음</td></tr>
+  <tr><td class="c">누가 남겼나</td>
+      <td>사람이 일부러 남긴 메시지</td>
+      <td><b>시스템이 자동으로 남긴 기록.</b> 아무도 의도 안 했는데 증거가 됨 — 훨씬 서늘함</td></tr>
+  <tr><td class="c">독자 체감</td>
+      <td>“웹툰에서 본 장치”</td>
+      <td><b>누구나 아는 실물.</b> 대사 없이 반복만으로 충격이 전달됨</td></tr>
+  <tr><td class="c">그림 난이도</td>
+      <td>낙서 클로즈업 — AI가 글자를 흘려넣어 매번 깨짐</td>
+      <td><b>메신저 화면은 HTML 오버레이로 100% 정확하게 찍힘.</b> 우리 파이프라인에 딱 맞음</td></tr>
+  <tr><td class="c">결말 연결</td>
+      <td>낙서에 한 줄 더 적기 = 약한 장치에 결말이 얹힘</td>
+      <td><b>나가기 버튼 앞에서 멈춘다</b> = 같은 화면에서 결말이 나옴</td></tr>
+</table>
+</div>
+
+<div class="box new">
+  <span class="bt">그리고 이게 시리즈를 하나로 묶습니다</span>
+  <p>폐기한 낙서의 문장은 <b>“나도 여기 있었어”</b>였습니다 — 과거형, 익명, 우연히 발견됨.<br>
+  4편에서 지현이 새 막내에게 보내는 DM은 <b>“저도 여기 있어요”</b>입니다 — <b>현재형, 직접, 의지로 보냄.</b></p>
+  <p>같은 문장의 변주라, 지현이 받은 것과 주는 것이 대구를 이룹니다. <b>낙서를 버리면서 그 문장만 살렸습니다.</b></p>
+</div>
+
+<!-- ─────────── 4 ─────────── -->
+<h2><span class="n">4</span>캐릭터</h2>
+
+<div class="scroll">
+<table>
+  <tr><th>인물</th><th>설정</th><th>그림 앵커</th></tr>
+  <tr>
+    <td><b>지현</b><br><span class="sub">주인공</span></td>
+    <td>20대 중반, 연출부 <b>막내</b>. 두 번째 상업 현장. 검은 단발·뿔테·네이비 후드·크로스백·명찰.</td>
+    <td><code>_art/s2_protagonist_v1.png</code> <span class="pill ok">있음</span></td>
+  </tr>
+  <tr>
+    <td><b>그 선배</b><br><span class="sub">문제 인물</span></td>
+    <td><b>퍼스트(제1조감독)</b>. 친절 → 폭언·욕설 → 성희롱 → 물건 던짐 → <b>조용한 배제</b>로 단계적으로 드러남.
+    <b>이름 없음 · 얼굴 안 나옴 · 성별 특정 안 함.</b></td>
+    <td>뒷모습·그림자만 <span class="pill wt">생성 필요</span></td>
+  </tr>
+  <tr>
+    <td><b>민아</b><br><span class="sub">세컨드</span></td>
+    <td>2년 전 같은 팀이었던 사람. 말려주지도 말리지도 않는다. <b>침묵의 이유</b>를 말하는 인물.</td>
+    <td><span class="pill wt">생성 필요</span></td>
+  </tr>
+  <tr>
+    <td><b>제작부 사람</b><br><span class="sub">v3 신규</span></td>
+    <td>나쁜 사람이 아니다. <b>진심으로 “알겠어, 얘기해볼게”라고 말하고, 진심으로 잊어버린다.</b>
+    악의 없는 무반응이 3편의 핵심 — 여기서 악당을 하나 더 만들면 이야기가 유치해집니다.</td>
+    <td><span class="pill wt">생성 필요</span></td>
+  </tr>
+  <tr>
+    <td><b>웃는 사람들</b></td>
+    <td>성희롱 발언에 <b>같이 웃는</b> 이름 없는 스태프들. 얼굴 흐리게·뒷모습 위주.</td>
+    <td><span class="pill wt">생성 필요</span></td>
+  </tr>
+</table>
+</div>
+
+<!-- ─────────── 5 ─────────── -->
+<h2><span class="n">5</span>전체 대본 (32컷)</h2>
+<p class="sub"><span class="pill ok">말</span> 말풍선 · <span class="pill">속</span> 속마음 · <span class="pill">나</span> 나레이션 · <span class="pill wt">밖</span> 화면 밖 목소리 · <span class="pill no">가해</span> 문제 인물 · <span class="pill nv">폰</span> 메신저 화면</p>
+
+<!-- 1편 -->
+<div class="ep">
+  <div class="eph">
+    <div class="num">EPISODE 1</div>
+    <div class="ttl">첫날</div>
+    <div class="hook">목표: 아무 일도 안 일어나는데 계속 이상하다</div>
+  </div>
+
+  <div class="cut"><div class="cn">01</div><div class="cb">
+    <p class="art"><b>표지.</b> 새벽 촬영 현장 입구. 장비 트럭 헤드라이트 역광, 지현 뒷모습.</p>
+    <div class="li narr"><span class="who">나</span>그 사람 조심해</div>
+    <div class="li narr"><span class="who">나</span>1편 · 첫날</div>
+  </div></div>
+
+  <div class="cut"><div class="cn">02</div><div class="cb">
+    <p class="art">연출부 텐트. 지현이 허리 숙여 인사. 스태프들은 각자 정신없음.</p>
+    <div class="li"><span class="who">말</span>지현 — “안녕하세요! 이번에 연출부 들어온 김지현입니다.”</div>
+    <div class="li narr"><span class="who">나</span>두 번째 현장이었다. 첫 현장에서 석 달을 버텼으니 이제 좀 안다고 생각했다.</div>
+  </div></div>
+
+  <div class="cut"><div class="cn">03</div><div class="cb">
+    <p class="art">민아가 콜시트를 넘겨준다. 사무적이지만 나쁘지 않은 표정.</p>
+    <div class="li"><span class="who">말</span>민아 — “지현씨, 오늘 콜시트. 슬레이트는 써드가 잡고, 넌 대기실이랑 무전 붙어 있어.”</div>
+    <div class="li think"><span class="who">속</span>지현 — 생각보다 안 무섭네.</div>
+  </div></div>
+
+  <div class="cut"><div class="cn">04</div><div class="cb">
+    <p class="art">지나가던 스태프가 묻는다. <b>답을 듣는 순간 표정이 아주 잠깐 굳는다</b> — 이 컷의 전부.</p>
+    <div class="li"><span class="who">말</span>스태프 — “연출부? 누구 팀인데.”</div>
+    <div class="li"><span class="who">말</span>지현 — “아, 퍼스트 선배님이요.”</div>
+    <div class="li"><span class="who">말</span>스태프 — “…아.”</div>
+  </div></div>
+
+  <div class="cut"><div class="cn">05</div><div class="cb">
+    <p class="art">밥차 앞. 지현이 말을 꺼내자 <b>대화가 뚝 끊긴다.</b> 다들 밥만 본다.</p>
+    <div class="li"><span class="who">말</span>지현 — “선배님 되게 꼼꼼하시던데요. 콘티도 다 직접 그리시고.”</div>
+    <div class="li"><span class="who">말</span>스태프A — “……어, 응. 잘 배워.”</div>
+    <div class="li think"><span class="who">속</span>지현 — 뭐지?</div>
+  </div></div>
+
+  <div class="cut hot"><div class="cn">06</div><div class="cb">
+    <p class="art"><span class="flag">수위</span> 그 선배 <b>뒷모습</b>이 자료 뭉치를 툭 내민다. <b>눈은 모니터에 그대로.</b> 지현을 보지도 않는다.</p>
+    <div class="li bad"><span class="who">가해</span>선배 — “지현씨 이거 내일까지 정리해. 엄청 급한 건 아니긴 한데.”</div>
+    <div class="li"><span class="who">말</span>지현 — “…네, 할 수 있습니다.”</div>
+    <div class="li narr"><span class="who">나</span>명령하듯이 말하긴 했지만, 선배니까 당연하다고 생각했다.</div>
+  </div></div>
+
+  <div class="cut hot"><div class="cn">07</div><div class="cb">
+    <p class="art"><span class="flag">수위</span> 텅 빈 새벽 주차장. 휴대폰에 <b>04:12</b>.
+    멀리 켜둔 무전기에서 소리가 새어 나온다. <b>지현에게 하는 말이 아니다.</b></p>
+    <div class="li off"><span class="who">밖</span>무전 — “야 이 씨*, 그거 하나를 못 챙겨?”</div>
+    <div class="li narr"><span class="who">나</span>그 ‘급한 거 아닌’ 일은 새벽 네 시에 끝났다.</div>
+    <div class="li think"><span class="who">속</span>지현 — 나한테 한 말은 아니니까. …아직은.</div>
+  </div></div>
+
+  <div class="cut"><div class="cn">08</div><div class="cb">
+    <p class="art">민아가 뒤에서 조용히 다가온다. 주변에 아무도 없는 걸 한 번 확인하고 말한다.</p>
+    <div class="li"><span class="who">말</span>민아 — “지현씨.”</div>
+    <div class="li"><span class="who">말</span>민아 — <b>“…너, 그 사람 팀이야?”</b></div>
+  </div></div>
+  <div class="cliff">▶ 2편에서 계속</div>
+</div>
+
+<!-- 2편 -->
+<div class="ep">
+  <div class="eph">
+    <div class="num">EPISODE 2</div>
+    <div class="ttl">신호</div>
+    <div class="hook">목표: 폭언·성희롱·폭력. 진짜 아픈 건 <b>주변이 같이 웃는다</b>는 것</div>
+  </div>
+
+  <div class="cut"><div class="cn">01</div><div class="cb">
+    <p class="art"><b>표지.</b> 모니터 앞, 등 돌린 실루엣 하나. 그 뒤에 작게 선 지현.</p>
+    <div class="li narr"><span class="who">나</span>그 사람 조심해 · 2편 — 신호</div>
+  </div></div>
+
+  <div class="cut hot"><div class="cn">02</div><div class="cb">
+    <p class="art"><span class="flag">수위</span> 현장. 무전기에서 터져 나오는 목소리. 주변은 <b>안 들리는 척</b> 자기 일만 한다.</p>
+    <div class="li off"><span class="who">밖</span>무전 — “야, 몇 시간짼데 아직도야? 이 씨* 머리는 장식이냐?”</div>
+    <div class="li narr"><span class="who">나</span>아무도 쳐다보지 않았다. 그게 더 이상했다.</div>
+  </div></div>
+
+  <div class="cut hot"><div class="cn">03</div><div class="cb">
+    <p class="art"><span class="flag">수위</span> 지현이 뛰어와 숨을 고른다. 선배는 <b>앉은 채 올려다본다</b>(뒤통수·어깨선만).
+    옆에 스태프 두엇. <b>카메라는 지현 얼굴에 있다.</b></p>
+    <div class="li bad"><span class="who">가해</span>선배 — “넌 왜 이렇게 느리냐. <b>가슴이 커서 뛰는 게 느린가?</b>”</div>
+    <div class="li off"><span class="who">밖</span>(옆에서 누가 웃는다) — “ㅋㅋㅋ”</div>
+    <div class="li think"><span class="who">속</span>지현 — …뭐라고 반응해야 하는 거지…</div>
+  </div></div>
+
+  <div class="cut hot"><div class="cn">04</div><div class="cb">
+    <p class="art"><span class="flag">수위</span> 밥차 앞 간이 테이블. 선배가 지현 옆에 앉는다. <b>거리가 가깝다.</b>
+    맞은편에서 민아가 <b>고개를 돌린다</b> — 이 동작이 이 컷의 핵심.<br>
+    <b>말풍선 3개를 위→아래 순서로 읽히게 배치.</b> 지현의 “네”는 작게, 아무 경계 없이.</p>
+    <div class="li bad"><span class="who">가해</span>선배 — “지현이 너 자취한다고 했나?”</div>
+    <div class="li"><span class="who">말</span>지현 — “네.”</div>
+    <div class="li bad"><span class="who">가해</span>선배 — “아씨 <b>남자들이 개 좋아하겠네.</b>”</div>
+    <div class="li think"><span class="who">속</span>지현 — 밥이 안 넘어갔다.</div>
+    <div class="li narr"><span class="who">나</span>민아 선배는 그때 고개를 돌렸다.</div>
+  </div></div>
+
+  <div class="cut hot"><div class="cn">05</div><div class="cb">
+    <p class="art"><span class="flag">수위</span> 선배가 <b>대본 뭉치를 지현 발치에 집어던진다.</b> 종이가 흩어진다.
+    <b>던지는 손이 아니라, 쪼그려 앉아 줍는 지현의 손</b>을 그린다.</p>
+    <div class="li bad"><span class="who">가해</span>선배 — “이걸 지금 결과라고 가져와? 이 씨***”</div>
+    <div class="li narr"><span class="who">나</span>아무도 말리지 않았다.</div>
+  </div></div>
+
+  <div class="cut"><div class="cn">06</div><div class="cb">
+    <p class="art">말 바꾸기. 지현이 휴대폰 대화창을 스크롤하지만 <b>그 얘기는 없다.</b></p>
+    <div class="li bad"><span class="who">가해</span>선배 — “내가 언제 그렇게 말했어. 니가 잘못 들은 거지.”</div>
+    <div class="li think"><span class="who">속</span>지현 — 분명히 들었는데. …전화로 들었다. 남은 게 없다.</div>
+  </div></div>
+
+  <div class="cut"><div class="cn">07</div><div class="cb">
+    <p class="art">건물 뒤. 지현이 조심스럽게 묻고, 민아는 <b>대답하지 않는다.</b></p>
+    <div class="li"><span class="who">말</span>지현 — “저 선배님 원래 저러세요?”</div>
+    <div class="li"><span class="who">말</span>민아 — “…….”</div>
+    <div class="li narr"><span class="who">나</span>대답을 안 하는 것도 대답이었다.</div>
+  </div></div>
+
+  <div class="cut"><div class="cn">08</div><div class="cb">
+    <p class="art">복도 모퉁이. 지현은 문 뒤에 있고 목소리 둘이 지나간다. <b>얼굴은 안 보인다.</b>
+    마지막 칸에 지현이 벽에 붙어 굳어 있는 컷.</p>
+    <div class="li off"><span class="who">밖</span>“그 팀 또 새 막내 들어왔다며.”</div>
+    <div class="li off"><span class="who">밖</span>“…아이고.”</div>
+    <div class="li off"><span class="who">밖</span>“몇 번째야 이게.”</div>
+    <div class="li think"><span class="who">속</span>지현 — <b>몇 번째…?</b></div>
+  </div></div>
+  <div class="cliff">▶ 3편에서 계속</div>
+</div>
+
+<!-- 3편 -->
+<div class="ep">
+  <div class="eph">
+    <div class="num">EPISODE 3 <span style="color:var(--new)">· 전면 교체</span></div>
+    <div class="ttl">얘기해볼게</div>
+    <div class="hook">시리즈의 심장. <b>말해봤다 → 아무 일도 안 일어났다 → 조용히 지워졌다</b></div>
+  </div>
+
+  <div class="cut fresh"><div class="cn">01</div><div class="cb">
+    <p class="art"><span class="flag n">신규</span> <b>표지.</b> 스태프 여럿 사이에 지현 혼자 정면. 나머지는 전부 시선을 피하고 있다.</p>
+    <div class="li narr"><span class="who">나</span>그 사람 조심해 · 3편 — 얘기해볼게</div>
+  </div></div>
+
+  <div class="cut fresh"><div class="cn">02</div><div class="cb">
+    <p class="art"><span class="flag n">신규</span> 밤, 주차장. 담배 피우는 민아 <b>옆에</b> 지현이 한참 서 있다.
+    붙잡는 게 아니라 <b>말을 못 꺼내고 발끝만 본다.</b><br>
+    말풍선 사이를 넓게 띄워 <b>침묵의 길이</b>가 보이게. 민아의 “…….”는 작게.</p>
+    <div class="li"><span class="who">말</span>지현 — “…선배님.”</div>
+    <div class="li"><span class="who">말</span>지현 — “아까 화장실 앞에서, 얘기하는 거 들었어요.”</div>
+    <div class="li"><span class="who">말</span>민아 — “…….”</div>
+    <div class="li"><span class="who">말</span>지현 — “몇 번째냐고 하는 거.”</div>
+    <div class="li"><span class="who">말</span>민아 — <b>“…알아. 다들 알아.”</b></div>
+  </div></div>
+
+  <div class="cut fresh"><div class="cn">03</div><div class="cb">
+    <p class="art"><span class="flag n">신규</span> 민아 클로즈업. <b>시리즈 전체에서 제일 중요한 대사.</b>
+    <b>민아는 끝까지 지현을 안 본다</b> — 담배 끝만 본다. 고백하는 얼굴이 아니라 <b>귀찮은 걸 털어놓는 얼굴.</b></p>
+    <div class="li"><span class="who">말</span>지현 — “근데 왜 다들 아무 말 안 하고 쉬쉬하는 거예요?”</div>
+    <div class="li"><span class="who">말</span>민아 — “나도 저 팀이었어. 재작년에.”</div>
+    <div class="li"><span class="who">말</span>민아 — “한 번 말했더니, 그 다음 작품부터 연락이 뚝 끊기더라.”</div>
+    <div class="li"><span class="who">말</span>민아 — “확실한 건 아니야. 증거도 없고.”</div>
+    <div class="li"><span class="who">말</span>민아 — <b>“근데 나 그때 반년 놀았어.”</b></div>
+  </div></div>
+
+  <div class="cut fresh"><div class="cn">04</div><div class="cb">
+    <p class="art"><span class="flag n">신규</span> 지현이 휴대폰 메모장에 뭔가 적었다 지웠다 한다. 며칠이 지나가는 몽타주.</p>
+    <div class="li narr"><span class="who">나</span>말하는 데 나흘이 걸렸다.</div>
+    <div class="li think"><span class="who">속</span>지현 — 내가 예민한 거면 어떡하지. 근데 안 하면… 다음 주에도 똑같겠지.</div>
+  </div></div>
+
+  <div class="cut fresh"><div class="cn">05</div><div class="cb">
+    <p class="art"><span class="flag n">신규</span> 제작부 사무실 앞. 지현이 문을 두드린다. <b>손이 떨린다 — 손 클로즈업.</b></p>
+    <div class="li"><span class="who">말</span>지현 — “저… 잠깐 드릴 말씀이 있는데요.”</div>
+  </div></div>
+
+  <div class="cut fresh"><div class="cn">06</div><div class="cb">
+    <p class="art"><span class="flag n">신규</span> 제작부 사람이 듣는다. <b>나쁜 표정이 아니다.</b> 진심으로 안타까워하는 얼굴.
+    그리고 <b>바로 다른 전화를 받는다.</b></p>
+    <div class="li"><span class="who">말</span>제작부 — “아… 그래? 알겠어. 내가 한번 얘기해볼게. 고생 많다.”</div>
+    <div class="li narr"><span class="who">나</span>그리고 아무 일도 일어나지 않았다.</div>
+    <div class="li narr"><span class="who">나</span>사흘. 일주일. 이 주.</div>
+  </div></div>
+
+  <div class="cut fresh hot"><div class="cn">07</div><div class="cb">
+    <p class="art"><span class="flag n">신규</span><span class="flag">수위</span> <b>배제 몽타주 — 이 편의 핵심 컷.</b>
+    ①콜시트가 안 온다 ②지현만 빼고 이동한 현장 ③자기가 정리한 자료가 남의 이름으로 올라가 있다
+    ④좁은 통로에서 선배가 <b>어깨로 밀치고</b> 지나간다.</p>
+    <div class="li bad"><span class="who">가해</span>선배 — “비켜.”</div>
+    <div class="li narr"><span class="who">나</span>아무도 나한테 뭐라고 하지 않았다.</div>
+    <div class="li narr"><span class="who">나</span>그냥, <b>아무도 나한테 말을 안 걸었다.</b></div>
+  </div></div>
+
+  <div class="cut fresh"><div class="cn">08</div><div class="cb">
+    <p class="art"><span class="flag n">신규</span> 밤. 혼자 남은 지현이 단톡방을 위로 스크롤한다.
+    <b>화면은 그림이 아니라 HTML 오버레이로 정확히 찍는다.</b><br>
+    <b>★ 이름 앞에 파트 표기가 붙어 있다</b>(현장 단톡방은 “연출 ○○○”처럼 파트를 붙여 저장하는 게 보통).
+    이게 있어야 <b>신입인 지현이 모르는 사람들인데도 어느 자리였는지 알 수 있습니다.</b>
+    같은 문구가 네 번 반복되는 화면 자체가 이 컷의 충격이라, <b>날짜만 다르고 문장은 똑같이</b> 찍는다.</p>
+    <div class="screen">
+      <div class="sysline">연출 ○○○님이 나갔습니다. <span class="sub">— 작년 3월</span></div>
+      <div class="sysline">연출 ○○○님이 나갔습니다. <span class="sub">— 작년 7월</span></div>
+      <div class="sysline">연출 ○○○님이 나갔습니다. <span class="sub">— 작년 11월</span></div>
+      <div class="sysline">연출 ○○○님이 나갔습니다. <span class="sub">— 올해 2월</span></div>
+    </div>
+    <div class="li think"><span class="who">속</span>지현 — 작년 3월… 7월… 11월… 올해 2월…</div>
+    <div class="li think"><span class="who">속</span>지현 — <b>다, 내 자리였다.</b></div>
+  </div></div>
+  <div class="cliff">▶ 마지막 편에서 계속</div>
+</div>
+
+<!-- 4편 -->
+<div class="ep">
+  <div class="eph">
+    <div class="num">EPISODE 4 · 완결</div>
+    <div class="ttl">그래서</div>
+    <div class="hook">나가지 않기로 한다. 체념이 아니라 <b>선택</b></div>
+  </div>
+
+  <div class="cut fresh"><div class="cn">01</div><div class="cb">
+    <p class="art"><span class="flag n">신규</span> <b>표지.</b> 어두운 방, 휴대폰 불빛만. 화면에 <b>‘채팅방 나가기’</b>가 떠 있다.</p>
+    <div class="li narr"><span class="who">나</span>그 사람 조심해 · 4편 — 그래서 <span class="sub">(완결)</span></div>
+  </div></div>
+
+  <div class="cut fresh"><div class="cn">02</div><div class="cb">
+    <p class="art"><span class="flag n">신규</span> 자취방. 불도 안 켜고 앉아 있다.</p>
+    <div class="li narr"><span class="who">나</span>나도 저 목록에 한 줄 더 추가되면 그만이었다.</div>
+    <div class="li narr"><span class="who">나</span>“연출 김지현님이 나갔습니다.” 그거면 끝이었다.</div>
+  </div></div>
+
+  <div class="cut fresh"><div class="cn">03</div><div class="cb">
+    <p class="art"><span class="flag n">신규</span> <b>손가락이 ‘나가기’ 위에 멈춰 있다.</b> 손끝 클로즈업. 누르지 않는다.</p>
+    <div class="li think"><span class="who">속</span>지현 — 근데 내가 나가면.</div>
+    <div class="li think"><span class="who">속</span>지현 — <b>다음 사람도 나처럼, 아무것도 모른 채 오겠지.</b></div>
+  </div></div>
+
+  <div class="cut"><div class="cn">04</div><div class="cb">
+    <p class="art">현장. 민아가 아무렇지 않게 툭 던진다. 지현의 얼굴만 굳는다.</p>
+    <div class="li"><span class="who">말</span>민아 — “아 맞다. 그 선배, 다음 달에 다른 작품 들어간대.”</div>
+    <div class="li think"><span class="who">속</span>지현 — 아무 일도 없었다는 듯이.</div>
+  </div></div>
+
+  <div class="cut fresh"><div class="cn">05</div><div class="cb">
+    <p class="art"><span class="flag n">신규</span> 현장에 들어가기 전. 지현이 <b>휴대폰 녹음 버튼을 누르고</b> 주머니에 넣는다.
+    화면의 <b>빨간 점 클로즈업.</b> 표정은 비장하지 않고 <b>담담하다</b> — 이제 이게 일과다.</p>
+    <div class="li narr"><span class="who">나</span>나는 나가지 않았다.</div>
+    <div class="li narr"><span class="who">나</span>대신 그날부터, 현장에 들어갈 때마다 녹음 버튼을 눌렀다.</div>
+    <div class="li narr"><span class="who">나</span>그땐 남은 게 없었으니까.</div>
+    <div class="li narr"><span class="who">나</span><b>이번엔 남는다.</b></div>
+  </div></div>
+
+  <div class="cut fresh"><div class="cn">06</div><div class="cb">
+    <p class="art"><span class="flag n">신규</span> 단톡방에 새 사람이 들어온다. <b>3편 08컷과 똑같은 화면 구도</b> — 이번엔 반대 문구.</p>
+    <div class="screen">
+      <div class="sysline">연출 ○○○님이 들어왔습니다.</div>
+    </div>
+    <div class="li think"><span class="who">속</span>지현 — 왔구나.</div>
+  </div></div>
+
+  <div class="cut fresh"><div class="cn">07</div><div class="cb">
+    <p class="art"><span class="flag n">신규</span> 개인 DM 창. <b>커서가 한참 깜빡인다.</b> 그리고 두 줄을 보낸다.</p>
+    <div class="li msg"><span class="who">폰</span>지현 — “안녕하세요. 혹시 힘든 일 있으면 저한테 말해요.”</div>
+    <div class="li msg"><span class="who">폰</span>지현 — <b>“저도 여기 있어요.”</b></div>
+    <div class="li think"><span class="who">속</span>지현 — 아무도 나한테 안 해준 말을, 내가 먼저 하기로 했다.</div>
+  </div></div>
+
+  <div class="cut fresh"><div class="cn">08</div><div class="cb">
+    <p class="art"><span class="flag n">신규</span> 마지막 컷. 현장 멀리서 본 풀샷.
+    <b>NUKU CTA·링크·브랜드는 없음.</b> 상담번호만 <b>맨 아래 작은 글씨</b>로 — 여운 안 깨는 크기.</p>
+    <div class="li narr"><span class="who">나</span>혼자 겪지 않게. 알 수 있게.</div>
+    <div class="li narr"><span class="who">나</span><span class="sub">※ 직장 내 괴롭힘·성희롱 상담 ☎ 고용노동부 1350</span></div>
+  </div></div>
+</div>
+
+<div class="box new">
+  <span class="bt">마지막 컷에서 CTA를 들어낸 이유 <span class="sub">(2026-08-07 결정)</span></span>
+  <p>원래는 이 자리에 <b>“당신의 현장 이야기도, 익명으로 — 프로필 링크”</b>가 붙어 있었습니다. 뺐습니다.</p>
+  <p><b>NUKU가 실제로 해줄 수 있는 게 없기 때문입니다.</b> 우리는 그 선배를 제재하지 못하고, 신고를 대행하지 못하고,
+  법적으로 돕지 못합니다. 동료인증도 크레딧을 검증하는 기능이지 <b>가해자를 걸러주는 장치가 아닙니다.</b>
+  그런데 “혼자 겪지 않게. 알 수 있게.” 바로 밑에 링크가 붙으면, <b>NUKU가 그 ‘알 수 있게’를 해주는 것처럼 읽힙니다.</b> 그건 사실이 아닙니다.</p>
+  <p>게다가 <b>지현이 한 일은 NUKU 없이 한 일입니다.</b> 단톡방에서 안 나가고, 새 막내에게 DM을 보낸 것.
+  거기에 서비스를 얹으면 이야기가 광고가 됩니다. 로드맵의 <b>“NUKU 브랜드 마무리 카드 없음, 이야기 자체로 끝낸다”</b>와도 어긋납니다.</p>
+</div>
+
+<h3>대신 캡션으로 내립니다</h3>
+<p>웹툰 안에서는 아무것도 약속하지 않고, <b>캡션에서 우리가 실제로 하는 일만</b> 밝힙니다.</p>
+<div class="box">
+  <p style="margin:0">이 이야기는 제보받은 사연을 <b>각색·합성</b>한 것입니다. 특정 인물·작품과 관련 없습니다.<br><br>
+  당신의 현장 이야기도 익명으로 보내주세요. → 프로필 링크<br><br>
+  <span class="sub">※ 직장 내 괴롭힘·성희롱 상담 ☎ 고용노동부 1350</span></p>
+</div>
+<p class="sub">“제보하면 해결해드립니다”가 아니라 <b>“제보해주시면 이렇게 그립니다”</b>입니다 — 이건 우리가 실제로 하는 일이라 거짓말이 아닙니다.
+그리고 실질적인 도움은 <b>1350으로 넘깁니다.</b> 성희롱·폭력을 다루면서 아무 데도 안 가리키는 건 무책임하지만,
+그 역할을 NUKU가 하는 척하는 건 더 나쁩니다.</p>
+
+<!-- ─────────── 6 ─────────── -->
+<h2><span class="n">6</span>사실관계 확인 결과</h2>
+<p class="sub">2026-08-07 확인. <b>확인된 것과 확인 안 된 것을 갈라</b> 적습니다.</p>
+
+<div class="scroll">
+<table>
+  <tr><th>항목</th><th>결과</th><th>대본 반영</th></tr>
+  <tr>
+    <td>연출부 서열 = <b>퍼스트 / 세컨드 / 써드 / 막내</b>, 조감독(AD)·제2조감독 체계</td>
+    <td><span class="pill ok">확인됨</span></td>
+    <td>이 호칭대로 씀. 문제 인물을 <b>퍼스트</b>로 둔 건 막내와 접점이 제일 크고, 감독보다 아래라 특정 위험이 낮아서.</td>
+  </tr>
+  <tr>
+    <td>감독·작가가 스태프에게 <b>폭언·욕설</b>을 하고 일부는 <b>폭력</b>까지 행사한 사례가 언론에 보도된 바 있음</td>
+    <td><span class="pill ok">확인됨</span></td>
+    <td>2편 무전 폭언·물건 던짐의 근거.</td>
+  </tr>
+  <tr>
+    <td>직장 내 갑질에서 “불이익이 두려워 참는다”는 일반적 경향</td>
+    <td><span class="pill ok">확인됨</span></td>
+    <td>3편 침묵 구조의 일반적 근거.</td>
+  </tr>
+  <tr>
+    <td><b>“영상 바닥은 좁아서 말하면 일이 끊긴다”는 업계 특유의 보복 구조</b></td>
+    <td><span class="pill wt">업계 통념<br>1차출처만 미확보</span></td>
+    <td><b>사장님 확인: 근거 없어도 맞는 말.</b> 웹 검색으로 이걸 다룬 보도·연구를 못 찾았을 뿐이고,
+    <b>업계에서 아는 사실이라 대사로 쓰는 데 문제 없습니다.</b> 특정 인물·업체를 지목하지 않는 업계 일반 논평이라 법적 리스크도 낮습니다.
+    <span class="sub">(콜타임 때와 다른 케이스입니다. 그건 제도·절차를 틀리게 단정한 거였고, 이건 구조에 대한 경험적 진술입니다.)</span><br><br>
+    <b>다만 3편 03컷의 “확실한 건 아니야. 증거도 없고.”는 그대로 두는 걸 권합니다 — 법적 안전장치가 아니라 연출로요.</b>
+    “이 바닥은 원래 그래”라고 단언하는 민아보다, <b>자기가 겪은 일조차 확신 못 하는 민아</b>가 훨씬 무섭습니다.
+    피해자가 자기 경험을 의심하게 만드는 게 이 구조의 본질이고, 4편에서 지현이 <b>녹음을 켜는 이유</b>와도 정확히 맞물립니다.</td>
+  </tr>
+  <tr>
+    <td><b>대화 당사자의 몰래 녹음이 합법인지</b> <span class="sub">(4편 05컷)</span></td>
+    <td><span class="pill ok">확인됨</span></td>
+    <td><b>본인이 참여한 대화를 몰래 녹음하는 건 통신비밀보호법 위반이 아닙니다.</b> 법이 금지하는 건 <b>“타인 간” 대화</b>의 녹음이라,
+    내가 낀 대화·내 통화는 해당 없고 증거로도 쓸 수 있습니다(신빙성은 법원이 별도 판단).<br><br>
+    <b>⚠️ 그래서 그림에서 지켜야 할 선:</b> 지현이 녹음하는 건 <b>자기가 당사자인 대화만</b>입니다.
+    2편 08처럼 <b>남들이 하는 얘기를 문 뒤에서 녹음하는 컷은 절대 넣으면 안 됩니다</b> — 그건 제3자 녹음이라 형사처벌 대상입니다.
+    <b>작품이 불법을 권하는 모양이 됩니다.</b></td>
+  </tr>
+  <tr>
+    <td><b>제작부에 말했을 때 실제로 어떤 절차가 도는지</b> <span class="sub">(v3 신규 쟁점)</span></td>
+    <td><span class="pill no">확인 안 함</span></td>
+    <td><b>3편이 통째로 여기 걸려 있습니다.</b> 그래서 대본은 <b>절차를 설명하지 않습니다</b> —
+    “신고하면 이렇게 됩니다”가 아니라 <b>“말했는데 아무 일도 안 일어났다”</b>는 한 사람의 경험으로만 그립니다.
+    제작부 사람도 악당이 아니라 <b>악의 없이 잊어버리는</b> 인물로 뒀습니다. 제도 비판으로 읽히지 않게.</td>
+  </tr>
+  <tr>
+    <td>촬영 현장 성희롱의 구체적 실태 통계</td>
+    <td><span class="pill wt">미확인</span></td>
+    <td>대본이 통계를 인용하지 않아 지금은 문제없음. 단 <b>캡션에 “현장에서 흔한 일”류 일반화를 쓰려면 그때는 근거가 필요합니다.</b></td>
+  </tr>
+</table>
+</div>
+
+<div class="box warn">
+  <span class="bt">발행 전 한 번 더 볼 것</span>
+  <p>이번 검색은 <b>웹 일반 검색</b>이라 업계 커뮤니티(filmmakers.co.kr 등) 실제 글은 못 봤습니다.
+  <b>콜시트 · 슬레이트 · 무전 · 콘티</b>가 막내 업무에 맞는지, 그리고 <b>3편의 “제작부에 말한다”가 현장에서 실제로 말이 되는 경로인지</b>(제작부가 맞는지, PD·프로듀서 쪽인지) 확인 부탁드립니다.
+  여기가 틀리면 3편 전체가 붕 뜹니다.</p>
+</div>
+
+<!-- ─────────── 7 ─────────── -->
+<h2><span class="n">7</span>리스크</h2>
+
+<h3>① 도달 — 제일 현실적인 손해</h3>
+<p>서사 맥락의 성희롱 묘사는 인스타에서 금지 대상이 아닙니다. 문제는 <b>추천(비팔로워 노출)에서 빠질 수 있다</b>는 것입니다.
+웹툰을 하는 이유가 애초에 비팔로워 도달이라 이게 깎이면 본말전도입니다.</p>
+<ul>
+  <li><b>욕설은 전부 마스킹</b>(<code>씨*</code>, <code>씨***</code>). 그림에 글자를 안 넣고 HTML로 얹는 방식이라 정확히 통제됩니다.</li>
+  <li><b>“가슴” 같은 단어는 대사 안에만</b> 두고, <b>캡션·해시태그·표지에는 절대 안 넣습니다.</b> 분류에 제일 크게 걸리는 게 표지와 캡션입니다.</li>
+  <li><b>2편이 제일 위험합니다.</b> 1·3·4편은 상대적으로 안전하니, 최악의 경우 2편만 낮추는 선택지가 있습니다.</li>
+  <li>캡션 첫 줄에 <b>“※ 폭언·성희롱 묘사가 있습니다”</b> — 신고를 줄이고 톤도 “구경거리”가 아니라 “다루는 이야기”로 잡힙니다.</li>
+</ul>
+
+<h3>② AI 그림 생성 거부</h3>
+<p><b>성희롱·폭력 장면을 그대로 프롬프트에 쓰면 생성이 거부됩니다.</b> 그래서 대본을
+<b>가해 동작이 아니라 피해자 반응</b> 중심으로 짰습니다 — “던지는 손” 대신 “줍는 손”, “웃는 입” 대신 “듣는 얼굴”.
+프롬프트가 <b>“흩어진 종이를 줍는 사람”</b>이 돼서 통과합니다. <b>연출적으로도 이게 낫습니다.</b></p>
+
+<h3>③ 메신저 화면 — 브랜드 복제 금지</h3>
+<p>단톡방 컷은 <b>특정 메신저를 그대로 베끼지 않습니다.</b> 로고·정확한 UI·색은 쓰지 않고
+<b>일반 메신저 화면</b>으로 그립니다. “○○○님이 나갔습니다”는 일반적인 표현이라 그대로 씁니다.
+<span class="sub">— 어차피 화면은 AI 그림이 아니라 HTML 오버레이로 찍으니 우리가 100% 통제합니다.</span></p>
+
+<h3>④ 명예훼손</h3>
+<p>실명·상호·작품명이 없고 합성이라 구도 자체는 안전합니다. 다만 강도가 세질수록 <b>“그 사건 아냐?”</b>가 나오기 쉬워서,
+특정 보도 사건과 겹치는 디테일(작품 종류·연도·직책 조합)은 피했습니다.
+<b>결말이 고발·폭로가 아니라 기록·공유</b>라는 점도 그대로 유지됩니다.</p>
+
+<!-- ─────────── 8 ─────────── -->
+<h2><span class="n">8</span>안전장치</h2>
+<ul>
+  <li><b>실명·상호·작품명 없음.</b> 작품 종류도 특정하지 않음.</li>
+  <li><b>문제 인물 = 합성 캐릭터</b>, 얼굴·이름·성별 전부 특정 안 함.</li>
+  <li><b>성희롱 = 발언까지만.</b> 신체 접촉은 <b>어깨 밀침(폭력 맥락)</b> 하나로 제한하고 <b>성적 신체 접촉은 넣지 않습니다.</b>
+      <span class="sub">— 여기서 더 가면 도달·신고 리스크가 급격히 올라갑니다.</span></li>
+  <li><b>욕설 전부 마스킹.</b></li>
+  <li><b>가해를 구경거리로 만들지 않음.</b> 카메라는 항상 피해자 쪽.</li>
+  <li><b>제작부를 악당으로 만들지 않음.</b> 악의 없는 무반응이 더 현실적이고, 제도 비난으로 읽히지 않습니다.</li>
+  <li>캡션에 <b>합성·각색 표기</b> + <b>트리거 워닝</b>.</li>
+</ul>
+
+<!-- ─────────── 9 ─────────── -->
+<h2><span class="n">9</span>확정 후 진행 순서</h2>
+<ol>
+  <li><b>그림 32컷 생성</b> — Gemini(나노바나나), 주인공 앵커 <code>s2_protagonist_v1.png</code>로 얼굴 고정.
+  민아·제작부·선배 뒷모습 앵커는 새로 뽑아야 함. <span class="sub">그림엔 글자 금지. 프롬프트는 §7-②대로 피해자 반응 중심.</span>
+  <b>단톡방 컷(3편 08 · 4편 01·06·07)은 그림이 거의 없고 화면 오버레이라 제작이 빠릅니다.</b></li>
+  <li><b>대사 오버레이 렌더</b> — 말풍선은 <b>얼굴 피해 컷별 수동 배치</b>(시리즈1에서 3번 지적받은 부분).</li>
+  <li><b>업로드용 PNG</b> 1080×1350 8장/편.</li>
+  <li><b>캐러셀 발행</b> → 며칠 뒤 <b>릴스 리퍼포징</b>(<code>_make_webtoon_reel.py</code>).</li>
+</ol>
+
+<div class="box">
+  <span class="bt">일정 (수요일 웹툰 슬롯)</span>
+  <p>1편 <b>8/12</b> → 2편 <b>8/19</b> → 3편 <b>8/26</b> → 4편 <b>9/2</b><br>
+  <span class="sub">각 편 릴스는 캐러셀 3~5일 뒤 별도 게시.</span></p>
+</div>
+
+<div class="box warn">
+  <span class="bt">그 전에 남아 있는 것</span>
+  <p>시리즈1이 아직 안 끝났습니다. <b>5편 「검증」 완결 캐러셀</b>(PNG 8장 완성·미발행)과
+  <b>4편 릴스</b>(빌드 완료·미발행)가 대기 중입니다. 시리즈2 1편보다 <b>이 둘이 먼저</b>입니다.</p>
+</div>
+
+<footer>
+  NUKU · @nuku.mag 사연 웹툰 시리즈 2 상세 기획서 <b>v3</b> · 2026-08-07 · 검토용 미확정본<br>
+  원본 로드맵: <code>22_웹툰_사연2_돌려막기/로드맵_돌려막기.txt</code>
+</footer>
+
+</div>
+</body>
+</html>

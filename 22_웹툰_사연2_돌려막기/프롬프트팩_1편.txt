@@ -1,0 +1,120 @@
+■ 시리즈2 「그 사람 조심해」 1편 ‘첫날’ — 그림 프롬프트팩 (8컷)
+   생성처: Gemini (나노바나나) / 저장: 22_웹툰_사연2_돌려막기\_art\
+   ※ 한글 대사는 그림에 넣지 않고 HTML 오버레이로 얹는다. 그림엔 글자 0개.
+
+────────────────────────────────
+0. 공통 규칙 (모든 프롬프트에 붙임)
+────────────────────────────────
+[STYLE]
+Korean webtoon (manhwa) illustration, clean line art, soft cel shading,
+cinematic film-set lighting, muted realistic palette, vertical 4:5 composition.
+
+[HARD RULES — 매번 붙일 것]
+- ABSOLUTELY NO text, letters, numbers, words, signage, or writing ANYWHERE
+  in the image — including ID badges, lanyards, call sheets, clipboards,
+  phone screens, truck panels, boxes, and clothing prints.
+  Leave all such surfaces BLANK.
+- No speech bubbles, no captions, no watermark.
+- Keep the TOP 15% and BOTTOM 25% visually simple (사람 얼굴·중요 요소 배치 금지)
+  → 말풍선·나레이션 박스 자리.
+
+[캐릭터 앵커 — 매번 레퍼런스 업로드]
+- 지현(주인공)  : _art/s2_protagonist_v1.png
+  검은 단발, 뿔테 안경, 네이비 후드, 갈색 크로스백, 목걸이 명찰(글자 없음), 20대 중반.
+- 민아(세컨드)  : 03컷에서 처음 확정 → 그 결과물을 _art/s2_minah_v1.png 로 저장해
+                  이후 08컷에 레퍼런스로 재업로드.
+- 그 선배(가해) : ★얼굴 절대 안 보임. 뒤통수·어깨선·그림자·프레임 밖만.
+                  앵커 불필요(얼굴이 없으니 일관성 문제도 없음).
+
+[저장 파일명]
+  ep1_01_cover.png / ep1_02_greet.png / ep1_03_callsheet.png / ep1_04_whoseteam.png
+  ep1_05_lunch.png / ep1_06_order.png   / ep1_07_dawn.png     / ep1_08_minah.png
+
+────────────────────────────────
+1. 컷별 프롬프트
+────────────────────────────────
+
+[01 · 표지] ep1_01_cover.png
+Pre-dawn exterior film set entrance. A young woman seen ONLY FROM BEHIND,
+small in frame, standing still at the edge of the lot. Equipment trucks with
+headlights on, backlighting her so she reads as a silhouette with rim light.
+Cables, road cases, a light stand in the foreground. Cold blue dawn air,
+warm truck headlights. Lonely, slightly ominous mood. Wide shot.
+→ 뒷모습이라 앵커 업로드 불필요(후드·크로스백 실루엣만 맞으면 됨).
+→ 상·하단 여백 넉넉히(제목 들어감).
+
+[02 · 인사] ep1_02_greet.png
+Interior of a production crew tent on a film set. The young woman (reference)
+bows deeply, greeting, bag on shoulder, slightly nervous smile.
+Around her, 3-4 crew members are busy with their own work and barely look up —
+one is on a walkie-talkie, one is moving a case. She is the only one facing out.
+Morning, practical work lights. Medium shot.
+→ 지현 앵커 업로드. 명찰·클립보드 전부 백지.
+
+[03 · 콜시트] ep1_03_callsheet.png  ★민아 첫 등장 = 여기서 확정
+Two women on a film set. LEFT: a woman in her early 30s — the SECOND assistant
+director. Short ponytail, no glasses, oversized black field jacket, radio clipped
+at her waist, tired eyes, businesslike but not unkind. She hands a BLANK sheet of
+paper on a clipboard to RIGHT: the young woman (reference), who takes it with
+both hands. Daytime, set clutter behind. Medium two-shot.
+→ 지현 앵커 업로드. 민아는 여기서 처음 만들어짐 → 결과 저장 후 08에 재사용.
+→ 종이·클립보드 반드시 백지.
+
+[04 · 누구 팀인데] ep1_04_whoseteam.png
+A crew member (30s, cap, utility vest) has stopped mid-walk to speak with the
+young woman (reference) on set. THE KEY: the crew member's expression is
+subtly stiffening — a micro-freeze, eyes going slightly flat, mouth losing its
+smile — as if they just heard something they did not want to hear.
+The young woman still looks open and unaware. Daytime. Medium close two-shot.
+→ 지현 앵커 업로드. 이 컷은 '표정'이 전부 — 과장 금지, 아주 미세하게.
+
+[05 · 밥차] ep1_05_lunch.png
+Outdoor catering truck area on a film set, simple folding tables. The young
+woman (reference) sits mid-sentence, still talking, slightly leaning in.
+The 3 crew members around the table have all gone quiet and are looking down
+at their food trays, avoiding eye contact with her and each other.
+Awkward dead silence. Overcast daylight. Medium wide shot.
+→ 지현 앵커 업로드. 식판·컵 등에 글자·로고 없음.
+
+[06 · 명령] ep1_06_order.png  ★가해자 첫 등장 — 얼굴 없음
+Interior, monitor station on a film set. FOREGROUND: the BACK OF A PERSON'S HEAD
+and shoulders, seated, facing away from camera toward glowing monitors —
+face completely hidden, never visible. This person holds out a thick stack of
+BLANK documents sideways without turning around, eyes still on the screens.
+BACKGROUND/RIGHT: the young woman (reference) standing, reaching to take the stack
+with both hands, expression compliant and a little uncertain.
+Dim room, cold monitor glow on their faces. Medium shot.
+→ 지현 앵커 업로드. ★선배 얼굴 절대 노출 금지. 서류 전부 백지.
+
+[07 · 새벽] ep1_07_dawn.png
+Empty parking lot at 4 AM. The young woman (reference) alone, exhausted,
+standing beside a concrete pillar, looking down at her phone —
+PHONE SCREEN MUST BE BLANK / just a glow, no numbers or text.
+Her breath faintly visible. A single sodium streetlight, deep blue night,
+long shadows. Far in the background, a small lit doorway. Wide shot, she is small.
+→ 지현 앵커 업로드. ★시계 04:12는 그림에 넣지 말고 오버레이로 얹는다.
+
+[08 · 민아] ep1_08_minah.png  ★민아 앵커 재업로드
+Night, exterior. The SECOND assistant director (민아 reference) has stepped
+close to the young woman (지현 reference) and is speaking quietly, leaning in
+slightly, having just glanced over her shoulder to check no one is around.
+Her expression is serious, almost warning. The young woman looks back at her,
+not understanding yet. Dark, single practical light source. Close two-shot.
+→ 앵커 2개 업로드(지현 + 03에서 만든 민아). 긴장감 있게, 클리프행어 컷.
+
+────────────────────────────────
+2. 생성 순서
+────────────────────────────────
+① 03 먼저 생성 → 민아 확정 → s2_minah_v1.png 로 따로 저장
+② 01 → 02 → 04 → 05 → 06 → 07 → 08 순서
+   (08은 민아 앵커가 있어야 하므로 마지막)
+
+────────────────────────────────
+3. 자주 나는 사고 (시리즈1 경험)
+────────────────────────────────
+· 소품·명찰에 AI가 글자를 흘려 넣음 → "소품에도 글자 없이" 반복 강조.
+  현재 앵커 s2_protagonist_v1.png 의 명찰에도 깨진 글자가 있음 → 새 컷에선 백지로.
+· 첫 생성이 가로로 나옴 → "TALL VERTICAL PORTRAIT, not landscape"로 재요청.
+· 저장은 canvas 트릭 말고 이미지 위 「원본 크기 이미지 다운로드」 버튼 클릭.
+  C:\Users\user\Downloads 에 자동저장 → _art\ 로 이동.
+· 얼굴이 컷마다 달라짐 → 반드시 앵커 재업로드. 그 선배는 얼굴이 없어 이 문제 없음.

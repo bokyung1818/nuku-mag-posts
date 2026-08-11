@@ -1,0 +1,156 @@
+■ 사연 웹툰 「포폴 쌓게 해줄게」 — 그림 프롬프트 팩 (제미나이/챗지피티용)
+  ※ 한글 글자는 그림에 넣지 마세요. 대사·나레이션은 나중에 코드로 얹습니다.
+
+────────────────────────────────
+0. 어느 도구로?
+────────────────────────────────
+· 제미나이(추천) — 이미지 모델이 '나노바나나'라 지금 그림체와 거의 동일.
+  새 채팅 → 앵커 그림 업로드 → 프롬프트 붙여넣기.
+· 챗지피티(GPT-4o 이미지) — 화풍이 조금 다름(더 부드러움). 방법은 동일.
+
+────────────────────────────────
+1. 캐릭터 고정법 (제일 중요)
+────────────────────────────────
+매 컷마다 아래 앵커 그림을 '레퍼런스로 업로드'하고 "이 인물과 똑같이"라고 지시.
+· 막내(주인공) 앵커  →  _art/p1.png
+· PD(40대) 앵커      →  _art/p2b_dirclose.png
+· 선배(20대 후반) 앵커 →  _art/ep4_meet.png
+· 두 명 나오는 컷은 두 앵커를 둘 다 업로드.
+
+────────────────────────────────
+2. 공통 스타일 (모든 프롬프트 앞에 붙이기 / 영어 그대로)
+────────────────────────────────
+Use the uploaded image as the character reference — keep the character(s) identical.
+Korean webtoon (manhwa) digital illustration, clean confident line art with soft cel shading,
+cinematic lighting, single vertical 3:4 panel.
+Absolutely NO text, NO letters, NO numbers, NO speech bubbles, NO watermark, NO split panels.
+
+────────────────────────────────
+3. 캐릭터 외형 (참고)
+────────────────────────────────
+· 막내(Rookie): young Korean man, early 20s, short black hair, black hoodie, black cap, backpack.
+· PD: middle-aged Korean man, 40s, casual jacket, short dark hair, friendly-but-calculating.
+· 선배(Senior): Korean man, late 20s, youthful face, slight stubble, casual dark hoodie, no cap.
+
+
+================================
+1편 「첫 현장」
+================================
+[p1] 입성 (앵커: 막내)
+A hopeful nervous rookie stands at the entrance of a busy film/video set; camera on tripod, softbox lights, cables on floor, crew silhouettes, early morning light; excited but anxious first day.
+
+[bow] 인사 (막내)
+He bows politely (90-degree greeting) to a group of busy crew who barely glance at him; awkward first-day mood, warm morning light.
+
+[chores] 잡일 (막내)
+Doing rookie chores on set: carrying a tray of takeaway coffee cups in one hand while dragging a coiled cable, juggling tasks, eager but overwhelmed; busy crew around, daytime.
+
+[arm] 칭찬 (막내+PD)
+A smiling PD (40s) puts his arm around the rookie's shoulder in a friendly but manipulative way, praising him; rookie looks hopeful; warm daytime light.
+
+[shake] 약속 (막내+PD)
+The rookie and the PD shake hands firmly, both smiling as if sealing a promise, on set; rookie grateful, PD confident; warm light.
+
+[night] 탈진 (막내)
+Late night, exhausted rookie alone on an empty set coiling heavy cables, dark circles, a convenience-store triangle kimbap and canned coffee on an equipment case; cold blue night light, lonely.
+
+[dir] PD 클로즈업 (PD)
+Close-up of the PD (40s) with a warm charming smile but subtly cold, calculating eyes; slightly low angle, backlit softbox glow, foreboding mood.
+
+
+================================
+2편 「3개월」
+================================
+[grind] 새벽 중노동 (막내)
+At 5am he carries a heavy lighting stand and equipment case alone across the set, sweating, arms straining, while other crew sip coffee; cold blue dawn, overworked.
+
+[wait] 대기 (막내)
+He sits waiting for hours on an equipment flight case in a corner, bored and drowsy, chin on hand, glancing at his watch; endless standby, muted daylight.
+
+(night 재사용 — 1편 것 그대로)
+
+[pay] 페이 요청 (막내+PD)
+The rookie turns toward the PD and speaks, looking at him with an anxious hopeful face asking about pay; the PD waves his hand dismissively with an excuse-making smile, avoiding eye contact; set packing up behind, tense.
+
+[kakao] 카톡 변명 (막내)
+Evening close-up: he stares at a messaging app on his phone with a disappointed frustrated expression, as if reading another excuse; soft phone glow, dim room. (screen only glow, no readable content)
+
+[doubt] 고민 (막내)
+He stands alone in a dim stairwell, head lowered, deeply conflicted about whether to quit, one hand on the railing; heavy contemplative mood, cold shadows.
+
+[bank] 통장 (막내)
+Close-up at night: he anxiously stares at his phone banking app, gripping it with both hands, biting his lip, dread on his face; cold blue phone glow. (screen only glow)
+
+
+================================
+3편 「0원」
+================================
+[zero] 0원 (막내)
+Close-up at night: he stares at his phone bank balance in utter devastation, hollow shocked eyes, mouth slightly open, tears welling; cold blue glow, dark room.
+
+[contract] 무급 실체 (막내)
+He sits holding a single crumpled sheet of paper (a pay statement), staring at it with a hollow bitter empty smile of disbelief; dim room, defeated.
+
+[call] 전화 잠수 (막내)
+Night: he holds his phone to his ear trying to call, waiting, anxious and increasingly hopeless as no one answers; dim indoor light.
+
+(kakao 재사용 — 2편 것 그대로)
+
+[credit] 크레딧 (막내)
+He sits at a laptop at night looking at scrolling end-credits, searching for his name; quiet betrayal and heartbreak, glassy eyes; cold blue screen glow. (screen unreadable)
+
+[break] 오열 (막내)
+ONE single panel, close-up: he sits at a laptop and buries his face against one hand, head lowered, a single tear, utterly crushed by betrayal; cold blue laptop light, dark room.
+
+[resolve] 버스정류장 (막내)
+He stands alone at a night bus stop looking down at his phone with a bitter, melancholic but slowly hardening determined expression; city lights bokeh, cold night.
+
+
+================================
+4편 「나만이 아니었다」
+================================
+[meet] 술집 만남 (막내+선배)
+Two young men at a shabby late-night Korean pub: the rookie sits across a small table with a slightly older young man (late 20s, youthful, slight stubble, dark hoodie, no cap), green soju bottle and glasses between them, talking seriously; melancholic, both young.
+
+[senior] 선배 클로즈업 (선배)
+Close-up of the younger senior (late 20s, youthful, no wrinkles, slight stubble) looking down bitterly at his soju glass, a resigned sad smile, telling a painful story; warm dim pub light.
+
+[shock] 충격 (막내)
+Close-up: the rookie's eyes go wide in shock and disbelief, mouth slightly open, as if hearing "you too?"; dim warm pub light.
+
+[community] 증언 다수 (막내)
+Night, in his room: mainly his face and upper body as he holds a phone low, cold blue glow lighting his grim shocked face from below while he reads many others' testimonies; focus on his reaction, not the screen. (no UI, no text)
+
+[silence] 집단 침묵 (막내)
+Several young crew members stand apart on a set, most with backs turned or looking away in silence; in the middle the rookie looks around, isolated; somber symbolic, cold muted tone.
+
+[cliff] 결심 (막내)
+Close-up facing forward: a hardened, determined but sad resolve, clenched jaw, steady eyes, as if asking "why did no one warn me?"; dark moody background, single rim light.
+
+
+================================
+5편 「검증」 (완결) — 그림 6컷 (7·8장은 파란 NUKU 카드, 코드로 제작)
+================================
+[labor] 노동청 (막내)
+At a government labor office counter he stands holding a folder of documents, pleading anxiously to a bureaucratic public officer seated behind the desk; cold institutional daytime light.
+
+[reject] 좌절 (막내)
+He walks out through a cold empty government building hallway holding a folder loosely, shoulders slumped, defeated as if he hit a wall; muted gray corridor.
+
+[realize] 자각 (막내)
+Quiet night close-up: he looks at his phone with a pensive, thoughtful, wistful expression, a small dawning idea — if only he could have known this person beforehand; soft warm reflection.
+
+[hope] 검증 발견 (막내)
+He looks at his smartphone with a small relieved hopeful smile, soft blue app glow on his face, as if he finally found a way to check who he works with; bright optimistic morning tone, warm.
+
+[newstart] 새 출발 (막내)
+A more mature confident rookie arrives at a NEW film set on a bright fresh morning, greeted warmly with smiles and a friendly handshake by welcoming crew; optimistic uplifting, warm sunlight.
+
+
+────────────────────────────────
+4. 뽑은 뒤
+────────────────────────────────
+· 파일명을 위 [대괄호] 이름 그대로 저장해서 _art 폴더에 넣으면,
+  제가 한글 대사·나레이션 얹어 업로드용 카드(1080×1350)로 렌더해 드립니다.
+· 비율은 3:4 또는 4:5 세로로 뽑아주세요.
+· 소품에 영어 글자(배너 등)가 들어가면 "no text on signs/banners"를 추가하세요.
