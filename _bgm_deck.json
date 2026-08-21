@@ -1,0 +1,25 @@
+{
+ "_설명": "릴스 배경음악 규칙. decks=덱 고정곡, tones=내용 성격별 곡(--tone 으로 지정). tones의 bgm은 여러 곡을 배열로 둘 수 있고 그 톤 안에서 번갈아 나간다. 여기 묶인 곡은 톤 없이 돌리는 자동 선택에서 제외된다.",
+ "decks": {
+  "17_공연소식_릴스": "Jonathan Hadas - Habanera.mp3"
+ },
+ "tones": {
+  "serious": {
+   "bgm": "idokay - What Youve Been Looking For.mp3",
+   "when": "법률·세무·계약·권리처럼 딱딱하고 꼭 알아야 하는 내용. 잔잔해서 글자를 읽게 만든다."
+  },
+  "bright": {
+   "bgm": [
+    "Out of Flux - Sunny Summer.mp3",
+    "Roie Shpigler - Blooz Mojo.mp3"
+   ],
+   "when": "즐겁고 가벼운 내용, 긍정적인 소식. 휘파람처럼 밝은 곡."
+  },
+  "calm": {
+   "bgm": [
+    "Aves - Joy Ride - Short version.mp3"
+   ],
+   "when": "무겁지도 가볍지도 않은 보통 소식·안내. 편안하게 흘러가는 곡."
+  }
+ }
+}
