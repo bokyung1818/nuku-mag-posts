@@ -1,0 +1,296 @@
+{
+  "slug": "standard-contract",
+  "kicker": "프리랜서 생존 가이드",
+  "title": "내 직업 표준계약서, 여기 다 있어요",
+  "subtitle": "한국예술인복지재단이 배포하는 12개 분야 79종. 직업별로 어떤 걸 받아야 하는지 정리하고 공식 최신본 링크를 달았어요. (2026년 8월 기준)",
+  "summary": [
+    "계약서를 안 쓰면 <b>일을 준 쪽</b>에 과태료 — 1차 150만원 · 2차 300만원 · 3차 이상 500만원",
+    "<b>표준계약서를 쓰면</b> 법이 요구하는 계약을 체결한 것으로 본다 (예술인복지법 제4조의4 제3항)",
+    "국가·지자체는 표준계약서를 쓴 쪽을 <em>문화예술 재정 지원에서 우대할 수 있다</em> (제5조 제2항)",
+    "계약서 필수 6가지 — 금액 / 기간·갱신·변경·해지 / 권리·의무 / 업무 범위 / 수익 배분 / 분쟁 해결",
+    "<b>서명한 계약서</b>는 서로 주고받아야 하고, 일을 준 쪽은 <b>3년간 보존</b> 의무 (제5조의2)",
+    "전부 무료예요. 회원가입도 필요 없습니다"
+  ],
+  "sections": [
+    {
+      "h": "① 내 일에는 어떤 계약서인가",
+      "p": "표준계약서는 '예술인용' 하나로 있는 게 아니라 <b>분야별·역할별로 따로</b> 만들어져 있어요. 아래에서 내 일에 맞는 줄을 먼저 찾으세요.",
+      "table": {
+        "cols": [
+          "내 일",
+          "찾아야 할 계약서"
+        ],
+        "rows": [
+          [
+            "영화 현장 스태프<br>(촬영·조명·미술·연출부)",
+            "영화산업 <b>근로표준계약서</b>"
+          ],
+          [
+            "방송 제작 스태프",
+            "방송 제작스태프 <b>표준근로 / 표준하도급 / 표준업무위탁</b> 중 내 계약 형태"
+          ],
+          [
+            "방송작가",
+            "<b>방송작가 집필</b> 표준계약서"
+          ],
+          [
+            "배우 · 가수",
+            "방송·영상 <b>출연표준계약서</b> (드라마 / 비드라마 / 음악)"
+          ],
+          [
+            "소속사와 계약",
+            "대중문화예술인 <b>표준전속계약서</b> (가수중심 / 연기자중심)"
+          ],
+          [
+            "공연 스태프",
+            "공연예술 <b>기술지원 표준근로 / 표준용역계약서</b>"
+          ],
+          [
+            "공연 배우 · 창작자",
+            "공연예술 <b>출연계약서 / 창작계약서</b>"
+          ],
+          [
+            "웹툰 작가",
+            "<b>웹툰 연재계약서</b> (만화분야 8종 중)"
+          ],
+          [
+            "시나리오 · 각본 · 각색",
+            "영화 시나리오 표준계약서 <b>4종</b>"
+          ],
+          [
+            "웹소설 작가",
+            "<b>웹소설 연재계약서</b> / 출판권 설정계약서"
+          ],
+          [
+            "내 분야가 위에 없다",
+            "<b>저작재산권 분야 4종</b> — 양도·이용허락의 기본형"
+          ]
+        ]
+      },
+      "callout": "분야가 애매하면 '계약 형태'로 고르세요. 출퇴근·지휘를 받으면 근로계약서, 결과물을 납품하면 용역·도급계약서 쪽입니다."
+    },
+    {
+      "h": "② 영화",
+      "p": "현장 스태프는 <b>근로표준계약서</b> 한 종으로 통합돼 있어요. 해설서를 같이 받으면 조항별로 무슨 뜻인지 나옵니다.",
+      "list": [
+        "<b>영화산업 근로표준계약서</b> — 2024.5.25 개정 <a href=\"https://www.kawf.kr/files/FILM-EMPLOYMENT_contract%2820240525%29.hwp\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>영화 시나리오 표준계약서 4종</b> — 영화화 권리 이용허락·양도, 각본, 각색 <a href=\"https://www.kawf.kr/files/FILM-SCENARIO_contract%2820151020%29.hwp\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>영화 상영 표준계약서 2종</b> <a href=\"https://www.kawf.kr/files/FILM-SCREENING_contract%2820141001%29.hwp\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>영화 투자 표준계약서</b> <a href=\"https://www.kawf.kr/files/FILM-INVESTMENT_contract%2820141030%29.hwp\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>[해설서] 영화산업 근로표준계약서 해설서</b> — 2024년, 문체부 <a href=\"https://www.kawf.kr/files/FILM-EMPLOYMENT_guide%282024%29.pdf\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>[지침] 영화산업 표준보수지침</b> — 2025.10.1 시행 <a href=\"https://www.kawf.kr/files/FILM-PAYMENT_guide%28202510%29.pdf\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>"
+      ]
+    },
+    {
+      "h": "③ 방송",
+      "p": "6종이 한 파일에 들어 있어요. 내려받아서 <b>내 계약 형태에 맞는 것</b>을 고르면 됩니다.",
+      "list": [
+        "<b>방송분야 표준계약서 6종</b> — 2021.10.27 개정 <a href=\"https://www.kawf.kr/files/BROADCAST_contract%2820211027%29.hwp\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "└ 방송프로그램 제작 / 방영권 구매 / 제작스태프 <b>표준근로</b> / 제작스태프 <b>표준하도급</b> / 제작스태프 <b>표준업무위탁</b> / <b>방송작가 집필</b>"
+      ],
+      "callout": "제작스태프 계약서가 세 가지인 이유는 계약 형태가 다르기 때문이에요. 지휘·감독을 받으며 정해진 시간에 일하면 근로계약서가 맞습니다."
+    },
+    {
+      "h": "④ 대중문화 — 배우 · 가수 · 연습생",
+      "p": "출연과 전속은 <b>완전히 다른 계약</b>이에요. 출연은 그 작품 한 건, 전속은 소속사와의 관계 전체를 정합니다.",
+      "list": [
+        "<b>방송·영상 출연표준계약서 3종</b> — 2025.7.31 개정 / 드라마·비드라마·음악 <a href=\"https://www.kawf.kr/files/POPCULTURE-CAST_contract%2820250731%29.hwp\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>대중문화예술인 표준전속계약서 2종</b> — 2024.6.3 개정 / 가수중심·연기자중심 <a href=\"https://www.kawf.kr/files/POPCULTURE-EXCLUSIVE_contract%2820240603%29.hwp\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>연습생 표준계약서</b> — 2026.1.1 개정 <a href=\"https://www.kawf.kr/files/POPCULTURE-TRAINEE_contract%2820260101%29.hwpx\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>청소년 대중문화예술인·연습생 표준 부속합의서</b> — 2026.1.1 개정 <a href=\"https://www.kawf.kr/files/POPCULTURE-YOUTH_agreement%2820260101%29.hwpx\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>디지털콘텐츠(영상) 공급표준계약서</b> <a href=\"https://www.kawf.kr/files/POPCULTURE-VIDEO_contract%2820230406%29.hwpx\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>디지털콘텐츠(음악) 공급표준계약서</b> <a href=\"https://www.kawf.kr/files/POPCULTURE-MUSIC_contract%2820230406%29.hwpx\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>"
+      ]
+    },
+    {
+      "h": "⑤ 공연예술",
+      "p": "출연·창작뿐 아니라 <b>기술지원 스태프용</b>이 근로형·용역형 두 가지로 따로 있어요.",
+      "list": [
+        "<b>공연예술분야 표준계약서 5종</b> — 2022.8.10 개정 <a href=\"https://www.kawf.kr/files/PERFORMING_contract%2820220808%29.hwp\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "└ 출연계약서 / 창작계약서 / <b>기술지원 표준근로계약서</b> / <b>기술지원 표준용역계약서</b> / 대관계약서"
+      ]
+    },
+    {
+      "h": "⑥ 만화 · 웹툰 · 웹소설 · 출판",
+      "p": "이 분야는 <b>2차적저작물 조항</b>이 핵심이에요. 드라마·영화로 만들어질 때의 권리를 여기서 정합니다.",
+      "list": [
+        "<b>만화분야 표준계약서 8종</b> — 2024.6.13 개정 / 웹툰 연재계약서 포함 <a href=\"https://www.kawf.kr/files/CARTOON_contract%2820240613%29.hwp\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>[안내서] 만화 분야 표준계약서 안내서</b> — 2025.6 <a href=\"https://www.kawf.kr/files/CARTOON_guide%28202506%29.pdf\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>웹소설분야 표준계약서 3종</b> — 2025.3.20 제정 <a href=\"https://www.kawf.kr/files/NOVEL_contract%2820250320%29.hwp\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>출판분야 표준계약서 10종</b> — 오디오북 4종 포함 <a href=\"https://www.kawf.kr/files/PUBLICATION_contract%2820210222%29.hwp\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>"
+      ],
+      "callout": "2차적저작물작성권을 <b>양도</b>하는 계약과 <b>이용허락</b>하는 계약은 결과가 완전히 다릅니다. 만화분야 8종에 둘 다 들어 있으니 반드시 구분해서 쓰세요."
+    },
+    {
+      "h": "⑦ 미술 · 공예 · 애니메이션 · 게임 · 저작재산권",
+      "list": [
+        "<b>미술분야 표준계약서 12종</b> — 2022.2.18 일부개정 <a href=\"https://www.kawf.kr/files/VISUAL_contract%2820220218%29.hwp\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>공예분야 표준계약서 5종</b> <a href=\"https://www.kawf.kr/files/CRAFT_contract%2820210701%29.hwp\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>애니메이션분야 표준계약서 4종</b> <a href=\"https://www.kawf.kr/files/ANIMATION_contract%2820190807%29.hwp\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>게임 분야 표준계약서 5종</b> — 도급·하도급·중개·위탁매매·퍼블리싱 <a href=\"https://www.kawf.kr/files/GAME_contract%2820220325%29.hwp\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>저작재산권분야 표준계약서 4종</b> — 내 분야 양식이 없을 때의 기본형 <a href=\"https://www.kawf.kr/files/AUTHORSPROPERTY_contract%2820210906%29.hwp\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>",
+        "<b>[안내] 저작권 관련 안내서</b> — 2024.1 <a href=\"https://www.kawf.kr/files/COPYRIGHT_guide%28202401%29.pdf\" style=\"color:#0273FF;font-weight:800;text-decoration:none;white-space:nowrap\">다운로드 ↓</a>"
+      ]
+    },
+    {
+      "h": "⑧ 계약서에 반드시 들어가야 하는 여섯 가지",
+      "p": "예술인복지법 제4조의4 제2항이 정한 <b>필수 기재사항</b>이에요. 표준계약서를 그대로 쓰면 이 여섯 가지가 이미 들어 있습니다. 조항만 옮겨 쓸 거라면 아래를 직접 확인하세요.",
+      "table": {
+        "cols": [
+          "법이 적은 것",
+          "실제로 뭘 적나"
+        ],
+        "rows": [
+          [
+            "계약 금액",
+            "얼마를, 언제 주는지"
+          ],
+          [
+            "계약 기간 · 갱신 · 변경 · 해지",
+            "언제까지, 어떻게 끝내는지"
+          ],
+          [
+            "당사자의 권리 및 의무",
+            "저작권을 누가 갖는지도 여기"
+          ],
+          [
+            "업무·과업의 내용, 시간 및 장소",
+            "어디까지가 내 일인지"
+          ],
+          [
+            "수익의 배분",
+            "돈을 나눌 때의 몫"
+          ],
+          [
+            "분쟁 해결",
+            "다툼이 생겼을 때의 규칙"
+          ]
+        ]
+      },
+      "callout": "제4조의4 제3항 — <b>표준계약서를 사용하면 제1항·제2항에 따라 계약을 체결한 것으로 봅니다.</b> 여섯 가지를 하나씩 따져볼 필요가 없다는 뜻이에요."
+    },
+    {
+      "h": "⑨ 안 쓰면 어떻게 되나",
+      "p": "서면계약 의무는 예술인이 아니라 <b>문화예술기획업자등</b>, 즉 일을 맡긴 쪽에 있어요. 과태료도 그쪽에 부과됩니다.",
+      "table": {
+        "cols": [
+          "위반",
+          "1차",
+          "2차",
+          "3차 이상"
+        ],
+        "rows": [
+          [
+            "서면계약 미작성",
+            "150만원",
+            "300만원",
+            "500만원"
+          ],
+          [
+            "계약서 미보존 (3년)",
+            "100만원",
+            "200만원",
+            "300만원"
+          ],
+          [
+            "시정명령 위반",
+            "300만원",
+            "400만원",
+            "500만원"
+          ],
+          [
+            "자료 미제출·거짓 제출",
+            "100만원",
+            "200만원",
+            "300만원"
+          ]
+        ]
+      },
+      "callout": "차수는 <b>최근 3년간</b> 같은 위반으로 과태료를 받은 횟수로 셉니다. 사정에 따라 감경·가중될 수 있어요 (예술인 복지법 시행령 별표 2)."
+    },
+    {
+      "h": "⑩ 말을 꺼내는 법",
+      "p": "계약서 얘기를 먼저 하면 까다로운 사람이 될까 봐 망설이게 되죠. 그런데 이건 내 요구가 아니라 <b>이미 법에 있는 절차</b>예요.",
+      "steps": [
+        {
+          "h": "링크부터 보낸다",
+          "d": "\"이 양식으로 하면 서로 편할 것 같아요\" 한 줄이면 충분해요. 정부가 만들어 배포한 문서라 따로 설득할 게 없습니다."
+        },
+        {
+          "h": "그대로 쓰는 걸 먼저 제안한다",
+          "d": "표준계약서를 그대로 쓰면 법이 요구하는 계약을 체결한 것으로 봅니다."
+        },
+        {
+          "h": "지원사업을 하는 곳이면 이 말을 덧붙인다",
+          "d": "국가·지자체는 표준계약서를 쓴 경우 문화예술진흥기금 등 재정 지원에서 우대할 수 있어요 (제5조 제2항). 상대에게도 이득입니다."
+        },
+        {
+          "h": "서명본을 서로 한 부씩",
+          "d": "주고받는 것까지가 법이 정한 의무예요. 내 사본은 최소 3년 보관하세요."
+        },
+        {
+          "h": "일부 조항만 옮겨 쓴다면",
+          "d": "위 여섯 가지가 다 들어갔는지 직접 확인해야 합니다. 하나라도 빠지면 요건을 못 채운 계약서예요."
+        }
+      ]
+    },
+    {
+      "h": "⑪ 그래도 안 지켜졌다면",
+      "p": "혼자 소송부터 준비하지 않아도 돼요. <b>예술인 신문고</b>에 신고하면 한국예술인복지재단이 접수하고 문화체육관광부가 사실조사를 합니다.",
+      "list": [
+        "구두로만 합의했어도 <b>카톡·문자·메일·통화 녹음</b>이 증거가 됩니다. 미리 모아 두세요",
+        "일을 맡긴 쪽은 계약서를 3년간 보존할 의무가 있어요 — 없다고 하면 그 자체가 위반입니다",
+        "신고 창구 — 예술인권리보장시스템 (sinmungo.kawf.kr)"
+      ]
+    }
+  ],
+  "checklist": [
+    "내 분야 표준계약서를 받아 뒀다",
+    "계약 금액과 지급 시기가 적혀 있다",
+    "업무 범위 — 어디까지가 내 일인지 적혀 있다",
+    "저작권·2차 이용을 누가 갖는지 확인했다",
+    "서명·날인한 계약서를 서로 한 부씩 주고받았다",
+    "내 사본을 3년 이상 보관하고 있다"
+  ],
+  "contacts": [
+    {
+      "name": "한국예술인복지재단",
+      "detail": "02-3668-0200 · 표준계약서 보급·서면계약 상담",
+      "url": "https://www.kawf.kr/welfare/sub03.do"
+    },
+    {
+      "name": "예술인 신문고",
+      "detail": "예술인권리보장시스템 · 서면계약 위반 신고",
+      "url": "https://sinmungo.kawf.kr/user/intro/writeContractViolate/list.do"
+    },
+    {
+      "name": "문화체육관광부 법령자료",
+      "detail": "분야별 표준계약서 공고문",
+      "url": "https://www.mcst.go.kr/site/s_data/generalData/dataList.jsp?pMenuCD=0405050000"
+    }
+  ],
+  "disclaimer": "일반 정보를 정리한 것이고 법률 자문이 아니에요. 서면계약 의무와 과태료는 '문화예술용역 관련 계약'에 적용되는 것이라 계약 형태와 사안에 따라 적용 여부가 달라집니다. 표준계약서 파일은 한국예술인복지재단이 배포하는 원본으로 바로 연결되며, 개정되면 파일이 바뀔 수 있어요. 내 계약이 여기에 해당하는지 애매하면 한국예술인복지재단(02-3668-0200)에 확인하세요.",
+  "sources": [
+    {
+      "label": "국가법령정보센터 — 예술인 복지법 제4조의4 · 제5조 · 제5조의2 · 제18조",
+      "url": "https://law.go.kr/lsInfoP.do?lsId=011492"
+    },
+    {
+      "label": "한국예술인복지재단 — 표준계약서 보급 (12개 분야 79종)",
+      "url": "https://www.kawf.kr/welfare/sub03.do"
+    },
+    {
+      "label": "한국예술인복지재단 — 서면계약 위반신고 (과태료 부과기준)",
+      "url": "https://www.kawf.kr/social/sub06_2.do"
+    },
+    {
+      "label": "예술인 복지법 시행령 [별표 2] 과태료의 부과기준",
+      "url": "https://www.kawf.kr/files/Welfare_act_Enforcement_ordinance_20240208.pdf"
+    }
+  ],
+  "cta": {
+    "text": "계약서는 챙겼는데, 참여한 작품이 내 경력으로 안 남고 있다면",
+    "button": "누쿠에서 크레딧 정리하기",
+    "url": "https://nuku.im"
+  }
+}
