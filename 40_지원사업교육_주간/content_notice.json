@@ -15,7 +15,7 @@
       "benefit": null,
       "quota": "20명 내외",
       "place": "영화진흥위원회 영화교육지원센터 1층 강의실",
-      "how": null,
+      "how": "교육신청 페이지 내 구글폼 지원서 링크를 통해 본인의 해당 정보를 기입",
       "url": "https://www.kofic.or.kr/kofic/business/board/selectBoardDetail.do?boardNumber=4&boardSeqNumber=74787",
       "key": "kofic:4:74787"
     },
@@ -31,7 +31,7 @@
       "benefit": null,
       "quota": null,
       "place": null,
-      "how": "및 기간 ㅇ",
+      "how": null,
       "url": "https://www.kocca.kr/kocca/pims/view.do?intcNo=326D00091013&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
       "key": "kocca:326D00091013"
     },
@@ -47,25 +47,9 @@
       "benefit": null,
       "quota": "30명 내외",
       "place": "영화진흥위원회 영화교육지원센터 1층 강의실",
-      "how": null,
+      "how": "교육신청 페이지 내 구글폼 지원서 링크를 통해 본인의 해당 정보를 기입",
       "url": "https://www.kofic.or.kr/kofic/business/board/selectBoardDetail.do?boardNumber=4&boardSeqNumber=74920",
       "key": "kofic:4:74920"
-    },
-    {
-      "cat": "ETC",
-      "catLabel": "지원사업",
-      "org": "한국콘텐츠진흥원",
-      "title": "2026년 게임인재원 AI 외래 강사 Pool 2차 모집",
-      "period": "8.10 ~ 9.4",
-      "deadline": "2026-09-04",
-      "dday": 10,
-      "target": null,
-      "benefit": null,
-      "quota": null,
-      "place": null,
-      "how": null,
-      "url": "https://www.kocca.kr/kocca/pims/view.do?intcNo=326D00034006&menuNo=204104&recptSt=&category=&pageIndex=1&search=&searchWrd=",
-      "key": "kocca:326D00034006"
     },
     {
       "cat": "EDU",
@@ -114,22 +98,6 @@
       "how": "1차 원서접수 온라인 (2·3차는 10월·11월 별도)",
       "url": "https://www.kofic.or.kr/kofic/business/board/selectBoardDetail.do?boardNumber=4&boardSeqNumber=74789",
       "key": "kofic:4:74789"
-    },
-    {
-      "cat": "ETC",
-      "catLabel": "지원사업",
-      "org": "영화진흥위원회",
-      "title": "[서울영화센터] 청년영화인 창작 네트워크 지원사업 공고 (공유오피스 등 혜택 무료 제공 / 개인·팀 신청 가능)",
-      "period": "상세 확인",
-      "deadline": null,
-      "dday": null,
-      "target": "만 19~39세 청년 영화인 또는 2인 이상 영화 관련 모임·동아리",
-      "benefit": "서울영화센터 8층 좌석 무료 · 복합기 · 사물함 · 멤버십 교육/세미나",
-      "quota": "동아리팀 개별 6석+공유 12석 · 개인 지정 6석",
-      "place": null,
-      "how": "선착순 · 마감일 없이 상시 모집",
-      "url": "https://www.kofic.or.kr/kofic/business/board/selectBoardDetail.do?boardNumber=5&boardSeqNumber=74301",
-      "key": "kofic:5:74301"
     }
   ]
 }
