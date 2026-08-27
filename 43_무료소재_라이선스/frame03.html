@@ -113,6 +113,56 @@ u{text-decoration:none;background:linear-gradient(transparent 60%,color-mix(in s
 .splithook .hbody{margin-top:0;}
 .splithook .bot{margin-top:64px;}
 
+/* ── big + 포스터 : 위 포스터 / 아래 관람료·제목 ─────────────────────
+   공연 포스터는 비율이 제각각(2:3 ~ 1:1)이라 cover로 자르면 제목·날짜가 잘린다.
+   같은 그림을 흐리게 깔고 원본은 contain으로 통째로 보여준다. */
+.frame.bigposter{padding:0;}
+.bigposter .ph{position:relative;height:var(--imgh,880px);flex:none;overflow:hidden;background:#0A0C10;}
+.bigposter .ph .blur{position:absolute;left:-40px;top:-40px;width:calc(100% + 80px);
+  height:calc(100% + 80px);object-fit:cover;filter:blur(38px) brightness(.55);}
+.bigposter .ph .fg{position:relative;width:100%;height:100%;object-fit:contain;}
+.bigposter .ph .topbar{position:absolute;left:96px;right:96px;top:56px;display:flex;
+  justify-content:space-between;align-items:center;font-size:30px;font-weight:700;
+  letter-spacing:.04em;color:rgba(255,255,255,.94);text-shadow:0 2px 14px rgba(0,0,0,.75);}
+.bigposter .ph .topbar .num{font-variant-numeric:tabular-nums;}
+.bigposter .inner{flex:1;padding:56px 96px 120px;display:flex;flex-direction:column;min-height:0;}
+/* 포스터가 위를 먹으므로 글자는 한 단계씩 줄인다(글자만 있는 big보다 작다). */
+.bigposter .bignum{font-size:150px;margin-bottom:22px;}
+.bigposter .h2{font-size:60px;}
+.bigposter .bigcap{font-size:37px;margin-top:26px;}
+.bigposter .bot{margin-top:auto;}
+
+/* ── 포스터 그리드 훅 : 위 2x2 포스터 / 아래 글자 (splithook 규칙을 그대로 쓴다) ── */
+.gridhook .pg{height:var(--gridh,880px);flex:none;display:grid;
+  grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:8px;
+  background:#0A0C10;padding:8px;overflow:hidden;}
+/* 그리드 아이템 기본 min-height:auto 때문에 세로 포스터가 칸을 밀어 올려 아래줄이 잘린다.
+   min-height:0으로 눌러야 1fr 1fr이 실제로 반반이 된다. */
+.gridhook .pg .cell{position:relative;min-height:0;min-width:0;overflow:hidden;border-radius:10px;}
+.gridhook .pg .cell .blur{position:absolute;left:-20px;top:-20px;width:calc(100% + 40px);
+  height:calc(100% + 40px);object-fit:cover;filter:blur(22px) brightness(.5);}
+/* 포스터는 잘라 쓰지 않는다 — 제목이 잘리면 무슨 공연인지 알아볼 수가 없다. */
+.gridhook .pg .cell .fg{position:relative;width:100%;height:100%;object-fit:contain;}
+
+/* show (공연 한 편) — 캐러셀 카드와 같은 구성: 장르 배지 / 제목 / 포스터 / 기간·장소·관람료.
+   관람료를 bignum(200px)으로 키우면 가격 비교 콘텐츠처럼 읽힌다. 주인공은 포스터다. */
+/* .body는 기본 min-height:auto라 내용이 많으면 프레임 밖으로 자란다(핸들이 잘렸다).
+   포스터가 줄어들어 흡수하도록 body와 포스터 둘 다 min-height:0으로 눌러 둔다. */
+.showslide .body{min-height:0;justify-content:flex-start;padding-top:26px;}
+.showgenre{display:inline-block;align-self:flex-start;font-size:32px;font-weight:800;color:#fff;
+  background:var(--accent);border-radius:14px;padding:14px 26px;letter-spacing:.02em;margin-bottom:30px;}
+.showtitle{font-weight:800;letter-spacing:-.025em;line-height:1.2;width:100%;}
+.showposter{flex:1;min-height:0;margin:44px 0 42px;display:flex;align-items:center;justify-content:center;}
+/* 작은 원본은 화면을 채우되 --pmax(원본의 2.2배)까지만 키운다. 그 이상은 뭉개져서
+   포스터를 넣은 의미가 없다. 큰 원본은 --pmax가 커서 사실상 100%로 찬다. */
+.showposter img{width:auto;height:100%;max-width:100%;max-height:min(100%, var(--pmax,100%));
+  object-fit:contain;border-radius:20px;box-shadow:0 18px 60px rgba(0,0,0,.45);}
+.showmeta{display:grid;grid-template-columns:auto 1fr;gap:18px 32px;align-items:baseline;}
+.showmeta .k{font-size:33px;font-weight:800;color:var(--accent);white-space:nowrap;}
+.showmeta .v{font-size:35px;font-weight:600;color:var(--soft);line-height:1.35;}
+/* 핸들이 관람료 줄에 붙어 버린다 — 포스터가 flex:1이라 여백을 주면 포스터가 그만큼 줄어든다. */
+.showslide .bot{margin-top:38px;}
+
 /* table (비교표) */
 .tbl{width:100%;border-collapse:separate;border-spacing:0;margin-top:44px;
   border:2px solid var(--cardbd);border-radius:24px;overflow:hidden;}
@@ -123,6 +173,33 @@ u{text-decoration:none;background:linear-gradient(transparent 60%,color-mix(in s
 .tbl tr td:first-child{font-weight:800;color:var(--ink);white-space:nowrap;}
 .tbl td em{color:var(--accent);font-weight:800;}
 .tblnote{font-size:31px;color:var(--muted);font-weight:600;margin-top:32px;line-height:1.5;}
+/* notecover — 지원사업 주간 릴스 표지. 카드뉴스 표지(_gen_notice.py)와 같은 형식으로
+   맞춘 것이라 배경·그리드·알약·캐릭터 위치를 그쪽 CSS에서 그대로 가져왔다.
+   테마 변수를 안 쓰고 색을 박아 두는 이유 = 카드와 픽셀로 같아야 하기 때문. */
+.frame.notecover{background:linear-gradient(168deg,#FFFFFF 0%,#EAF2FF 62%,#DCEAFF 100%);}
+.frame.notecover .body{justify-content:flex-end;}
+.frame.notecover .top{color:#7B8AA3;font-size:28px;}
+.frame.notecover .bot{color:#7B8AA3;font-size:28px;font-weight:700;}
+.frame.notecover .bot .src{color:#9AA7BC;}
+.cov-grid{position:absolute;inset:0;z-index:0;
+  background-image:linear-gradient(rgba(2,115,255,.05) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(2,115,255,.05) 1px,transparent 1px);
+  background-size:90px 90px;}
+.cov-char{position:absolute;right:52px;top:250px;z-index:1;width:560px;}
+.cov-char img{width:100%;display:block;}
+.cov-k{display:inline-block;align-self:flex-start;font-size:32px;font-weight:800;color:#0273FF;
+  background:rgba(2,115,255,.10);border:1px solid rgba(2,115,255,.22);
+  border-radius:999px;padding:14px 28px;margin-bottom:40px;}
+.cov-h{font-size:132px;font-weight:800;line-height:1.12;letter-spacing:-.04em;color:#0C1524;}
+.cov-h em{color:#0273FF;}
+.cov-sub{font-size:42px;font-weight:600;color:#4A5B75;margin-top:36px;line-height:1.5;}
+.cov-cats{margin-top:48px;display:flex;flex-wrap:wrap;gap:16px;}
+.cov-cats b{font-size:30px;font-weight:800;color:#2A3648;background:#fff;
+  border:1px solid #D8E2F0;border-radius:14px;padding:14px 22px;box-shadow:0 2px 8px rgba(12,21,36,.05);}
+.cov-hot{margin-top:42px;display:flex;align-items:center;gap:18px;font-size:34px;font-weight:800;color:#0C1524;}
+.cov-hot i{font-style:normal;background:#0273FF;color:#fff;border-radius:12px;padding:10px 18px;font-size:32px;}
+.frame.notecover .body{padding-bottom:34px;}
+.frame.notecover .bot{padding-top:30px;border-top:1px solid rgba(2,115,255,.10);}
 </style></head><body><div class="frame"><div class="top"><span>제일 자주 걸리는 것</span><span class="num">03 / 07</span></div><div class="body"><div class="biglabel">이 두 글자가 붙어 있으면</div><div class="bignum">NC</div><div class="h2">돈이 되는 영상에는<br>쓸 수 없습니다</div><div class="bigcap">NC는 비영리(Noncommercial). 영리 목적 이용을 금지하는 조건이에요. 광고·협찬 영상이나 수익창출이 붙은 채널이면 영리 이용으로 봐야 합니다.</div></div><div class="bot"><span><span class="dot"></span>@nuku.mag</span><span></span></div></div><script>
 (function(){
   function fit(el){
