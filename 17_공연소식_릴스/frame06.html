@@ -173,7 +173,34 @@ u{text-decoration:none;background:linear-gradient(transparent 60%,color-mix(in s
 .tbl tr td:first-child{font-weight:800;color:var(--ink);white-space:nowrap;}
 .tbl td em{color:var(--accent);font-weight:800;}
 .tblnote{font-size:31px;color:var(--muted);font-weight:600;margin-top:32px;line-height:1.5;}
-</style></head><body><div class="frame"><div class="top"><span>마무리</span><span class="num">06 / 06</span></div><div class="body"><div class="ctah">이번 주 <em>전체 12편</em>은<br>지난 게시물에</div><div class="ctasub">연극·뮤지컬·클래식·국악까지 모아 뒀어요.</div><div class="ctabox">저장해두고 주말에 꺼내 보세요</div><div class="disc">일정·관람료는 바뀔 수 있어요. 예매는 공연명으로 검색하세요.</div><div class="handlebig"><span class="dot"></span>@nuku.mag</div></div></div><script>
+/* notecover — 지원사업 주간 릴스 표지. 카드뉴스 표지(_gen_notice.py)와 같은 형식으로
+   맞춘 것이라 배경·그리드·알약·캐릭터 위치를 그쪽 CSS에서 그대로 가져왔다.
+   테마 변수를 안 쓰고 색을 박아 두는 이유 = 카드와 픽셀로 같아야 하기 때문. */
+.frame.notecover{background:linear-gradient(168deg,#FFFFFF 0%,#EAF2FF 62%,#DCEAFF 100%);}
+.frame.notecover .body{justify-content:flex-end;}
+.frame.notecover .top{color:#7B8AA3;font-size:28px;}
+.frame.notecover .bot{color:#7B8AA3;font-size:28px;font-weight:700;}
+.frame.notecover .bot .src{color:#9AA7BC;}
+.cov-grid{position:absolute;inset:0;z-index:0;
+  background-image:linear-gradient(rgba(2,115,255,.05) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(2,115,255,.05) 1px,transparent 1px);
+  background-size:90px 90px;}
+.cov-char{position:absolute;right:52px;top:250px;z-index:1;width:560px;}
+.cov-char img{width:100%;display:block;}
+.cov-k{display:inline-block;align-self:flex-start;font-size:32px;font-weight:800;color:#0273FF;
+  background:rgba(2,115,255,.10);border:1px solid rgba(2,115,255,.22);
+  border-radius:999px;padding:14px 28px;margin-bottom:40px;}
+.cov-h{font-size:132px;font-weight:800;line-height:1.12;letter-spacing:-.04em;color:#0C1524;}
+.cov-h em{color:#0273FF;}
+.cov-sub{font-size:42px;font-weight:600;color:#4A5B75;margin-top:36px;line-height:1.5;}
+.cov-cats{margin-top:48px;display:flex;flex-wrap:wrap;gap:16px;}
+.cov-cats b{font-size:30px;font-weight:800;color:#2A3648;background:#fff;
+  border:1px solid #D8E2F0;border-radius:14px;padding:14px 22px;box-shadow:0 2px 8px rgba(12,21,36,.05);}
+.cov-hot{margin-top:42px;display:flex;align-items:center;gap:18px;font-size:34px;font-weight:800;color:#0C1524;}
+.cov-hot i{font-style:normal;background:#0273FF;color:#fff;border-radius:12px;padding:10px 18px;font-size:32px;}
+.frame.notecover .body{padding-bottom:34px;}
+.frame.notecover .bot{padding-top:30px;border-top:1px solid rgba(2,115,255,.10);}
+</style></head><body><div class="frame"><div class="top"><span>마무리</span><span class="num">06 / 06</span></div><div class="body"><div class="ctah">이번 주 <em>전체 8편</em>은<br>지난 게시물에</div><div class="ctasub">연극·뮤지컬·클래식·국악까지 모아 뒀어요.</div><div class="ctabox">저장해두고 주말에 꺼내 보세요</div><div class="disc">일정·관람료는 바뀔 수 있어요. 예매는 공연명으로 검색하세요.</div><div class="handlebig"><span class="dot"></span>@nuku.mag</div></div></div><script>
 (function(){
   function fit(el){
     var maxH=parseFloat(el.dataset.fith)||640,
