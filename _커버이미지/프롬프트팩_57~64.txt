@@ -1,0 +1,173 @@
+■ 커버 컷 프롬프트 — 57~64번 덱 / 2026-09-02 작성
+
+  ※ [0. 공통 스타일]을 모든 프롬프트 앞에 그대로 붙여 쓴다.
+    `프롬프트팩_43_44_50~56.txt`의 공통 스타일과 같되, 얼굴 규칙만 되돌렸다.
+
+  ※ 왜 사물 컷인가 — 2026-08-27에 정물 8장을 AI 모델 컷으로 전면 교체했는데,
+    9/1에 사용자가 "여자 이미지가 인기 있을 줄 알았는데 기물파손·드론이 잘되었고
+    영 효과가 없다"고 했다. 잘된 둘(30 박살난 카메라 / 33 날고 있는 드론)의 공통점은
+    '사람이 없다'가 아니라 **사물이 주인공이고 그 사물이 이미 벌어진 사건을 보여준다**는
+    것이다. 모델 컷(51 경고장 읽는 모델 / 53 봉투 든 모델)은 상황이 아니라 개념 삽화였다.
+    9/2에 44를 사물 컷으로 돌려 발행했고, 이 8장도 같은 문법으로 간다.
+    ★ 44 vs 51의 도달·평균 시청 시간이 나오면 그 결과로 확정한다.
+
+────────────────────────────────
+0. 공통 스타일 — 모든 프롬프트 앞에 그대로 붙일 것
+────────────────────────────────
+Photorealistic cinematic photograph. Aspect ratio 9:16 (vertical) — this is important.
+BRIGHT, airy, natural exposure — warm and luminous, NOT dark, NOT moody, NOT low-key.
+Shallow depth of field.
+The main subject sits in the upper two-thirds of the frame.
+Do NOT artificially darken the bottom of the image — keep the whole frame evenly and
+naturally lit.
+No human faces visible.
+Absolutely NO text, NO letters, NO numbers, NO watermark, NO logos, NO brand names.
+
+  ★ 밝게 뽑는다. 어둡게 하는 건 엔진의 `.imghook .scrim` 그라데이션이 이미 한다.
+  ★ 9:16 필수. 다른 비율이면 릴스 전면커버에서 좌우가 잘리고 imgpos가 안 먹는다.
+  ★ 컷마다 새 채팅. 한 채팅에서 3컷째부터 40초 → 6~7분으로 느려진다.
+  ★ 받은 뒤 `_dewatermark.py`로 우하단 반짝이를 지운다.
+
+────────────────────────────────
+57 아역·미성년 출연자 촬영 시간
+────────────────────────────────
+파일명:  아트/아역_해질녘빈의자.png
+An outdoor film set at golden hour. A small child-sized folding director's chair stands
+empty in the foreground with a soft blanket draped over its back. Behind it, a tall film
+light on a stand is switched on, glowing warmly against a bright amber evening sky.
+Nobody is present. The chair's canvas back is completely plain — no writing, no name,
+no markings. The empty ground fills the lower third.
+
+  왜 이 컷 — "밤이 오는데 아이 자리는 아직 비워지지 않았다"를 사람 없이 말한다.
+  ★ 의자 등받이에 이름이 잘 생긴다. "completely plain"을 반드시 유지.
+  ★ 밤으로 가면 어두워져 글자가 죽는다. 반드시 **황혼(golden hour)**으로 밝기를 확보.
+
+────────────────────────────────
+58 제3자 손해배상 (남을 다치게 / 물건을 부쉈을 때)
+────────────────────────────────
+파일명:  아트/제3자배상_인도위삼각대.png
+A heavy camera tripod standing on a city sidewalk in bright midday light, its three legs
+spread wide across the walking path. A cable runs along the pavement beside it. In the
+soft-focus background, the legs and feet of pedestrians walk past — no faces, no upper
+bodies visible. The bright paving stones fill the lower third.
+
+  왜 이 컷 — 이 편의 사고는 '내 장비'와 '지나가던 사람'이 만나는 지점에서 난다.
+  삼각대 다리가 보행 동선을 가로지르는 구도 자체가 위험을 보여준다.
+  ★ 30(박살난 카메라)과 겹치지 않게 파손이 아니라 **사고 직전**으로 간다.
+  ★ 얼굴이 들어가면 규칙 위반. 다리·발만.
+
+────────────────────────────────
+59 경력(참여작) 증명
+────────────────────────────────
+파일명:  아트/경력증명_빈스태프패스.png
+Several film crew lanyards with blank plastic ID card holders hanging side by side on
+metal hooks against a bright white wall, lit by soft daylight. Every card inside the
+holders is completely blank — plain white plastic with no photo, no writing, no numbers,
+no logos. The lanyard straps are plain solid colours with no printing. The bright wall
+fills the lower third.
+
+  왜 이 컷 — 현장마다 받는 패스는 쌓이는데 정작 '내가 그 현장에 있었다'는 증명은
+  남지 않는다. 빈 카드가 그 공백이다.
+  ★ 카드와 끈에 글자가 가장 잘 생긴다. blank·no printing을 두 번 강조할 것.
+  ★ 43(빈 인화물)과 소재가 겹치지 않게 종이가 아니라 패스로 잡았다.
+
+────────────────────────────────
+60 계약서, 도장과 서명
+────────────────────────────────
+파일명:  아트/도장과서명_인주와만년필.png
+A small round red ink pad with its lid open and a plain wooden name stamp lying beside
+it on a bright wooden desk, next to a fountain pen and a stack of plain white paper.
+Soft morning window light from the side, shallow depth of field. The paper is completely
+blank and the stamp face is not visible. The bright desk surface fills the lower third.
+
+  왜 이 컷 — 도장과 펜을 나란히 놓는 것이 이 편의 주제(도장이냐 서명이냐)다.
+  ★ 도장 면이 보이면 글자가 생긴다. "stamp face is not visible" 유지.
+  ★ 51(돋보기와 서류)과 구도가 겹치므로 돋보기·서류더미 중심 구도는 피한다.
+
+────────────────────────────────
+61 밥차 앞에서 알 수 있는 현장의 상태
+────────────────────────────────
+파일명:  아트/밥차_쌓인식판.png
+A stack of stainless steel meal trays and a ladle resting on a folding table beside a
+catering truck at an outdoor film location, in bright midday sunlight. Steam rises faintly
+from a large pot. Nobody is in frame. The truck's side panel is plain and unmarked — no
+writing, no logo. The bright table surface fills the lower third.
+
+  왜 이 컷 — 이 편은 법 덱이 아니라 **공감 편**이라 커버도 결이 다르다.
+  차갑고 개념적인 정물이 아니라 온기가 도는 생활 컷으로 간다.
+  ★ 밥차 옆면에 상호가 잘 생긴다. "plain and unmarked" 유지.
+  ★ 이 한 장만 톤이 달라도 된다. 필러가 다르다.
+
+────────────────────────────────
+62 해외 촬영, 장비 들고 나갈 때
+────────────────────────────────
+파일명:  아트/해외촬영_공항카트장비케이스.png
+Three black hard equipment cases stacked on an airport luggage cart, standing in a bright
+terminal hall with tall windows and daylight flooding in from behind. The cases are plain
+matte black with metal latches and no stickers, no labels, no writing of any kind. Out of
+focus in the background, a wide empty departure hall. The bright polished floor fills the
+lower third.
+
+  왜 이 컷 — 국경 앞에 멈춰 선 장비가 이 편의 출발점이다.
+  ★ 케이스에는 항공사 태그·스티커가 잘 생긴다. no stickers, no labels를 유지.
+  ★ 역광이 강하면 아래가 날아간다. 케이스가 실루엣이 되지 않게 "daylight from behind"
+    수준까지만.
+
+────────────────────────────────
+63 검수가 안 끝난다며 대금을 안 준다
+────────────────────────────────
+파일명:  아트/검수지연_식은커피와꺼진모니터.png
+An editing desk by a bright window in the late morning. A wide computer monitor is
+switched off, its screen a plain dark grey with nothing on it. A mug of coffee with a
+cold, filmed-over surface sits beside the keyboard. Dust floats in the daylight. Nobody is
+present. The bright desk surface fills the lower third.
+
+  왜 이 컷 — 넘긴 뒤 멈춰 있는 시간. 식은 커피가 '얼마나 오래 기다렸나'를 말한다.
+  ★ 모니터가 켜져 있으면 화면에 글자·UI가 생긴다. 반드시 **꺼진 상태**로.
+  ★ 달력·시계를 넣지 말 것. 숫자가 생긴다.
+
+────────────────────────────────
+64 영상저작물 특례 (제100조)
+────────────────────────────────
+파일명:  아트/저작권100조_빈슬레이트와열쇠.png
+A wooden film clapperboard lying closed and flat on a bright table, with a single small
+brass key resting on top of it. Soft daylight from a window, shallow depth of field. The
+clapperboard's face is completely blank — plain white and black stripes only, with no
+writing, no numbers, no chalk marks of any kind. The bright table surface fills the
+lower third.
+
+  왜 이 컷 — 슬레이트는 '내가 찍었다'의 상징이고, 그 위의 열쇠는 '그 권리를 누가
+  쥐고 있나'다. 두 물건을 겹쳐 이 편의 질문을 한 장으로 만든다.
+  ★ 슬레이트에는 반드시 글자·분필 자국이 생긴다. blank를 세 번 강조했다.
+    그래도 생기면 다시 뽑는다. 슬레이트에 글자가 남으면 `full` 커버를 못 쓴다.
+
+────────────────────────────────
+[2026-09-02 작업 기록 — 다음에 뽑을 때 읽을 것]
+────────────────────────────────
+8장 전부 생성·수령 완료. 1536x2752(9:16), 워터마크 제거까지 끝.
+
+★ 다운로드 방법이 바뀌었다.
+· 8/19부터 걸려 있던 크롬 차단이 **이날 대부분 풀려 있었다.** 라이트박스나 채팅의
+  '원본 크기 이미지 다운로드' 버튼을 누르면 그냥 Downloads에 떨어진다(6장이 이 방식).
+· 다만 **여러 장을 연속으로 받으면 중간에 다시 안 떨어진다**(63·64에서 발생).
+  그때는 [[gemini-download-bypass]]의 blob 앵커 우회가 여전히 그대로 동작한다.
+· 파일명은 `Gemini_Generated_Image_*.png`로 떨어진다. **Downloads의 옛 파일과
+  헷갈리기 쉬우니 반드시 LastWriteTime으로 확인하고 옮길 것.**
+
+★ 전송(제출)이 제일 애를 먹였다.
+· 좌표 클릭은 툴팁만 뜨고 자주 안 먹는다. 두 번 눌러야 갈 때가 많았다.
+· **가장 확실한 방법 = JS로 `button[aria-label="메시지 보내기"]`를 click().**
+· 프롬프트에 **빈 줄(\n\n)이 있으면 execCommand insertText가 중간에서 잘린다.**
+  실제로 63에서 앞 문단만 들어가 엉뚱한 그림(카페의 여성)이 나왔다.
+  → **한 문단으로 이어 쓰고 "Scene:"으로 장면을 구분할 것.** 이렇게 바꾼 뒤로는 안 잘렸다.
+· 입력 후 `box.dispatchEvent(new InputEvent('input',{bubbles:true}))`를 꼭 넣는다.
+  안 넣으면 전송 화살표가 활성화되지 않고 마이크 아이콘이 그대로 남는다.
+
+★ 61(밥차)은 한 번 다시 뽑았다.
+  첫 컷은 밥차 옆판만 크게 나오고 식판이 안 보였다. "make the trays the clear main
+  subject in close-up, the truck only a soft out-of-focus shape far behind"로 다시 요청하니
+  바로 나왔다. **주인공을 명시하지 않으면 배경 구조물이 화면을 먹는다.**
+
+[덱에 적용한 imgpos]
+57 center 34% / 58 center 30% / 59 center 30% / 60 center 34%
+61 center 36% / 62 center 34% / 63 center 32% / 64 center 34%
