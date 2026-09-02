@@ -92,14 +92,18 @@ only raw scratches and gouges. Rough texture, dust, one fingertip entering frame
 the right edge. Close-up, wall fills the frame.
 → ★앵커 불필요. 글자·숫자가 하나라도 보이면 다시 생성할 것.
 
-[06 · 과거] ep3_06_past.png
-Night, beside a catering truck at the edge of the set. The woman in her early 30s
-(민아 reference) sits on a folding chair in profile, holding a paper cup with both
-hands, looking down at it rather than at the camera. The young woman (reference) sits
-beside her, slightly behind, out of focus, listening. Warm light from the catering
-truck on one side, cold blue night on the other. Medium shot, weighted toward 민아,
-lower third kept simple.
-→ ★지현·민아 앵커 둘 다 업로드.
+[06 · 추적] ep3_06_trace.png  ★2026-09-02 신설 — 이 편의 심장
+Night, a cramped one-room apartment. The young woman (지현 reference) sits on the floor at a
+low table, a phone pressed to her ear with one shoulder, her free hand flat on a spread-out
+stack of old crew call sheets. The papers are COMPLETELY BLANK - plain pale sheets with faint
+grey ruled lines only, absolutely no letters, no numbers, no handwriting. A cheap desk lamp
+is the only light; the rest of the room is dark. Her expression is focused and awake, not
+sad - she is working, not grieving. Medium shot from slightly above, upper-left area kept
+open for the speech bubble, bottom simple.
+→ 지현 앵커 업로드. ★종이에 글자·숫자가 보이면 재생성.
+  ※ 이 컷이 종전 ep3_06_past(민아 옆모습, 밥차 옆)를 대체한다. 대본을 '추적' 구조로
+    바꾸면서 민아가 설명해주는 컷이 필요 없어졌고, 대신 지현이 스스로 움직이는 컷이
+    필요해졌다. 옛 그림은 _art/ep3_06_past.png로 남아 있다(재사용 안 함).
 
 [07 · 떠남] ep3_07_leaving.png  ★가해자 얼굴 정면 (이 편의 결정타)
 Early morning, film set wrap. The man in his early forties (senior reference) is walking
