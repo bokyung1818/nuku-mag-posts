@@ -1,0 +1,144 @@
+■ 시리즈2 「그 사람 조심해」 4편 ‘그래서’(완결) — 그림 프롬프트팩 (8컷)
+   생성처: Gemini (나노바나나) / 저장: 22_웹툰_사연2_돌려막기\_art\
+   ※ 한글 대사는 그림에 넣지 않고 HTML 오버레이로 얹는다. 그림엔 글자 0개.
+   ※ 1~3편 프롬프트팩과 동일 규칙. 달라진 건 컷 내용뿐.
+
+────────────────────────────────
+0. 공통 규칙 (모든 프롬프트에 붙임)
+────────────────────────────────
+[STYLE]
+Korean webtoon (manhwa) illustration, clean line art, soft cel shading,
+cinematic film-set lighting, muted realistic palette, vertical 4:5 composition.
+
+[HARD RULES — 매번 붙일 것]
+- ABSOLUTELY NO text, letters, numbers, words, signage, or writing ANYWHERE
+  in the image — including ID badges, lanyards, call sheets, clipboards,
+  phone screens, truck panels, boxes, and clothing prints.
+  Leave all such surfaces BLANK.
+- No speech bubbles, no captions, no watermark.
+- Keep the TOP 15% and BOTTOM 25% visually simple (사람 얼굴·중요 요소 배치 금지)
+  → 말풍선·나레이션 박스 자리.
+
+[캐릭터 앵커 — 매번 레퍼런스 업로드]
+- 지현(주인공)  : _art/s2_protagonist_v1.png
+- 민아(세컨드)  : _art/s2_minah_v1.png
+- 그 선배(가해)  : _art/s2_senior_v1.png
+  ★2026-08-19 사용자 결정으로 **얼굴을 보여준다.** (기존 '얼굴 절대 안 보임' 규칙 폐기)
+  40대 초반 남성, 야구모자를 뒤로 눌러 씀, 허리에 무전기, 짙은 카키 야상,
+  목에 건 명찰(글자 없음). **웃을 때 입만 웃고 눈은 안 웃는 인상**이 이 캐릭터의 핵심.
+  → 이중성(위에는 살살, 아래에는 험하게)이 이 시리즈의 동력이고, 그건 표정 대비로만 표현된다.
+  ※ 남은 안전장치: 실명·작품명·회사 로고 없음, 실존 감독·PD를 연상시키는
+    특징 조합(특정 안경+수염+헤어 조합 등) 피하기, 캡션에 '재구성' 표기 유지.
+
+
+★ 이 편의 새 인물 — '새 막내'
+  06·07·08컷에 연속으로 나오는 신입 스태프는 기존 앵커가 없다.
+  → **06컷을 먼저 생성해 마음에 드는 것을 고른 뒤, 그 이미지를 07·08 생성 때
+    레퍼런스로 함께 업로드**해야 얼굴이 유지된다. (지현 앵커와 같이 올릴 것)
+  → 새 막내는 20대 초반, 헐렁한 작업용 셔츠, 목에 건 명찰(글자 없음),
+    아직 현장 물건이 손에 익지 않은 자세. 지현과 확실히 다른 인상으로.
+
+★ 톤 지침
+  이 편은 어두운 톤에서 서서히 밝아진다. 01~04는 여전히 밤·창고의 차가운 빛,
+  05부터 사람 사이의 온기(밥차 조명), 06~08은 아침 빛으로 간다.
+  마지막 컷은 시리즈 전체에서 유일하게 '따뜻한' 컷이어야 한다.
+
+[저장 파일명]
+  ep4_01_cover.png / ep4_02_pack.png   / ep4_03_choice.png / ep4_04_wall.png
+  ep4_05_talk.png  / ep4_06_newbie.png / ep4_07_ask.png    / ep4_08_end.png
+
+────────────────────────────────
+1. 컷별 프롬프트
+────────────────────────────────
+
+[01 · 표지] ep4_01_cover.png
+Pre-dawn film set. The young woman (reference) stands facing camera straight on for
+the first time in the series, hands in her hoodie pocket, chin slightly up, tired but
+steady — no longer flinching. Behind her the set is being built: silhouetted crew,
+stands going up, a truck with its rear doors open. Cold blue dawn with the first warm
+light on the horizon behind her. Medium shot, her face in the middle band, generous
+empty sky above and ground below.
+→ 지현 앵커 업로드. 상·하단 여백 넉넉히(제목 들어감).
+
+[02 · 짐] ep4_02_pack.png
+Close-up, night, a cramped room. A half-packed duffel bag on a bed seen from above:
+folded clothes, a coiled cable, work gloves, a headlamp. Two hands (the young woman's,
+same skin tone and sleeve as reference) rest motionless on the edge of the open bag —
+paused mid-packing. No face in frame. Single warm lamp from the left, everything else
+dark. Overhead close shot, upper area of the frame dark and simple.
+→ 앵커 업로드(손·소매 톤 유지용). 얼굴 안 나와도 됨.
+
+[03 · 선택] ep4_03_choice.png
+Night, two folding chairs beside a catering truck. The woman in her early 30s (민아
+reference) sits at LEFT turned toward the young woman (reference) at RIGHT, one elbow
+on her knee, speaking plainly. The young woman is leaning forward, forearms on her
+knees, looking at the ground, listening hard. Paper cups on an upturned crate between
+them. Warm light from the truck on their faces, cold night behind. Medium two-shot,
+both faces visible, bottom kept simple.
+→ ★지현·민아 앵커 둘 다 업로드.
+
+[04 · 벽] ep4_04_wall.png
+Interior equipment storage room, dim. The young woman (reference) stands facing the
+bare concrete wall, seen from behind and slightly to the side so her profile is just
+visible. Her palm rests flat on the wall over a cluster of old SCRATCH MARKS — short
+gouged strokes, absolutely NO letters or numbers. She is not adding to them; her
+other hand hangs at her side, empty. A single hanging bulb above. Medium shot, quiet,
+still. Lower third simple.
+→ 지현 앵커 업로드. ★벽에 글자·숫자가 보이면 재생성.
+
+[05 · 사람에게] ep4_05_talk.png
+Night, beside the catering truck. The young woman (reference) stands at LEFT talking
+quietly to three crew members gathered close around her, all of them leaning in
+slightly, holding paper cups and lunch boxes. Their faces show recognition, not shock
+— the expression of people hearing something they already half knew. Warm practical
+light, the rest of the set dark behind. Medium-wide shot, the small circle of people
+is the subject. Keep the upper-left area open.
+→ 지현 앵커 업로드. 주변 스태프는 얼굴이 보여도 되나 특정 인상 강조 금지.
+
+[06 · 새 막내] ep4_06_newbie.png  ★이 컷을 먼저 확정할 것
+Morning, a different film set. A young man or woman in their early twenties (NEW
+character, not the reference) stands alone near a stack of road cases holding a blank
+clipboard against their chest, looking around uncertainly, shoulders slightly raised —
+visibly new. Loose work shirt, blank lanyard badge, clean shoes that do not belong on
+a set yet. Crew moving briskly past them, blurred. Bright flat morning light.
+Medium shot, face clearly visible and well lit, bottom area simple.
+→ ★앵커 없이 생성. 여기서 고른 이미지를 07·08의 레퍼런스로 재사용한다.
+
+[07 · 묻는다] ep4_07_ask.png  ★수미상관 컷
+Same morning set. The young woman (reference) has stepped up beside the new crew
+member (use the ep4_06 image as reference for this person), close and slightly turned
+toward them, speaking low with a calm, careful expression — the same posture 민아 had
+in episode 1. The new person turns their head toward her, surprised. Equipment truck
+and crew behind, out of focus. Medium two-shot, both faces visible, upper-left area
+kept open for the speech bubble.
+→ ★지현 앵커 + ep4_06에서 만든 새 막내 이미지, 둘 다 업로드.
+
+[08 · 마무리] ep4_08_end.png  ★완결 · 시리즈에서 유일하게 따뜻한 컷
+Morning, the two of them walking away from camera side by side into the set, seen
+from behind — the young woman (reference) and the new crew member (ep4_06 reference),
+shoulders relaxed, the new person carrying a case with her showing them how to hold
+it. Warm low morning sun ahead of them, long soft shadows behind. Other crew working
+around, ordinary and calm. Wide shot, plenty of open space at the bottom for the
+closing line. Hopeful, unforced.
+→ ★지현 앵커 + 새 막내 이미지 둘 다 업로드. 하단 여백 크게.
+
+────────────────────────────────
+2. 생성 후 할 일
+────────────────────────────────
+① 제미나이 우하단 워터마크 제거 — python _작업스크립트/_dewatermark.py
+   (좌표는 항상 같음. 다운로드 폴더에 옛 파일이 섞여 있는지 먼저 확인할 것)
+② _art/ 에 위 파일명 그대로 저장
+③ 대사 오버레이 렌더 — python _작업스크립트/_gen_webtoon2_ep4.py
+   (대본은 이미 스크립트 안에 들어 있음. 그림만 채우면 바로 돌아간다)
+④ 결과: 22_웹툰_사연2_돌려막기/인스타_업로드/4편_그래서/01~08.png + card01~08.png + caption.txt
+
+────────────────────────────────
+3. 안전장치 점검 (발행 전)
+────────────────────────────────
+· 가해 인물의 표정이 '웃는 얼굴 / 굳은 얼굴' 대비로 읽히는가
+· 4컷 벽에 글자·숫자가 하나도 없는가
+· 새 막내의 얼굴이 06·07·08에서 같은 사람으로 보이는가
+· 특정 작품·회사·실명을 연상시키는 요소가 없는가 (로고·간판·차량 표기 전부 백지)
+· 마지막 컷이 '복수·고발'이 아니라 '다음 사람이 미리 알 수 있게'로 읽히는가
+· 캡션에 "실제 사연을 바탕으로 재구성. 특정 인물·작품·회사와 무관" 표기했는가
+· 완결편 캡션에만 소프트 CTA(익명 제보 · 프로필 링크)를 넣었는가 — 중간 편에는 넣지 않는다

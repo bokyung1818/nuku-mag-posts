@@ -1,0 +1,138 @@
+■ 시리즈2 「그 사람 조심해」 3편 ‘알고 있었다’ — 그림 프롬프트팩 (8컷)
+   생성처: Gemini (나노바나나) / 저장: 22_웹툰_사연2_돌려막기\_art\
+   ※ 한글 대사는 그림에 넣지 않고 HTML 오버레이로 얹는다. 그림엔 글자 0개.
+   ※ 1·2편 프롬프트팩과 동일 규칙. 달라진 건 컷 내용뿐.
+   ※ 이 편은 원 로드맵의 3편 「알고 있었다」 + 4편 「나만이 아니었다」를 합친 것이다.
+      (2026-08-19 총 4편 구성으로 확정)
+
+────────────────────────────────
+0. 공통 규칙 (모든 프롬프트에 붙임)
+────────────────────────────────
+[STYLE]
+Korean webtoon (manhwa) illustration, clean line art, soft cel shading,
+cinematic film-set lighting, muted realistic palette, vertical 4:5 composition.
+
+[HARD RULES — 매번 붙일 것]
+- ABSOLUTELY NO text, letters, numbers, words, signage, or writing ANYWHERE
+  in the image — including ID badges, lanyards, call sheets, clipboards,
+  phone screens, truck panels, boxes, and clothing prints.
+  Leave all such surfaces BLANK.
+- No speech bubbles, no captions, no watermark.
+- Keep the TOP 15% and BOTTOM 25% visually simple (사람 얼굴·중요 요소 배치 금지)
+  → 말풍선·나레이션 박스 자리.
+
+[캐릭터 앵커 — 매번 레퍼런스 업로드]
+- 지현(주인공)  : _art/s2_protagonist_v1.png
+  검은 단발, 뿔테 안경, 네이비 후드, 갈색 크로스백, 목걸이 명찰(글자 없음), 20대 중반.
+- 민아(세컨드)  : _art/s2_minah_v1.png
+  30대 초반, 짧은 포니테일, 안경 없음, 오버사이즈 검정 필드재킷, 허리에 무전기.
+- 그 선배(가해)  : _art/s2_senior_v1.png
+  ★2026-08-19 사용자 결정으로 **얼굴을 보여준다.** (기존 '얼굴 절대 안 보임' 규칙 폐기)
+  40대 초반 남성, 야구모자를 뒤로 눌러 씀, 허리에 무전기, 짙은 카키 야상,
+  목에 건 명찰(글자 없음). **웃을 때 입만 웃고 눈은 안 웃는 인상**이 이 캐릭터의 핵심.
+  → 이중성(위에는 살살, 아래에는 험하게)이 이 시리즈의 동력이고, 그건 표정 대비로만 표현된다.
+  ※ 남은 안전장치: 실명·작품명·회사 로고 없음, 실존 감독·PD를 연상시키는
+    특징 조합(특정 안경+수염+헤어 조합 등) 피하기, 캡션에 '재구성' 표기 유지.
+
+
+★ 이 편의 추가 주의 — 벽의 자국
+  4컷·5컷에 나오는 '먼저 있었던 사람들의 흔적'은 **글자·날짜·낙서가 아니라
+  손톱이나 공구로 긁은 자국(tally-like scratch marks)**이다.
+  그림 규칙상 글자를 넣을 수 없기도 하고, 글자가 없어야 어느 나라·어느 현장인지
+  특정되지 않아 더 안전하다. 대사도 그 전제로 쓰여 있다.
+
+[저장 파일명]
+  ep3_01_cover.png / ep3_02_talk.png    / ep3_03_reason.png  / ep3_04_storage.png
+  ep3_05_marks.png / ep3_06_past.png    / ep3_07_leaving.png / ep3_08_next.png
+
+────────────────────────────────
+1. 컷별 프롬프트
+────────────────────────────────
+
+[01 · 표지] ep3_01_cover.png
+Interior of a dark equipment storage room on a film set. A young woman (reference)
+stands with her back to camera in the middle of the room, small in frame, facing a
+wall of shelves stacked with road cases and light stands. A hard blade of light from
+the half-open door cuts across the floor toward her. Dust in the air. Everything
+else in deep shadow. Wide shot, large dark empty area at the top and bottom.
+→ 지현 앵커 업로드. 상·하단 여백 넉넉히(제목 들어감).
+
+[02 · 민아와] ep3_02_talk.png
+Night exterior beside a parked equipment truck. The woman in her early 30s (민아
+reference) stands at LEFT leaning against the truck, arms folded, radio at her waist.
+The young woman (reference) stands at RIGHT facing her, hands in her hoodie pocket,
+shoulders tense. They are close but not looking straight at each other. A single
+work light from above, breath faintly visible in the cold. Medium two-shot,
+both faces visible, clear open space at the top and bottom.
+→ ★지현·민아 앵커 둘 다 업로드.
+
+[03 · 이유] ep3_03_reason.png
+Tighter shot of the woman in her early 30s (민아 reference), night, same location.
+She is looking slightly off camera, mouth set, an expression that is not angry but
+resigned — the face of someone repeating something they have said before. Shallow
+depth of field, the truck and set lights blurred behind her. Chest-up shot,
+her face in the lower-middle third, generous empty space above her head.
+→ 민아 앵커 업로드.
+
+[04 · 창고] ep3_04_storage.png
+Interior equipment storage room, dim. The young woman (reference) crouches beside a
+metal shelving unit she has just pushed aside, one hand on the shelf frame, leaning
+in to look at the bare concrete wall behind it. Her phone is in her other hand used
+as a flashlight, its beam hitting the wall (SCREEN NOT VISIBLE). Her face is lit
+from below by the beam, curious and slightly unsettled. Medium shot from the side.
+→ 지현 앵커 업로드. 휴대폰 화면 노출 금지.
+
+[05 · 자국들] ep3_05_marks.png  ★이 편의 핵심 컷
+Extreme close-up of a bare concrete wall in a dark storage room, raked by a narrow
+flashlight beam from the left. Across the wall are SCRATCH MARKS gouged into the
+surface — short vertical strokes grouped in several separate clusters, some old and
+worn smooth, some fresh and pale. The clusters are clearly made by different hands
+at different times. ABSOLUTELY NO letters, numbers, dates, or writing of any kind —
+only raw scratches and gouges. Rough texture, dust, one fingertip entering frame at
+the right edge. Close-up, wall fills the frame.
+→ ★앵커 불필요. 글자·숫자가 하나라도 보이면 다시 생성할 것.
+
+[06 · 과거] ep3_06_past.png
+Night, beside a catering truck at the edge of the set. The woman in her early 30s
+(민아 reference) sits on a folding chair in profile, holding a paper cup with both
+hands, looking down at it rather than at the camera. The young woman (reference) sits
+beside her, slightly behind, out of focus, listening. Warm light from the catering
+truck on one side, cold blue night on the other. Medium shot, weighted toward 민아,
+lower third kept simple.
+→ ★지현·민아 앵커 둘 다 업로드.
+
+[07 · 떠남] ep3_07_leaving.png  ★가해자 얼굴 정면 (이 편의 결정타)
+Early morning, film set wrap. The man in his early forties (senior reference) is walking
+toward a waiting van but has turned back over his shoulder toward camera, one hand raised
+in a casual, cheerful goodbye — his face CLEARLY VISIBLE, smiling the same friendly mouth
+with flat eyes. A duffel over one shoulder. In the background crew members load road
+cases; none of them look up at him. Cold pale dawn light, long shadows. Medium-wide shot,
+his face in the upper-middle band, empty ground at the bottom.
+→ ★가해자 앵커 A(웃는 버전) 업로드. 이 컷에서 독자가 얼굴을 확실히 기억하게 만든다.
+
+[08 · 다음] ep3_08_next.png  ★클리프행어
+The same film set location, now empty after wrap. The young woman (reference) stands
+alone near the middle of the frame, small, holding a coiled cable, looking off toward
+where the van left. Bare stands, taped cable runs and a few abandoned road cases
+around her. Flat grey morning light, no other people. Wide shot with a very large
+open area at the bottom for the cliffhanger line.
+→ 지현 앵커 업로드. 하단 여백 크게.
+
+────────────────────────────────
+2. 생성 후 할 일
+────────────────────────────────
+① 제미나이 우하단 워터마크 제거 — python _작업스크립트/_dewatermark.py
+   (좌표는 항상 같음. 다운로드 폴더에 옛 파일이 섞여 있는지 먼저 확인할 것)
+② _art/ 에 위 파일명 그대로 저장
+③ 대사 오버레이 렌더 — python _작업스크립트/_gen_webtoon2_ep3.py
+   (대본은 이미 스크립트 안에 들어 있음. 그림만 채우면 바로 돌아간다)
+④ 결과: 22_웹툰_사연2_돌려막기/인스타_업로드/3편_알고있었다/01~08.png + card01~08.png + caption.txt
+
+────────────────────────────────
+3. 안전장치 점검 (발행 전)
+────────────────────────────────
+· 가해 인물의 얼굴이 편마다 같은 사람으로 보이는가 (앵커 재사용했는가)
+· 5컷 벽에 글자·숫자·날짜가 하나도 없는가 (있으면 재생성)
+· 특정 작품·회사·실명을 연상시키는 요소가 없는가 (로고·간판·차량 표기 전부 백지)
+· 톤이 '고발·조리돌림'이 아니라 '이런 구조가 있다 + 당신 잘못 아니다'인가
+· 캡션에 "실제 사연을 바탕으로 재구성. 특정 인물·작품·회사와 무관" 표기했는가

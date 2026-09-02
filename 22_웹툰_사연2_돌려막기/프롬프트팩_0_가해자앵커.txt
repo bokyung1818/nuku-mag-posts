@@ -1,0 +1,27 @@
+■ 시리즈2 「그 사람 조심해」 — '그 선배'(가해) 캐릭터 앵커 2장
+   생성처: Gemini / 저장: _art\s2_senior_v1.png (웃는 버전), s2_senior_v2.png (굳은 버전)
+   ※ 2026-08-19 결정: 가해자 얼굴을 보여준다. 이중성(웃음↔냉담)이 이 시리즈의 동력이다.
+
+[공통]
+Korean webtoon (manhwa) character reference sheet, single character, clean line art,
+soft cel shading, muted realistic palette, plain neutral grey background,
+waist-up, facing camera. NO text, letters, numbers or writing anywhere.
+
+[A · 웃는 버전] s2_senior_v1.png
+A Korean man in his early forties on a film set. Baseball cap pushed back on his head,
+dark khaki field jacket, a two-way radio on his belt, a blank lanyard badge.
+He is smiling warmly and openly at someone above his own rank - but his eyes are not
+smiling; they stay flat and measuring. Friendly mouth, cold eyes. Ordinary-looking,
+not handsome, not a villain caricature. Waist-up, plain grey background.
+
+[B · 굳은 버전] s2_senior_v2.png
+The SAME man (use image A as reference), same cap, same jacket, same radio.
+Now his face is hard and impatient - jaw set, chin slightly down, looking at someone
+below his own rank. Not shouting, not cartoonishly angry: the flat contempt of someone
+who knows nothing will happen to him. Waist-up, plain grey background.
+→ A를 레퍼런스로 올려서 같은 인물로 유지할 것.
+
+[안전장치]
+· 실존 감독·PD를 연상시키는 특징 조합(특정 안경+수염+헤어) 피하기
+· 로고·간판·명찰 글자 전부 백지
+· 악당 캐리커처로 만들지 않는다. '어디서나 본 평범한 얼굴'이 더 무섭고 더 공감된다

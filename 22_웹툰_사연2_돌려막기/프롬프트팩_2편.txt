@@ -24,9 +24,14 @@ cinematic film-set lighting, muted realistic palette, vertical 4:5 composition.
   검은 단발, 뿔테 안경, 네이비 후드, 갈색 크로스백, 목걸이 명찰(글자 없음), 20대 중반.
 - 민아(세컨드)  : _art/s2_minah_v1.png
   30대 초반, 짧은 포니테일, 안경 없음, 오버사이즈 검정 필드재킷, 허리에 무전기.
-- 그 선배(가해) : ★얼굴 절대 안 보임. 뒤통수·어깨선·그림자·프레임 밖만.
-                  2편에서도 이 규칙 유지. 얼굴이 보이는 순간 특정인 연상 위험이 생긴다.
-- 화장실 앞 스태프 2인 : 얼굴 안 보이게(뒷모습·기둥 뒤·실루엣). 앵커 불필요.
+- 그 선배(가해)  : _art/s2_senior_v1.png
+  ★2026-08-19 사용자 결정으로 **얼굴을 보여준다.** (기존 '얼굴 절대 안 보임' 규칙 폐기)
+  40대 초반 남성, 야구모자를 뒤로 눌러 씀, 허리에 무전기, 짙은 카키 야상,
+  목에 건 명찰(글자 없음). **웃을 때 입만 웃고 눈은 안 웃는 인상**이 이 캐릭터의 핵심.
+  → 이중성(위에는 살살, 아래에는 험하게)이 이 시리즈의 동력이고, 그건 표정 대비로만 표현된다.
+  ※ 남은 안전장치: 실명·작품명·회사 로고 없음, 실존 감독·PD를 연상시키는
+    특징 조합(특정 안경+수염+헤어 조합 등) 피하기, 캡션에 '재구성' 표기 유지.
+
 
 [저장 파일명]
   ep2_01_cover.png / ep2_02_rain.png    / ep2_03_scold.png  / ep2_04_silence.png
@@ -45,23 +50,26 @@ Isolated, tense mood. Wide shot, plenty of empty sky at the top and wet ground a
 the bottom.
 → 지현 앵커 업로드. 상·하단 여백 넉넉히(제목 들어감).
 
-[02 · 비] ep2_02_rain.png
-A young woman (reference) crouched on wet asphalt at night, holding an umbrella
-tilted to cover a stack of equipment cases rather than herself. Her shoulder and
-one side of her hair are soaked. Rain streaks lit by a single work light.
-Behind her, out of focus, a broad-shouldered figure seen ONLY FROM BEHIND walks
-away under his own umbrella. Medium shot, her face visible and lit, upper area open.
-→ 지현 앵커 업로드. ★뒷모습 인물의 얼굴 절대 노출 금지.
+[02 · 비 · 이중성 A] ep2_02_rain.png  ★이 편의 핵심 컷 (웃는 얼굴)
+Night exterior film set in the rain. FOREGROUND RIGHT: the young woman (지현 reference)
+crouches on wet asphalt, tilting a large umbrella to cover a stack of equipment cases
+rather than herself; her shoulder and one side of her hair are soaked. MIDGROUND LEFT,
+clearly visible and lit: the man in his early forties (senior reference) holds a second
+umbrella up over an older director figure beside him, body turned away from 지현,
+smiling broadly and warmly at the director — mouth smiling, eyes flat and measuring.
+His face must be CLEARLY VISIBLE. Rain streaks lit by a work light. Medium-wide shot;
+the gap between the sheltered pair and the soaked woman is the subject.
+→ ★지현 앵커 + 가해자 앵커 A(웃는 버전) 둘 다 업로드. 감독 인물은 앵커 불필요, 뒷모습/측면.
 
-[03 · 질책] ep2_03_scold.png
-Interior of a production tent at night. FOREGROUND LEFT, very close to camera:
-the back of a man's head and shoulder, out of focus, dominating the left third of
-the frame — his face is NEVER visible. He leans forward toward the young woman
-(reference) who stands at RIGHT, holding a blank clipboard against her chest,
-shoulders drawn in, eyes lowered. Harsh practical light from above. Two other crew
-members in the deep background pointedly look at their own hands.
-Medium shot. Keep top and bottom simple.
-→ 지현 앵커 업로드. ★가해자는 전경 실루엣으로만.
+[03 · 질책 · 이중성 B] ep2_03_scold.png  ★같은 얼굴, 굳은 표정 (10분 뒤)
+Interior of a production tent at night. The man in his early forties (senior reference,
+SAME face as cut 02) stands at LEFT leaning in toward the young woman (지현 reference)
+at RIGHT, his face CLEARLY VISIBLE and now hard and impatient — jaw set, chin down,
+flat contempt, not shouting. 지현 holds a blank clipboard against her chest, shoulders
+drawn in, eyes lowered. Harsh practical light from above. Two other crew members in the
+deep background pointedly look at their own hands. Medium two-shot, both faces visible.
+Keep top and bottom simple.
+→ ★지현 앵커 + 가해자 앵커 B(굳은 버전) 둘 다 업로드. 02컷과 같은 인물로 보여야 한다.
 
 [04 · 침묵] ep2_04_silence.png
 Interior production tent, immediately after. The young woman (reference) stands
@@ -120,7 +128,7 @@ cliffhanger line.
 ────────────────────────────────
 3. 안전장치 점검 (발행 전)
 ────────────────────────────────
-· 가해 인물의 얼굴이 어느 컷에서도 보이지 않는가
+· 가해 인물의 얼굴이 편마다 같은 사람으로 보이는가 (앵커 재사용했는가)
 · 특정 작품·회사·실명을 연상시키는 요소가 없는가 (로고·간판·차량 표기 전부 백지)
 · 톤이 '고발·조리돌림'이 아니라 '이런 구조가 있다 + 당신 잘못 아니다'인가
 · 캡션에 "실제 사연을 바탕으로 재구성. 특정 인물·작품·회사와 무관" 표기했는가
