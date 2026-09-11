@@ -1,0 +1,91 @@
+■ @nuku.mag 커버 컷 — 그림 프롬프트 팩 (제미나이/챗지피티용)
+  커버 형식 = A안(사진 전면 + 하단 글자). 이 팩은 그 "사진"을 주제별로 새로 뽑기 위한 것.
+  ※ 그림에 한글/영문 글자를 넣지 마세요. 제목은 나중에 엔진이 얹습니다.
+
+────────────────────────────────
+0. 어느 도구로
+────────────────────────────────
+· 제미나이(추천) — 이미지 모델이 나노바나나라 기존 웹툰 아트와 화풍이 거의 같음.
+  새 채팅 → 앵커 그림 업로드 → 아래 프롬프트 붙여넣기.
+· 클로드에게 "크롬으로 제미나이 열어서 이 프롬프트로 그려줘"라고 시켜도 됨
+  (Claude-in-Chrome, 최초 1회 크롬 확장 연결 + 제미나이 로그인 필요).
+
+────────────────────────────────
+1. 화풍 고정 (제일 중요)
+────────────────────────────────
+매번 아래 중 하나를 '레퍼런스로 업로드'하고 "이 그림체와 똑같이"라고 지시.
+· 화풍 앵커  →  ../21_웹툰_사연1_포폴/_art/ep2_bank.png  (얼굴 크게·어두운 톤, 커버에 가장 가까움)
+· 대안 앵커  →  ../21_웹툰_사연1_포폴/_art/p1.png
+
+★ 커버는 웹툰 연재와 달리 **인물을 고정하지 않아도 된다.**
+  주제에 맞는 사람(여성 촬영감독, 40대 PD, 20대 편집자 등)을 자유롭게 쓰되 **화풍만 통일**.
+  (웹툰 연재 컷은 기존대로 캐릭터 앵커 고정 — 그건 `21_웹툰_사연1_포폴/그림_프롬프트팩_제미나이.txt`)
+
+────────────────────────────────
+2. 공통 스타일 (모든 프롬프트 앞에 붙이기 / 영어 그대로)
+────────────────────────────────
+Match the uploaded image's art style exactly.
+Korean webtoon (manhwa) digital illustration, clean confident line art with soft cel shading,
+cinematic lighting, single vertical panel.
+[릴스용] aspect ratio 9:16 (vertical).   [카드뉴스용] aspect ratio 4:5 (vertical).
+
+★ 비율을 꼭 지정할 것. 3:4로 뽑으면 릴스(9:16) 전면커버에서 좌우가 잘리는데,
+  이때는 세로 위치 조정(imgpos)이 아예 먹지 않는다(높이 기준으로 스케일되기 때문).
+  즉 "위쪽을 더 보여줘" 같은 보정이 불가능해진다.
+Subject's face is LARGE and close to the frame — head and shoulders fill the upper two-thirds.
+The lower third of the image is visually simple and darker (empty wall, shadow, out-of-focus
+background) so that text can be placed over it.
+Overall dark, moody tone with one clear light source.
+Absolutely NO text, NO letters, NO numbers, NO speech bubbles, NO watermark, NO split panels.
+
+  왜 이렇게 쓰나
+  · 얼굴 크게 = 스크롤 멈추는 힘(썸네일이 작아서 전신샷은 아무것도 안 보임)
+  · 아래 1/3 단순·어둡게 = 제목 얹을 자리. 안 그러면 글자가 배경에 먹힘
+  · 어두운 톤 = 흰 글자가 확실히 읽힘. 밝은 그림은 B안(상하분할)에서나 쓸 것
+
+────────────────────────────────
+3. 감정 카탈로그 (주제에 맞는 걸 골라 붙이기)
+────────────────────────────────
+[놀람·당황]  wide eyes, slight sweat, mouth slightly open, staring at a phone screen that lights
+             the face from below — "이거 나도 해당돼?" 류 (세금·마감·규정)
+[막막함]     tired blank stare, slumped shoulders, dim desk lamp, papers scattered
+             — 돈 못 받음·단가·번아웃
+[분노·억울]  jaw clenched, brows down, gripping a phone or contract paper hard
+             — 갑질·매절·떼인 돈
+[안도·해결]  small relieved smile, shoulders dropping, warm light on the face
+             — 지원제도·환급·해결편
+[집중]       focused eyes lit by a monitor, hand on mouse or camera
+             — 실무 팁·장비·편집
+[의심]       one eyebrow raised, head slightly tilted, side-eye at a document
+             — 계약서 독소조항·"이 말 나오면 조심"
+
+────────────────────────────────
+4. 주제별 예시 (그대로 써도 됨)
+────────────────────────────────
+[세금·신고]   A young Korean freelancer sits at a cluttered desk at night, staring at a tax
+              document with wide anxious eyes; laptop glow lights the face from below;
+              calendar on the wall behind, out of focus.
+[돈 못 받음]  A tired Korean video editor in their late 20s stares at a banking app on a phone,
+              blank exhausted expression, dark room, single desk lamp.
+[계약서]      A Korean woman in her 30s reads a printed contract with a suspicious side-eye,
+              one eyebrow raised, pen in hand, office window light from the side.
+[현장·갑질]   A young Korean crew member on a film set holds coffee cups, forced smile,
+              stressed eyes; blurred crew and lighting equipment behind.
+[제도·지원금] A Korean freelancer in a hoodie exhales with a small relieved smile while looking
+              at a phone; warm morning light through a window.
+[주거·공고]   A young Korean adult looks up at an apartment building at dusk with a mix of hope
+              and worry; phone in hand showing a listing (screen not readable).
+
+  ※ 만들 때마다 3~4장 뽑아서 **가장 얼굴이 크고 감정이 분명한 것**을 고를 것.
+
+────────────────────────────────
+5. 받은 그림 처리
+────────────────────────────────
+1) `09_카드뉴스\_커버이미지\아트\` 에 저장. 이름은 주제 슬러그로: `tax_shock.png`, `unpaid_blank.png`
+   (재사용하려면 이름이 내용을 말해야 함. `image1.png` 금지)
+2) content.json / content_reel.json 커버 슬라이드에 경로 추가:
+     "img": "../_커버이미지/아트/tax_shock.png",
+     "imgpos": "center 22%"
+3) 굽고 나서 **얼굴이 잘렸으면 `imgpos`의 % 를 낮춘다**(위쪽을 더 보여줌).
+   제목이 얼굴을 너무 가리면 `"fitmax": 100` 처럼 낮춘다.
+4) 릴스는 `_그리드확인` 방식으로 4:5 크롭선 안에 글자가 들어왔는지 한 번 볼 것.

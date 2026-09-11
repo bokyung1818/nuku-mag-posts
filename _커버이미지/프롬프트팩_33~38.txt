@@ -1,0 +1,156 @@
+■ 커버 컷 프롬프트 — 33~38번 덱 (사진 톤) / 2026-08-03 개정
+
+  ※ 처음엔 `프롬프트팩_커버컷.txt`(웹툰 인물 초상)를 따라 만들었다가 전면 교체했다.
+    실제 발행 커버(29 폭염 / 30 렌탈장비 / 32 예술활동증명)는 전부 **사진 톤**이고
+    **사람 얼굴이 크게 나오지 않는다.**
+      · 29 폭염        — 아스팔트에 녹아내린 라바콘 (사물·상황 은유)
+      · 30 렌탈장비    — 바닥에 놓인 부서진 카메라 (사물)
+      · 32 예술활동증명 — 조명 만지는 스태프의 뒷모습 (얼굴 안 보임)
+    `프롬프트팩_커버컷.txt`의 "얼굴 크게 / 웹툰 화풍"은 21~28 웹툰 연재 아트 기준이라
+    커버에는 맞지 않는다. 커버는 이 파일을 쓴다.
+
+  ※ 웹툰 연재 컷(21·22·25·28·31)은 기존대로 캐릭터 앵커 고정 — 그건 별개 문서다.
+
+────────────────────────────────
+0. 어느 도구로
+────────────────────────────────
+· 제미나이(gemini.google.com) 새 채팅에 아래 프롬프트를 그대로 붙여넣으면 된다.
+  **사진 톤이라 레퍼런스 이미지 업로드가 필요 없다.** (웹툰 톤과 달리 화풍 앵커 불필요)
+· 클로드에게 "크롬으로 제미나이 열어서 이 프롬프트로 그려줘"라고 시켜도 된다.
+
+────────────────────────────────
+1. 공통 스타일 (모든 프롬프트 앞에 붙이기 / 영어 그대로)
+────────────────────────────────
+Photorealistic cinematic photograph. Aspect ratio 9:16 (vertical) — this is important.
+BRIGHT, airy, natural exposure — warm and luminous, NOT dark, NOT moody, NOT low-key.
+Shallow depth of field.
+The main subject sits in the upper two-thirds of the frame.
+Do NOT artificially darken the bottom of the image — keep the whole frame evenly and
+naturally lit.
+No human faces visible.
+Absolutely NO text, NO letters, NO numbers, NO watermark, NO logos, NO brand names.
+
+  ★ 밝기 규칙 (2026-08-03 개정) — 제일 자주 틀리는 부분
+    처음엔 "moody low-key / 아래 1/3을 어둡게"를 **사진 자체에** 요구했다가 전량 다시 뽑았다.
+    사용자 피드백: "밝은 화면에서 하단이 그라데이션으로 어둡게 가는 것도 괜찮은데,
+    너무 어두우니까."
+    → **어둡게 만드는 건 엔진이 이미 한다.** `_gen_reel.py`의 `.imghook .scrim`이
+      하단으로 갈수록 진해지는 그라데이션을 깔아준다:
+        0%  rgba(8,10,14,.55)   (상단 — 키커/상단바 가독용)
+        22% rgba(8,10,14,.08)   (여기가 제일 밝다)
+        52% rgba(8,10,14,.50)
+        86% rgba(8,10,14,.94)
+        100% rgba(8,10,14,.98)  (제목 자리 — 거의 검정)
+    → 그러니 **사진은 밝게 뽑는다.** 사진까지 어두우면 어둠 × 어둠 = 칙칙해진다.
+      제목 가독성은 그라데이션이 이미 보장한다.
+    → 단, 주제상 밤/실내가 맞는 컷(예: 상영관 내부)은 어두워도 된다. 억지로 밝히지 말 것.
+
+  왜 이렇게 쓰나
+  · 사진 톤 = 29·30·32와 결을 맞추기 위해. 웹툰 인물 초상은 커버에 안 쓴다.
+  · 얼굴 안 보이게 = AI 인물 특유의 어색함을 피하고, 사물·상황에 집중시킨다.
+  · 로고·브랜드명 금지 = 32번에서 조명기의 ARRI 로고를 지우느라 국소 블러를 써야 했다.
+  · **9:16 필수.** 3:4나 4:3으로 뽑으면 릴스 전면커버에서 좌우가 잘리고,
+    그 상태에선 imgpos 세로 조정이 아예 안 먹는다(높이 기준으로 스케일되기 때문).
+    ※ 30번 커버가 0.749 비율로 발행돼 있다. 앞으로는 맞출 것.
+
+────────────────────────────────
+33 드론촬영 — 신고와 허가
+────────────────────────────────
+파일명:  아트/드론_야간비행.png
+A single small quadcopter drone hovering low against a deep blue dusk sky over an open
+empty field, seen from slightly below. Its rotors are motion-blurred, its navigation
+lights glowing faint red and green. No operator visible. The horizon is low and dark,
+and the empty darkening sky fills the lower third of the frame.
+
+  왜 이 컷 — 훅이 "돈 받고 띄우면 무게 상관없이 신고"라 기체 자체가 주인공.
+  조종자를 넣으면 '사람 이야기'가 되는데 이 편은 규정 이야기다.
+
+
+────────────────────────────────
+34 크레딧 · 성명표시권
+────────────────────────────────
+파일명:  아트/크레딧_상영관.png
+A dark empty cinema auditorium photographed from the back row. The screen glows with the
+soft, heavily out-of-focus light of rolling end credits — the characters are completely
+illegible, only faint horizontal bands of pale light. Rows of empty dark seats recede
+toward the screen. The seats and dark floor fill the lower third.
+
+  왜 이 컷 — "크레딧이 올라가는데 내 이름이 없다"는 상황 그 자체.
+  글자가 읽히면 안 되므로 "completely illegible, bands of light"를 반드시 유지할 것.
+
+
+────────────────────────────────
+35 산재신청 · 사업주 날인
+────────────────────────────────
+파일명:  아트/산재_붕대와장비.png
+A film set at night after wrap. On the lid of a black hard equipment case lie a partly
+unrolled white gauze bandage and a pair of worn work gloves, lit by a single warm
+practical lamp from the side. Cables and a folded light stand sit out of focus in the
+background. Dark concrete floor fills the lower third.
+
+  왜 이 컷 — 다친 사람을 직접 보여주지 않고 흔적으로 말한다.
+  상처·피를 묘사하면 플랫폼 제재 위험이 있어 붕대와 장갑으로만.
+
+
+────────────────────────────────
+36 국민연금 납부예외
+────────────────────────────────
+파일명:  아트/국민연금_미개봉고지서.png
+A plain unopened white official envelope wedged halfway into a worn metal mailbox slot
+at dusk, shallow depth of field. The envelope is completely blank with no writing,
+stamps or markings. Cool blue evening light from one side. A dark textured wall fills
+the lower third.
+
+  왜 이 컷 — "고지서가 왔는데 열지 않은 채 두었다"가 이 편의 감정.
+  봉투에 글자가 들어가면 안 되니 "completely blank"를 반드시 유지.
+
+
+────────────────────────────────
+37 종합소득세 중간예납
+────────────────────────────────
+파일명:  아트/중간예납_봉투와계산기.png
+A plain white official envelope and a small worn desk calculator on a dark wooden desk,
+lit by a single warm desk lamp from the side on a late autumn evening. The envelope is
+blank with no writing or numbers; the calculator display is dark and empty. A pen rests
+beside them. The dark desk surface fills the lower third.
+
+  왜 이 컷 — 11월 고지서. 계산기를 넣어 "다시 계산해 볼 수 있다"는 이 편의 실익을 암시.
+  계산기 화면에 숫자가 뜨면 글자 금지 규칙에 걸리니 "display is dark and empty".
+
+
+────────────────────────────────
+38 촬영현장 초상권
+────────────────────────────────
+파일명:  아트/초상권_뷰파인더너머.png
+A city street at dusk seen past the edge of a cinema camera body in the near foreground,
+the camera dark and out of focus. In the middle distance pedestrians walk by, all
+completely out of focus and unidentifiable — no recognizable faces. Street lights are
+just turning on. Dark wet asphalt fills the lower third.
+
+  왜 이 컷 — "찍어도 되나?" 하는 망설임의 시점(視點).
+  배경 행인의 얼굴이 식별되면 주제와 정면으로 모순되므로
+  "completely out of focus and unidentifiable"을 반드시 넣을 것.
+
+
+────────────────────────────────
+뽑은 뒤 할 일
+────────────────────────────────
+1. `아트/`에 위 파일명으로 저장
+2. 제미나이 반짝이 워터마크(우하단 4각 별) 제거.
+   자동 제거 + 덱 연결 + 재렌더까지 한 번에:
+     python <작업폴더>/grab_cover.py <파일명(확장자 없이)> <덱폴더명> "center 30%"
+   원본은 `<파일명>_원본.png`으로 남는다.
+3. 수동으로 할 경우 각 덱 content_reel.json의 hook 슬라이드에 추가:
+     "img": "../_커버이미지/아트/<파일명>.png",
+     "imgstyle": "full",
+     "imgpos": "center 30%"
+4. `python _작업스크립트/_make_reel.py 09_카드뉴스/<덱폴더>` 재실행
+5. frame01.png을 열어 제목이 4:5 그리드 안에 있는지, 피사체를 안 가리는지 확인
+   (가리면 imgpos % 를 낮추거나 fitmax를 줄인다)
+
+────────────────────────────────
+폐기된 이전 버전 (웹툰 인물 초상)
+────────────────────────────────
+2026-08-03 오전에 웹툰 인물 초상으로 33·34·35 커버를 뽑았다가 전량 폐기했다.
+폐기 사유: 위 ※ 참고. 커버 톤이 29·30·32와 어긋난다.
+당시 파일(드론_조종자 / 크레딧_편집자 / 산재_다친스태프)은 `_폐기_웹툰커버/`로 옮겼다.
