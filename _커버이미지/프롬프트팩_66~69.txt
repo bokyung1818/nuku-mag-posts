@@ -1,0 +1,115 @@
+■ 커버 컷 프롬프트 — 66~69번 덱 / 2026-09-11 작성
+
+  ※ [0. 공통 스타일]을 모든 프롬프트 앞에 그대로 붙여 쓴다.
+    `프롬프트팩_57~64.txt`와 같은 공통 스타일이다.
+
+  ※ 사물 컷 문법을 그대로 이어간다 — 사물이 주인공이고, 그 사물이
+    이미 벌어진 사건을 보여준다. 개념 삽화가 되면 실패한 쪽(51·53)으로 간다.
+
+────────────────────────────────
+0. 공통 스타일 — 모든 프롬프트 앞에 그대로 붙일 것
+────────────────────────────────
+Photorealistic cinematic photograph. Aspect ratio 9:16 (vertical) — this is important.
+BRIGHT, airy, natural exposure — warm and luminous, NOT dark, NOT moody, NOT low-key.
+Shallow depth of field.
+The main subject sits in the upper two-thirds of the frame.
+Do NOT artificially darken the bottom of the image — keep the whole frame evenly and
+naturally lit.
+No human faces visible.
+Absolutely NO text, NO letters, NO numbers, NO watermark, NO logos, NO brand names.
+
+  ★ 밝게 뽑는다. 어둡게 하는 건 엔진의 `.imghook .scrim` 그라데이션이 이미 한다.
+  ★ 9:16 필수.
+  ★ 컷마다 새 채팅.
+  ★ 프롬프트는 **한 문단으로 이어 쓰고 "Scene:"으로 장면을 구분**한다.
+    빈 줄이 있으면 insertText가 중간에서 잘린다(63에서 겪음).
+  ★ 받은 뒤 `_dewatermark.py`로 우하단 반짝이를 지운다.
+
+────────────────────────────────
+66 추석 연휴 촬영 단가
+────────────────────────────────
+파일명:  아트/추석연휴_불켜진현장과달.png
+Scene: An outdoor film set at dusk on a clear autumn evening, with a large round full
+moon low in a bright deep-blue sky. A tall film light on a stand is switched on and
+glowing warmly over a cluster of equipment cases and coiled cables on the ground. A
+folding chair stands empty beside them with a jacket draped over the back. Nobody is
+present. Every surface is plain and unmarked with no writing of any kind. The bright
+ground fills the lower third.
+
+  왜 이 컷 — 남들이 쉬는 밤에 켜져 있는 조명. 보름달과 작업등을 한 화면에 놓으면
+  '연휴인데 현장이 돌아간다'가 설명 없이 읽힌다.
+  ★ 달을 너무 크게 주문하면 합성 티가 난다. "low in the sky" 정도로.
+  ★ 57(해질녘 빈 의자)과 구도가 겹칠 위험이 있다. 57은 의자가 주인공이고
+    이 컷은 **켜진 조명과 달**이 주인공이다. 의자는 곁들이는 정도로만.
+  ★ 밤으로 가면 어두워져 헤드라인이 죽는다. 반드시 **해가 막 진 직후(dusk)**로.
+
+────────────────────────────────
+67 해외 클라이언트 정산
+────────────────────────────────
+파일명:  아트/해외정산_외화통장과영수증.png
+Scene: A bright desk by a window in the morning. A few foreign banknotes of mixed
+colours lie fanned out beside a small stack of plain blank receipt slips and a
+calculator. A passport lies closed at the edge of the frame. Soft daylight, shallow
+depth of field. Every paper surface is completely blank — no writing, no numbers, no
+printing. The passport cover is plain with no emblem or lettering. The bright desk
+surface fills the lower third.
+
+  왜 이 컷 — 외화와 영수증이 같은 책상에 놓인 장면이 이 편의 질문이다.
+  들어온 돈 옆에 '정리해야 할 종이'가 쌓인다.
+  ★ 지폐와 여권에는 글자·숫자가 반드시 생긴다. blank·plain을 여러 번 강조했는데
+    그래도 생기면 다시 뽑는다. 지폐가 특정 국가로 식별되면 안 된다.
+  ★ 60(인주와 만년필)·63(식은 커피와 모니터)이 이미 '밝은 책상' 구도다.
+    지폐의 색으로 톤을 다르게 가져간다.
+  ★ 대안(글자 문제가 계속되면): 여권·지폐를 빼고 **여러 통화의 동전을 흩어 놓은
+    클로즈업**으로 간다. 동전이 지폐보다 글자가 덜 생긴다.
+
+────────────────────────────────
+68 실연자의 저작인접권
+────────────────────────────────
+파일명:  아트/실연자_빈무대와마이크.png
+Scene: An empty theatre stage seen from the front rows, lit brightly by warm stage
+lights from above. A single microphone on a stand waits at centre stage. The heavy
+curtains are open and the wooden stage floor is bare. The seats in the foreground are
+empty and out of focus. Nobody is present. No signage, no writing anywhere. The bright
+stage floor fills the lower third.
+
+  왜 이 컷 — 연기와 연주가 끝난 뒤에도 남아 있는 자리. 마이크 하나가
+  '거기 사람이 있었다'를 말한다. 이 편의 주제(출연료 뒤에 남는 권리)와 맞는다.
+  ★ 무대 뒤 배경막에 글자가 잘 생긴다. 커튼을 열어 두고 어두운 백스테이지가
+    보이게 하면 글자가 생길 자리가 줄어든다.
+  ★ 어둡게 가기 쉬운 소재다. "lit brightly by warm stage lights"를 반드시 유지.
+  ★ 34(상영관)와 겹치지 않게, 객석이 아니라 **무대 위**가 주인공이다.
+
+────────────────────────────────
+69 AI 합성과 출연 동의
+────────────────────────────────
+파일명:  아트/AI합성_모니터속얼굴격자.png
+Scene: A bright editing desk by a window in the daytime. A computer monitor displays a
+grid of nine identical blank white rectangles arranged three by three, like empty photo
+placeholders — each rectangle is completely empty with no image, no face, no text, no
+icon inside. A graphics tablet and stylus lie in front of the keyboard. Soft daylight,
+shallow depth of field. The bright desk surface fills the lower third.
+
+  ★★ 이 컷이 네 장 중 제일 까다롭다. 주제는 '얼굴'인데 공통 스타일이
+    얼굴을 금지한다. **얼굴을 그리지 말고 얼굴이 들어갈 빈칸을 그린다.**
+    빈 격자가 '아직 채워지지 않은 자리 = 언제든 채울 수 있는 자리'로 읽힌다.
+  ★ 모니터 화면에는 UI·글자가 가장 잘 생긴다. "no text, no icon"을 유지하고,
+    그래도 생기면 다시 뽑는다. 63에서 이 문제 때문에 모니터를 아예 껐었는데,
+    이 편은 화면이 켜져 있어야 해서 내용을 '빈 격자'로 최대한 단순하게 잡았다.
+  ★ 대안(격자가 계속 지저분하게 나오면): 모니터를 빼고 **삼각대 위 카메라의
+    빈 뷰파인더 화면 클로즈업**으로 간다. 다만 38(뷰파인더 너머)과 겹친다.
+
+────────────────────────────────
+[생성 전 읽을 것 — 57~64 작업에서 얻은 것]
+────────────────────────────────
+· 전송은 좌표 클릭 말고 JS로 `button[aria-label="메시지 보내기"]`를 click().
+· 입력 후 `box.dispatchEvent(new InputEvent('input',{bubbles:true}))`를 꼭 넣는다.
+· 프롬프트에 빈 줄(\n\n)이 있으면 insertText가 잘린다 → 한 문단 + "Scene:".
+· 다운로드는 라이트박스의 '원본 크기 이미지 다운로드'를 먼저 시도하고,
+  연속으로 받다가 안 떨어지면 [[gemini-download-bypass]]의 blob 앵커 우회.
+· 파일명이 `Gemini_Generated_Image_*.png`로 떨어진다 →
+  **Downloads의 옛 파일과 헷갈리지 않게 LastWriteTime으로 확인하고 옮길 것.**
+· 주인공을 명시하지 않으면 배경 구조물이 화면을 먹는다(61에서 겪음).
+
+[덱에 적어 둔 imgpos — 이미지가 나오면 보고 조정]
+66 center 34% / 67 center 32% / 68 center 34% / 69 center 32%
