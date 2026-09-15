@@ -15,9 +15,9 @@
     "나온다면"
    ],
    "hint": "동의서에 그 얘기가 적혀 있나요?",
-   "img": "../_커버이미지/아트/AI합성_모니터속얼굴격자.png",
+   "img": "../_커버이미지/아트/AI합성_트래킹마커배우.png",
    "imgstyle": "full",
-   "imgpos": "center 32%"
+   "imgpos": "center 20%"
   },
   {
    "type": "statement",
